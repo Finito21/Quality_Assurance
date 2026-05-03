@@ -8,25 +8,144 @@
         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
     </url>
     <url>
-        <loc>Noneapi/postman/</loc>
+        <loc>Nonefundamentals/test_theory/</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Noneapi/postman/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/api/postman/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonefundamentals/test_theory/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/fundamentals/test_theory/"/>
     </url>
     <url>
-        <loc>Nonetesting/questions/</loc>
+        <loc>Nonerecruitment/qa_questions/</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetesting/questions/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/testing/questions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/qa_questions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/qa_questions/"/>
     </url>
     <url>
-        <loc>Nonetesting/test_theory/</loc>
+        <loc>Nonerecruitment/technical_tasks/</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetesting/test_theory/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/testing/test_theory/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/technical_tasks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/technical_tasks/"/>
+    </url>
+    <url>
+        <loc>Nonesample_project/sample_project/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonesample_project/sample_project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample_project/sample_project/"/>
+    </url>
+    <url>
+        <loc>Nonetechnologies/backend/api/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/api/"/>
+    </url>
+    <url>
+        <loc>Nonetechnologies/backend/sql/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/sql/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/sql/"/>
+    </url>
+    <url>
+        <loc>Nonetechnologies/frontend/css/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/css/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/css/"/>
+    </url>
+    <url>
+        <loc>Nonetechnologies/frontend/html/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/html/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/html/"/>
+    </url>
+    <url>
+        <loc>Nonetechnologies/frontend/javascript/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/javascript/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/javascript/"/>
+    </url>
+    <url>
+        <loc>Nonetools/devtools/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/devtools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/devtools/"/>
+    </url>
+    <url>
+        <loc>Nonetools/ci_cd/github_actions/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/github_actions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/github_actions/"/>
+    </url>
+    <url>
+        <loc>Nonetools/ci_cd/jenkins/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/jenkins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/jenkins/"/>
+    </url>
+    <url>
+        <loc>Nonetools/git/git/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/git/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/git/"/>
+    </url>
+    <url>
+        <loc>Nonetools/git/github/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/github/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/github/"/>
+    </url>
+    <url>
+        <loc>Nonetools/monitoring/grafana/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/monitoring/grafana/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/monitoring/grafana/"/>
+    </url>
+    <url>
+        <loc>Nonetools/test_management/confluence/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/confluence/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/confluence/"/>
+    </url>
+    <url>
+        <loc>Nonetools/test_management/jira/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/jira/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/jira/"/>
+    </url>
+    <url>
+        <loc>Nonetools/test_management/slack/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/slack/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/slack/"/>
+    </url>
+    <url>
+        <loc>Nonetools/test_management/testlink/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/testlink/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/testlink/"/>
+    </url>
+    <url>
+        <loc>Nonetools/test_management/xray/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/xray/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/xray/"/>
     </url>
     <url>
         <loc>Noneen/</loc>
@@ -36,24 +155,143 @@
         <xhtml:link rel="alternate" hreflang="pl" href="None"/>
     </url>
     <url>
-        <loc>Noneen/api/postman/</loc>
+        <loc>Noneen/fundamentals/test_theory/</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/api/postman/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Noneapi/postman/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/fundamentals/test_theory/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonefundamentals/test_theory/"/>
     </url>
     <url>
-        <loc>Noneen/testing/questions/</loc>
+        <loc>Noneen/recruitment/qa_questions/</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/testing/questions/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetesting/questions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/qa_questions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/qa_questions/"/>
     </url>
     <url>
-        <loc>Noneen/testing/test_theory/</loc>
+        <loc>Noneen/recruitment/technical_tasks/</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/testing/test_theory/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetesting/test_theory/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/technical_tasks/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/technical_tasks/"/>
+    </url>
+    <url>
+        <loc>Noneen/sample_project/sample_project/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample_project/sample_project/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonesample_project/sample_project/"/>
+    </url>
+    <url>
+        <loc>Noneen/technologies/backend/api/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/api/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/api/"/>
+    </url>
+    <url>
+        <loc>Noneen/technologies/backend/sql/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/sql/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/sql/"/>
+    </url>
+    <url>
+        <loc>Noneen/technologies/frontend/css/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/css/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/css/"/>
+    </url>
+    <url>
+        <loc>Noneen/technologies/frontend/html/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/html/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/html/"/>
+    </url>
+    <url>
+        <loc>Noneen/technologies/frontend/javascript/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/javascript/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/javascript/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/devtools/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/devtools/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/devtools/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/ci_cd/github_actions/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/github_actions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/github_actions/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/ci_cd/jenkins/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/jenkins/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/jenkins/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/git/git/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/git/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/git/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/git/github/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/github/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/github/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/monitoring/grafana/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/monitoring/grafana/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/monitoring/grafana/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/test_management/confluence/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/confluence/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/confluence/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/test_management/jira/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/jira/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/jira/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/test_management/slack/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/slack/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/slack/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/test_management/testlink/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/testlink/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/testlink/"/>
+    </url>
+    <url>
+        <loc>Noneen/tools/test_management/xray/</loc>
+        <lastmod>2026-05-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/xray/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/xray/"/>
     </url>
 </urlset>
