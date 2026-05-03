@@ -1,41 +1,51 @@
 site_name: QA Notes
-site_description: Notatki QA / Testowanie / API / SQL
 
-theme: darkly
+theme: material
 
 nav:
-  - Home Page: index.md
+  - Home: index.md
+
   - Fundamentals:
-      - Fundamentals: fundamentals/test_theory.md
+      - Test Theory: fundamentals/test_theory.md
+
   - Technologies:
       - Frontend:
         - HTML: technologies/frontend/html.md
         - CSS: technologies/frontend/css.md
         - JavaScript: technologies/frontend/javascript.md
+
       - Backend:
         - Sql: technologies/backend/sql.md
         - API: technologies/backend/api.md
+
   - Tools:
-      - Devtools: tools/devtools/devtools.md
+      - Devtools: tools/devtools.md
+
       - GIT:
-        - Git: tools/git/git.md
+        - Git Basics: tools/git/git_basics.md
         - GitHub: tools/git/github.md
+
       - CI/CD:
         - Jenkins: tools/ci_cd/jenkins.md
         - GitHub Actions: tools/ci_cd/github_actions.md
+
       - Monitoring:
         - Grafana: tools/monitoring/grafana.md
-      - Test_Management:
+        
+      - Test Management:
         - Jira: tools/test_management/jira.md
         - Confluence: tools/test_management/confluence.md
         - Slack: tools/test_management/slack.md
         - TestLink: tools/test_management/testlink.md
         - Xray: tools/test_management/xray.md
+
   - Recruitment:
-      - QA_Questions: recruitment/qa_questions.md
-      - Technical_task: recruitment/technical_task.md
-  - Sample project:
-      - Sample_project: sample_project/sample_project.md
+      - QA Questions: recruitment/qa_questions.md
+      - Technical Tasks: recruitment/technical_tasks.md
+
+  - Sample Project:
+      - Sample Project: sample_project/sample_project.md
+      
 plugins:
   - search
   - i18n:
