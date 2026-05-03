@@ -1,297 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>None./</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/index.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="None"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/index.html"/>
     </url>
     <url>
-        <loc>Nonefundamentals/test_theory/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/fundamentals/test_theory.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonefundamentals/test_theory/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/fundamentals/test_theory/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/fundamentals/test_theory.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/fundamentals/test_theory.html"/>
     </url>
     <url>
-        <loc>Nonerecruitment/qa_questions/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/recruitment/qa_questions.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/qa_questions/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/qa_questions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/qa_questions.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/qa_questions.html"/>
     </url>
     <url>
-        <loc>Nonerecruitment/technical_tasks/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/recruitment/technical_tasks.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/technical_tasks/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/technical_tasks/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/technical_tasks.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/technical_tasks.html"/>
     </url>
     <url>
-        <loc>Nonesample_project/sample_project/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/sample_project/sample_project.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonesample_project/sample_project/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample_project/sample_project/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/sample_project/sample_project.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/sample_project/sample_project.html"/>
     </url>
     <url>
-        <loc>Nonetechnologies/backend/api/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/technologies/backend/api.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/api/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/api/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/backend/api.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/backend/api.html"/>
     </url>
     <url>
-        <loc>Nonetechnologies/backend/sql/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/technologies/backend/sql.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/sql/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/sql/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/backend/sql.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/backend/sql.html"/>
     </url>
     <url>
-        <loc>Nonetechnologies/frontend/css/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/technologies/frontend/css.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/css/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/css/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/frontend/css.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/frontend/css.html"/>
     </url>
     <url>
-        <loc>Nonetechnologies/frontend/html/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/technologies/frontend/html.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/html/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/html/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/frontend/html.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/frontend/html.html"/>
     </url>
     <url>
-        <loc>Nonetechnologies/frontend/javascript/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/technologies/frontend/javascript.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/javascript/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/javascript/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/frontend/javascript.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/frontend/javascript.html"/>
     </url>
     <url>
-        <loc>Nonetools/devtools/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/devtools.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/devtools/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/devtools/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/devtools.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/devtools.html"/>
     </url>
     <url>
-        <loc>Nonetools/ci_cd/github_actions/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/ci_cd/github_actions.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/github_actions/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/github_actions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/ci_cd/github_actions.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/ci_cd/github_actions.html"/>
     </url>
     <url>
-        <loc>Nonetools/ci_cd/jenkins/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/ci_cd/jenkins.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/jenkins/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/jenkins/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/ci_cd/jenkins.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/ci_cd/jenkins.html"/>
     </url>
     <url>
-        <loc>Nonetools/git/git/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/git/git.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/git/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/git/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/git/git.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/git/git.html"/>
     </url>
     <url>
-        <loc>Nonetools/git/github/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/git/github.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/github/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/github/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/git/github.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/git/github.html"/>
     </url>
     <url>
-        <loc>Nonetools/monitoring/grafana/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/monitoring/grafana.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/monitoring/grafana/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/monitoring/grafana/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/monitoring/grafana.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/monitoring/grafana.html"/>
     </url>
     <url>
-        <loc>Nonetools/test_management/confluence/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/test_management/confluence.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/confluence/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/confluence/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/confluence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/confluence.html"/>
     </url>
     <url>
-        <loc>Nonetools/test_management/jira/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/test_management/jira.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/jira/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/jira/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/jira.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/jira.html"/>
     </url>
     <url>
-        <loc>Nonetools/test_management/slack/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/test_management/slack.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/slack/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/slack/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/slack.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/slack.html"/>
     </url>
     <url>
-        <loc>Nonetools/test_management/testlink/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/test_management/testlink.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/testlink/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/testlink/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/testlink.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/testlink.html"/>
     </url>
     <url>
-        <loc>Nonetools/test_management/xray/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/tools/test_management/xray.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/xray/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/xray/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/xray.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/xray.html"/>
     </url>
     <url>
-        <loc>Noneen/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/index.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/index.html"/>
     </url>
     <url>
-        <loc>Noneen/fundamentals/test_theory/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/fundamentals/test_theory.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/fundamentals/test_theory/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonefundamentals/test_theory/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/fundamentals/test_theory.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/fundamentals/test_theory.html"/>
     </url>
     <url>
-        <loc>Noneen/recruitment/qa_questions/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/recruitment/qa_questions.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/qa_questions/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/qa_questions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/qa_questions.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/qa_questions.html"/>
     </url>
     <url>
-        <loc>Noneen/recruitment/technical_tasks/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/recruitment/technical_tasks.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/recruitment/technical_tasks/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonerecruitment/technical_tasks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/technical_tasks.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/technical_tasks.html"/>
     </url>
     <url>
-        <loc>Noneen/sample_project/sample_project/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/sample_project/sample_project.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample_project/sample_project/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonesample_project/sample_project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/sample_project/sample_project.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/sample_project/sample_project.html"/>
     </url>
     <url>
-        <loc>Noneen/technologies/backend/api/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/technologies/backend/api.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/api/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/api/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/backend/api.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/backend/api.html"/>
     </url>
     <url>
-        <loc>Noneen/technologies/backend/sql/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/technologies/backend/sql.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/backend/sql/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/backend/sql/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/backend/sql.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/backend/sql.html"/>
     </url>
     <url>
-        <loc>Noneen/technologies/frontend/css/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/technologies/frontend/css.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/css/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/css/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/frontend/css.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/frontend/css.html"/>
     </url>
     <url>
-        <loc>Noneen/technologies/frontend/html/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/technologies/frontend/html.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/html/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/html/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/frontend/html.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/frontend/html.html"/>
     </url>
     <url>
-        <loc>Noneen/technologies/frontend/javascript/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/technologies/frontend/javascript.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/technologies/frontend/javascript/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetechnologies/frontend/javascript/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/technologies/frontend/javascript.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/technologies/frontend/javascript.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/devtools/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/devtools.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/devtools/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/devtools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/devtools.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/devtools.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/ci_cd/github_actions/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/ci_cd/github_actions.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/github_actions/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/github_actions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/ci_cd/github_actions.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/ci_cd/github_actions.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/ci_cd/jenkins/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/ci_cd/jenkins.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/ci_cd/jenkins/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/ci_cd/jenkins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/ci_cd/jenkins.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/ci_cd/jenkins.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/git/git/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/git/git.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/git/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/git/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/git/git.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/git/git.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/git/github/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/git/github.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/git/github/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/git/github/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/git/github.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/git/github.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/monitoring/grafana/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/monitoring/grafana.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/monitoring/grafana/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/monitoring/grafana/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/monitoring/grafana.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/monitoring/grafana.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/test_management/confluence/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/test_management/confluence.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/confluence/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/confluence/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/confluence.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/confluence.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/test_management/jira/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/test_management/jira.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/jira/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/jira/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/jira.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/jira.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/test_management/slack/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/test_management/slack.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/slack/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/slack/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/slack.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/slack.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/test_management/testlink/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/test_management/testlink.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/testlink/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/testlink/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/testlink.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/testlink.html"/>
     </url>
     <url>
-        <loc>Noneen/tools/test_management/xray/</loc>
+        <loc>https://finito21.github.io/Quality_Assurance/en/tools/test_management/xray.html</loc>
         <lastmod>2026-05-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/test_management/xray/"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="Nonetools/test_management/xray/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/tools/test_management/xray.html"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/tools/test_management/xray.html"/>
     </url>
 </urlset>
