@@ -2,13 +2,31 @@ site_name: QA Notes
 site_url: https://finito21.github.io/Quality_Assurance/
 use_directory_urls: false
 
-theme: material
+theme: 
+  name: material
+  palette:
+
+    # Dark mode
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Przełącz na tryb jasny
+
+    # Light mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Przełącz na tryb ciemny
 
 nav:
-  - Home: index.md
+  - Introduction: index.md
 
   - Fundamentals:
-      - Test Theory: fundamentals/test_theory.md
+      - QA Fundamentals : fundamentals/qa_fundamentals.md
 
   - Technologies:
       - Frontend:
@@ -47,7 +65,8 @@ nav:
 
   - Sample Project:
       - Sample Project: sample_project/sample_project.md
-      
+  - Resources: resources.md
+
 plugins:
   - search
   - i18n:
