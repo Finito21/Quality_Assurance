@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://finito21.github.io/Quality_Assurance/fundamentals/test_theory.html">
+        <link rel="canonical" href="https://finito21.github.io/Quality_Assurance/fundamentals/qa_fundamentals.html">
       
       
         <link rel="prev" href="../index.html">
@@ -18,9 +18,9 @@
       
       
         
-          <link rel="alternate" href="test_theory.html" hreflang="pl">
+          <link rel="alternate" href="qa_fundamentals.html" hreflang="pl">
         
-          <link rel="alternate" href="../en/fundamentals/test_theory.html" hreflang="en">
+          <link rel="alternate" href="../en/fundamentals/qa_fundamentals.html" hreflang="en">
         
       
       
@@ -29,11 +29,14 @@
     
     
       
-        <title>Test Theory - QA Notes</title>
+        <title>QA Fundamentals - QA Notes</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -61,13 +64,25 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#qm-qa-i-qc" class="md-skip">
+          Przejdź do treści
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -101,12 +116,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Test Theory
+              QA Fundamentals
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Przełącz na tryb jasny"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Przełącz na tryb jasny" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Przełącz na tryb ciemny"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Przełącz na tryb ciemny" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -122,13 +163,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="test_theory.html" hreflang="pl" class="md-select__link">
+            <a href="qa_fundamentals.html" hreflang="pl" class="md-select__link">
               🇵🇱 Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../en/fundamentals/test_theory.html" hreflang="en" class="md-select__link">
+            <a href="../en/fundamentals/qa_fundamentals.html" hreflang="en" class="md-select__link">
               🇬🇧 English
             </a>
           </li>
@@ -230,7 +271,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Introduction
   
 
     
@@ -305,15 +346,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-      <a href="test_theory.html" class="md-nav__link md-nav__link--active">
+      
+      <a href="qa_fundamentals.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Test Theory
+    QA Fundamentals
   
 
     
@@ -768,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/git/git_basics.md" class="md-nav__link">
+      <a href="../tools/git/git_basics.html" class="md-nav__link">
         
   
   
@@ -1413,6 +1456,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1430,6 +1500,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1446,9 +1518,280 @@
 
 
 
-  <h1>Test Theory</h1>
-
-
+<h1 id="qm-qa-i-qc">QM, QA i QC<a class="headerlink" href="#qm-qa-i-qc" title="Permanent link">&para;</a></h1>
+<p><strong>QM (Quality Management)</strong> - system zarządzania jakością w organizacji obejmujący politykę jakości, cele jakościowe, procesy, nadzór oraz ciągłe doskonalenie, w celu zapewnienia zgodności produktów lub usług z wymaganiami klienta i normami. Obejmuje QA i QC.</p>
+<p><strong>QA (Quality Assurance)</strong> - działania związane z zapewnieniem jakości, poprzez tworzenie i nadzorowanie procesów, procedur oraz standardów mających zapobiegać powstawaniu błędów. </p>
+<p><strong>QC (Quality Control)</strong> - działania związane z kontrolą i oceną jakości produktu, usługi, modułu lub systemu.</p>
+<p>W ujęciu teoretycznym QC jest częścią QA, jednak w praktyce organizacyjnej QA i QC często funkcjonują jako niezależne obszary.</p>
+<p><img alt="Relacja między QM, QA, QC i testowaniem" src="../assets/images/qm_qa_qc.png" /></p>
+<p><em>Rys 1. Relacja między QM, QA, QC i testowaniem.</em></p>
+<hr />
+<h1 id="czym-jest-testowanie">Czym jest testowanie?<a class="headerlink" href="#czym-jest-testowanie" title="Permanent link">&para;</a></h1>
+<p><strong>Testowanie</strong> - proces oceny jakości oprogramowania i powiązanych artefaktów poprzez wykrywanie defektów oraz weryfikację, czy system spełnia określone wymagania.</p>
+<hr />
+<h1 id="testowanie-vs-debugowanie">Testowanie vs debugowanie<a class="headerlink" href="#testowanie-vs-debugowanie" title="Permanent link">&para;</a></h1>
+<p><strong>Testowanie</strong> - proces sprawdzania działania programu i wykrywania błędów. Wykonuje je głównie tester poprzez uruchamianie testów i porównywanie wyniku oczekiwanego z rzeczywistym.</p>
+<p><strong>Debugowanie</strong> - proces analizowania przyczyny błędu i jego naprawy. Wykonuje je głównie programista po otrzymaniu raportu defektu.</p>
+<hr />
+<h1 id="cele-testowania">Cele testowania<a class="headerlink" href="#cele-testowania" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Budowanie zaufania do jakości produktu.</li>
+<li>Zapobieganie awariom, dzięki wczesnemu wykrywaniu niezgodności w procesie wytwarzania (obejmuje ocenę i weryfikację produktów pracy, takich jak wymagania, projekt i kod, a także sprawdzenie spełnienia zobowiązań wynikających z umów, standardów, prawa i oczekiwań interesariuszy).</li>
+<li>Sprawdzenie kompletności przedmiotu testów.</li>
+</ul>
+<hr />
+<h1 id="bad-defekt-i-awaria">Błąd, defekt i awaria<a class="headerlink" href="#bad-defekt-i-awaria" title="Permanent link">&para;</a></h1>
+<p><strong>Błąd (error)</strong> - pomyłka człowieka prowadząca do powstania defektu w kodzie.</p>
+<p><strong>Defekt (defect/bug)</strong> - nieprawidłowość w kodzie lub działaniu programu.</p>
+<p><strong>Awaria (failure)</strong> - efekt działania defektu w czasie wykonania (zdarzenie, w którym moduł lub system nie wykonuje wymaganej funkcji w określonym zakresie).</p>
+<hr />
+<h1 id="zasady-testowania">Zasady testowania<a class="headerlink" href="#zasady-testowania" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Testowanie ujawnia obecność błędów, nie ich brak.</li>
+<li>Pełne testowanie jest niemożliwe.</li>
+<li>Wczesne testowanie oszczędza czas i koszty.</li>
+<li>Defekty koncentrują się w określonych obszarach systemu.</li>
+<li>Paradoks pestycydów - te same testy przestają wykrywać nowe błędy, trzeba je regularnie aktualizować.</li>
+<li>Testowanie zależy od kontekstu (np. testy systemów medycznych różnią się od testów gier).</li>
+<li>Brak błędów nie oznacza, że system jest użyteczny lub spełnia potrzeby użytkownika.</li>
+</ol>
+<hr />
+<h1 id="wybrane-modele-cyklu-zycia-oprogramowania">Wybrane modele cyklu życia oprogramowania<a class="headerlink" href="#wybrane-modele-cyklu-zycia-oprogramowania" title="Permanent link">&para;</a></h1>
+<p><strong>Sekwencyjne</strong> - zakładają wykonanie poszczególnych czynności wytwórczych po kolei liniowo. Kolejna faza rozpoczyna się po zakończeniu poprzedniej.</p>
+<ul>
+<li>
+<p><strong>Kaskadowy (waterfall)</strong> - czynności testowe startują, gdy wszystkie inne czynności wytwórcze zostaną ukończone. Model ten jest stosowany, dla produktów posiadających dokładną dokumentacje i dobrze zdefiniowane wymagania (o niskim prawdopodobieństwie wystąpienia zmiany).</p>
+</li>
+<li>
+<p><strong>Model V</strong> - w przeciwieństwie do kaskadowego wprowadza zasadę wczesnego testowania. Każdemu etapowi wytwarzania odpowiada powiązany etap testowania.</p>
+</li>
+</ul>
+<p><strong>Iteracyjno-przyrostowe</strong> - oprogramowanie wytwarzane jest w krótkich cyklach, a funkcjonalności rosną przyrostowo.</p>
+<ul>
+<li>
+<p><strong>SCRUM</strong> - jedna z najpopularniejszych metodyk. Dzieli wytwarzanie oprogramowania na krótkie iteracje (sprinty) o tej samej długości. Częste zmiany. Dlatego testowanie staje się wyzwaniem, więc zamiast długotrwałego planowania stosuje się testowanie eksploracyjne, czy automatyzowanie dużych ilości testów, zwłaszcza testów regresji.</p>
+</li>
+<li>
+<p><strong>Kanban</strong> - nie narzuca stałych iteracji czasowych. Proces wytwórczy organizowany jest w oparciu o wizualne karty zadań na tablicy oraz limity pracy w toku (WIP). Kolejne funkcjonalności przekazywane są do produkcji w miarę ich ukończenia, gdy pojawi się na nie zapotrzebowanie. Metoda ta kładzie nacisk na płynność przepływu, szybkie wykrywanie wąskich gardeł i elastyczne reagowanie na zmiany priorytetów.</p>
+</li>
+<li>
+<p><strong>Model spiralny Boehma</strong> - nazywany jest modelem modeli, ponieważ można z niego uzyskać każdy model cyklu życia. Każda iteracja rozpoczyna się analizą ryzyka. Tworzy się w nim eksperymentalne elementy przyrostowe, które mogą być przebudowane, a nawet porzucone w dalszych etapach.</p>
+</li>
+<li>
+<p><strong>RUP</strong> - iteracyjny model wytwarzania oparty na fazach i przypadkach użycia. Proces może być dostosowywany do potrzeb projektu, a rozwój systemu odbywa się iteracyjnie. </p>
+</li>
+</ul>
+<hr />
+<h1 id="zasada-shift-left">Zasada Shift Left<a class="headerlink" href="#zasada-shift-left" title="Permanent link">&para;</a></h1>
+<p><strong>Zasada Shift Left</strong> - podejście polegające na przesunięciu testowania na wcześniejsze etapy wytwarzania oprogramowania, aby szybciej wykrywać i usuwać błędy oraz obniżyć koszty ich naprawy.</p>
+<hr />
+<h1 id="proces-testowy">Proces testowy<a class="headerlink" href="#proces-testowy" title="Permanent link">&para;</a></h1>
+<ol>
+<li><strong>Planowanie testów</strong> -&gt; plan testów (cel, podejście, techniki, harmonogram)</li>
+<li><strong>Monitorowanie testów</strong> -&gt; raporty z testów (oszacowanie jakości modułu na podstawie rezultatów, czy konieczne dalsze testy, sprawdzenie rezultatów)</li>
+<li><strong>Analiza testów</strong> -&gt; warunki testowe (analiza specyfikacji, diagramów, wymagań)</li>
+<li><strong>Projektowanie testów</strong> -&gt; przypadki testowe, zbiory testów</li>
+<li><strong>Implementacja testów</strong> -&gt; tworzenie zestawów testowych, przygotowanie danych testowych</li>
+<li><strong>Wykonywanie testów</strong> -&gt; dokumentacja (wykonanie testów), raport o defektach</li>
+<li><strong>Ukończenie testów</strong> -&gt; koniec</li>
+</ol>
+<hr />
+<h1 id="poziomy-testow">Poziomy testów<a class="headerlink" href="#poziomy-testow" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Testy jednostkowe/modułowe (Unit tests)</strong> - testują małe fragmenty kodu, wykonywane głównie przez programistów.</li>
+<li><strong>Testy integracyjne</strong> - sprawdzają współpracę między modułami lub systemami.</li>
+<li><strong>Testy systemowe</strong> - obejmują testy całej aplikacji jako całości.</li>
+<li><strong>Testy akceptacyjne</strong> - potwierdzają, że system spełnia potrzeby użytkowników, klienta oraz wymagania biznesowe. Wyróżnia się m.in.:<ul>
+<li><strong>UAT (User Acceptance Testing)</strong> - testy akceptacyjne użytkownika wykonywane przez użytkowników końcowych. Sprawdzają, czy system odpowiada rzeczywistym potrzebom i scenariuszom użycia.</li>
+<li><strong>OAT (Operational Acceptance Testing)</strong> - operacyjne testy akceptacyjne wykonywane przez administratorów lub operatorów systemu. Koncentrują się na utrzymaniu systemu, np. bezpieczeństwie, kopiach zapasowych czy odzyskiwaniu po awarii.</li>
+<li><strong>Testowanie zgodności</strong> - sprawdza zgodność systemu z umowami, normami lub przepisami prawa.</li>
+<li><strong>Alfa</strong> - wykonywane w środowisku producenta przez testerów, potencjalnych klientów lub niezależny zespół testowy.</li>
+<li><strong>Beta</strong> - wykonywane przez użytkowników lub klientów w rzeczywistym środowisku docelowym, poza siedzibą producenta.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="rodzaje-testow">Rodzaje testów<a class="headerlink" href="#rodzaje-testow" title="Permanent link">&para;</a></h1>
+<p>Ze względu, czy kod jest uruchamiany w trakcie testu:</p>
+<ul>
+<li><strong>Statyczne</strong> - testowanie można wykonać bez konieczności uruchamiania testowanego obiektu (testowane specyfikacje, projekt architektury czy kod oprogramowania).</li>
+<li><strong>Dynamiczne</strong> - testowanie może wymagać uruchomionego modułu lub systemu.</li>
+</ul>
+<p>Ze względu na cel:</p>
+<ul>
+<li><strong>Funkcjonalne</strong> - sprawdzenie, czy system działa zgodnie z wymaganiami (konkretne funkcjonalności).</li>
+<li><strong>Niefunkcjonalne</strong> - badanie sposobu działania systemu (jakość, wydajność, bezpieczeństwo, użyteczność).</li>
+</ul>
+<p>Ze względu na podejście:</p>
+<ul>
+<li><strong>Czarnoskrzynkowe (Black-box)</strong> - tester nie zna kodu, testuje na podstawie specyfikacji i interfejsu użytkownika.</li>
+<li><strong>Białoskrzynkowe (White-box)</strong> - tester zna strukturę kodu i testuje jego wewnętrzną logikę.</li>
+<li><strong>Bazujące na doświadczeniu</strong> - nie bazują na dokumencie formalnym.</li>
+</ul>
+<p>Ze względu na sposób wykonania:</p>
+<ul>
+<li><strong>Manualne</strong> - tester wykonuje testy ręcznie, krok po kroku, bez użycia skryptów. Stosowane głównie dla testów eksploracyjnych, UX, walidacji funkcjonalności.</li>
+<li><strong>Automatyczne</strong> - testy wykonywane są przez skrypty lub narzędzia (np. Selenium, Postman, Jenkins). Stosowane przy testach regresyjnych i powtarzalnych.</li>
+</ul>
+<p>Testy związane ze zmianami:</p>
+<ul>
+<li><strong>Potwierdzające</strong> - retesty stosuje się je zawsze po naprawie defektu. Sprawdzenie, czy defekt został rzeczywiście naprawiony.</li>
+<li><strong>Regresyjne</strong> - upewniają się, że nowa zmiana nie zepsuła istniejących funkcji. Często się je automatyzuje.</li>
+</ul>
+<p>Inne typy testów:</p>
+<ul>
+<li><strong>Smoke tests</strong> - szybka weryfikacja, czy aplikacja działa po wdrożeniu. Sprawdzenie, czy główne funkcje działają (czy "się uruchamia").</li>
+<li><strong>Sanity tests</strong> - sprawdzenie, czy konkretna poprawka działa zgodnie z oczekiwaniami.</li>
+<li><strong>Eksploracyjne</strong> - tester spontanicznie bada aplikację bez gotowych przypadków testowych, szukając nieoczywistych błędów.</li>
+<li><strong>Pielęgnacyjne</strong> - testy po wydaniu oprogramowania do użytku.</li>
+</ul>
+<hr />
+<h1 id="testowanie-instrukcji-i-gaezi">Testowanie instrukcji i gałęzi<a class="headerlink" href="#testowanie-instrukcji-i-gaezi" title="Permanent link">&para;</a></h1>
+<p><strong>Testowanie instrukcji i pokrycie instrukcji kodu</strong> - sprawdza, czy każda instrukcja kodu została wykonana przynajmniej raz podczas testów. Pomaga wykryć fragmenty kodu, które nie były testowane. Pokrycie instrukcji określa procent sprawdzonych instrukcji kodu.</p>
+<p><strong>Testowanie gałęzi i pokrycie gałęzi</strong> - sprawdza wszystkie możliwe wyniki decyzji w kodzie, aby upewnić się, że każda ścieżka została wykonana. Pomaga wykrywać błędy logiczne. Pokrycie gałęzi określa procent gałęzi sprawdzonych podczas testów.</p>
+<ul>
+<li>100% pokrycia gałęzi gwarantuje 100% pokrycia instrukcji, ponieważ wykonane zostają wszystkie ścieżki kodu.</li>
+<li>100% pokrycia instrukcji nie gwarantuje 100% pokrycia gałęzi, ponieważ można wykonać wszystkie instrukcje bez sprawdzenia wszystkich wyników warunków.</li>
+</ul>
+<hr />
+<h1 id="techniki-projektowania-przypadkow-testowych">Techniki projektowania przypadków testowych<a class="headerlink" href="#techniki-projektowania-przypadkow-testowych" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Podział na klasy / zakresy równoważności</strong> - np. pole "wiek" &lt; 0 (błędne), 0 – 100 (poprawne), &gt; 100 (błędne).</li>
+<li><strong>Analiza wartości brzegowych</strong> - testowanie granicznych wartości danych.</li>
+<li><strong>Tablice decyzyjne</strong> - sprawdzanie różnych kombinacji warunków i akcji.</li>
+<li><strong>Testy oparte na scenariuszach (Use case)</strong> - testowanie pełnych ścieżek użytkownika.</li>
+</ul>
+<hr />
+<h1 id="przypadek-testowy">Przypadek testowy<a class="headerlink" href="#przypadek-testowy" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Nazwa testu</li>
+<li>Warunki wstępne</li>
+<li>Kroki do wykonania</li>
+<li>Dane wejściowe</li>
+<li>Oczekiwany rezultat</li>
+<li>Rzeczywisty rezultat</li>
+<li>Status (pass/fail)</li>
+</ul>
+<hr />
+<h1 id="raport-z-bedu">Raport z błędu<a class="headerlink" href="#raport-z-bedu" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Identyfikator</li>
+<li>Tytuł</li>
+<li>Opis</li>
+<li>Data zgłoszenia</li>
+<li>Autor</li>
+<li>Priorytet</li>
+<li>Status zgłoszenia</li>
+<li>Identyfikacja elementu testowego</li>
+<li>Kroki do odtworzenia</li>
+<li>Rzeczywisty rezultat</li>
+<li>Oczekiwany rezultat</li>
+<li>Faza cyklu życia oprogramowania</li>
+<li>Załączniki (np. screeny, logi, video)</li>
+</ul>
+<hr />
+<h1 id="cykl-zycia-defektu">Cykl życia defektu<a class="headerlink" href="#cykl-zycia-defektu" title="Permanent link">&para;</a></h1>
+<p>Now → Assigned → Fixed → Retested → Closed (czasem: Reopened → Retested → Closed)</p>
+<hr />
+<h1 id="weryfikacja-a-walidacja">Weryfikacja a walidacja<a class="headerlink" href="#weryfikacja-a-walidacja" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Weryfikacja (Verification)</strong> - czy system jest zbudowany zgodnie ze specyfikacją ("Czy robimy to dobrze?").</li>
+<li><strong>Walidacja (Validation)</strong> - czy system spełnia potrzeby użytkownika ("Czy robimy to, czego oczekuje klient?").</li>
+</ul>
+<hr />
+<h1 id="proces-przegladu-produktow-pracy">Proces przeglądu produktów pracy<a class="headerlink" href="#proces-przegladu-produktow-pracy" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Planowanie</li>
+<li>Rozpoczęcie przeglądu</li>
+<li>Przegląd indywidualny</li>
+<li>Przekazanie informacji o problemach i analiza problemów</li>
+<li>Usunięcie defektów i raportowanie</li>
+</ol>
+<hr />
+<h1 id="typy-przegladow">Typy przeglądów<a class="headerlink" href="#typy-przegladow" title="Permanent link">&para;</a></h1>
+<p><strong>Przegląd nieformalny</strong> - mało formalna forma analizy dokumentów lub kodu, stosowana głównie do szybkiego wykrywania błędów i wymiany pomysłów. Często wykorzystywana w zespołach zwinnych.</p>
+<p><strong>Przejrzenie</strong> - autor prezentuje materiał zespołowi w celu znalezienia defektów, omówienia możliwych usprawnień i osiągnięcia wspólnego zrozumienia rozwiązania. Rola protokolanta jest obowiązkowa. Może przyjąć formę dość nieformalną jak i bardzo formalną.</p>
+<p><strong>Przegląd techniczny</strong> - formalniejszy przegląd wykonywany przez osoby posiadające wiedzę techniczną, którego celem jest ocena jakości oraz identyfikacja problemów i możliwych rozwiązań. Obowiązkowe jest przygotowanie indywidualne i zwykle jest generowany raport.</p>
+<p><strong>Inspekcja</strong> - najbardziej formalny typ przeglądu, oparty na określonych rolach i procedurach. Służy dokładnemu wykrywaniu defektów, analizie ich przyczyn oraz dokumentowaniu wyników. Wszystkie role obowiązkowe i nie mozna ich łączyć. Generowany jest raport do przyszłych ulepszeń.</p>
+<hr />
+<h1 id="role-w-przegladzie-formalnym">Role w przeglądzie formalnym<a class="headerlink" href="#role-w-przegladzie-formalnym" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Autor</li>
+<li>Kierownictwo</li>
+<li>Facylitator (moderator) – rola mediatora</li>
+<li>Lider przeglądu</li>
+<li>Przeglądający</li>
+<li>Protokolant</li>
+</ol>
+<hr />
+<h1 id="podejscia-do-wytwarzania-oprogramowania-sterowane-testami">Podejścia do wytwarzania oprogramowania sterowane testami<a class="headerlink" href="#podejscia-do-wytwarzania-oprogramowania-sterowane-testami" title="Permanent link">&para;</a></h1>
+<p><strong>TDD (Test-Driven Development)</strong> - najpierw tworzy się testy jednostkowe, a następnie kod spełniający wymagania testu. Proces opiera się na cyklu: test → implementacja → refaktoryzacja.</p>
+<p><strong>ATDD (Acceptance Test-Driven Development)</strong> - testy akceptacyjne są definiowane na podstawie wymagań biznesowych i kryteriów akceptacji jeszcze przed implementacją funkcjonalności.</p>
+<p><strong>BDD (Behavior-Driven Development)</strong> - podejście skupione na opisie zachowania systemu w języku naturalnym, często z wykorzystaniem składni Given/When/Then (Gherkin).</p>
+<hr />
+<h1 id="devops-w-procesie-testowania-oprogramowania">DevOps w procesie testowania oprogramowania<a class="headerlink" href="#devops-w-procesie-testowania-oprogramowania" title="Permanent link">&para;</a></h1>
+<p><strong>DevOps</strong> - podejście łączące rozwój oprogramowania (Development) i utrzymanie systemów (Operations) w celu usprawnienia współpracy, automatyzacji procesów oraz szybszego dostarczania wysokiej jakości aplikacji.</p>
+<p>Najważniejsze cechy DevOps:</p>
+<ul>
+<li>współpraca programistów, testerów i administratorów,</li>
+<li>automatyzacja procesów budowania, testowania i wdrażania,</li>
+<li>ciągłe monitorowanie aplikacji i infrastruktury,</li>
+<li>szybkie wykrywanie i naprawianie błędów dzięki CI/CD.</li>
+</ul>
+<p>CI/CD:</p>
+<ul>
+<li><strong>CI (Continuous Integration)</strong> - ciągła integracja kodu i automatyczne testy,</li>
+<li><strong>CD (Continuous Delivery)</strong> - przygotowanie aplikacji do wdrożenia,</li>
+<li><strong>Continuous Deployment</strong> - automatyczne wdrażanie zmian na środowisko produkcyjne.</li>
+</ul>
+<hr />
+<h1 id="retrospektywa">Retrospektywa<a class="headerlink" href="#retrospektywa" title="Permanent link">&para;</a></h1>
+<p><strong>Retrospektywa</strong> - spotkanie zespołu po zakończeniu iteracji lub etapu projektu, którego celem jest omówienie tego, co poszło dobrze, co wymaga poprawy oraz jak usprawnić dalszą pracę i proces testowania. W Scrumie retrospektywa odbywa się zazwyczaj po każdym sprincie.</p>
+<hr />
+<h1 id="szacowanie-3-punktowe">Szacowanie 3-punktowe<a class="headerlink" href="#szacowanie-3-punktowe" title="Permanent link">&para;</a></h1>
+<p>Technika stosowana m.in. w planowaniu i testowaniu oprogramowania do oszacowania czasu wykonania testów lub realizacji zadania. Polega na określeniu trzech wartości:</p>
+<ul>
+<li><strong>O (Optimistic)</strong> - wariant optymistyczny, gdy wszystko przebiega bez problemów,</li>
+<li><strong>M (Most Likely)</strong> - wariant najbardziej prawdopodobny,</li>
+<li><strong>P (Pessimistic)</strong> - wariant pesymistyczny, gdy pojawiają się problemy lub opóźnienia.</li>
+</ul>
+<p>Najczęściej stosowany wzór:</p>
+<p><strong>E = (O + 4M + P) / 6</strong></p>
+<hr />
+<h1 id="kwadraty-testowe">Kwadraty testowe<a class="headerlink" href="#kwadraty-testowe" title="Permanent link">&para;</a></h1>
+<p><strong>Kwadraty testowe</strong> - to model, który pomaga w planowaniu, organizacji i zarządzaniu działaniami testowymi. Ukazuje również, które typy testów sa bardziej istotne na określonych poziomach testów.</p>
+<p><img alt="Relacja między QM, QA, QC i testowaniem" src="../assets/images/test_quadrants.png" /></p>
+<p><em>Rys 2. Kwadraty testowe.</em></p>
+<hr />
+<h1 id="specyfikacja-wymagan">Specyfikacja wymagań<a class="headerlink" href="#specyfikacja-wymagan" title="Permanent link">&para;</a></h1>
+<p>Specyfikacja to dokument w którym zawarto wszystkie oczekiwania funkcjonalne i niefunkcjonalne stawiane systemowi. SRS i BRS różnia się, ale są powiazane.</p>
+<ul>
+<li>SRS - specyfikacja wymagań oprogramowania </li>
+<li>BRS - specyfikacja wymagań biznesowych </li>
+</ul>
+<p>Zawiera:</p>
+<ul>
+<li>Nazwa produktu</li>
+<li>Imiona i nazwiska jego autorów</li>
+<li>Wersja dokumentu</li>
+<li>Historia zmian</li>
+<li>Spis treści</li>
+<li>Charakterystyka firmy</li>
+<li>Opis przyszłego/aktualnego systemu</li>
+<li>Słownik pojęć</li>
+<li>Opis wymagań funkcjonalnych</li>
+<li>Opis wymagań niefunkcjonalnych</li>
+<li>Lista wymagań z priorytetyzacją i use-case</li>
+<li>Model systemu</li>
+</ul>
+<hr />
+<h1 id="inne-wazne-pojecia">Inne ważne pojęcia<a class="headerlink" href="#inne-wazne-pojecia" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Traceability Matrix (RTM)</strong> - mapa powiązań między wymaganiami, a przypadkami testowymi.</li>
+<li><strong>Test Pyramid</strong> - proporcje testów: najwięcej jednostkowych, mniej integracyjnych, najmniej UI.</li>
+<li><strong>Exit Criteria</strong> - warunki zakończenia testów (np. 95% przypadków zakończonych sukcesem, brak krytycznych defektów, przekroczenie budżetu).</li>
+<li><strong>Ryzyko</strong> - czynnik mogący w przyszłości skutkować negatywnymi konsekwencjami.</li>
+</ul>
 
 
 
