@@ -295,7 +295,7 @@ Najczęściej stosowany wzór:
 
 **Kwadraty testowe** - to model, który pomaga w planowaniu, organizacji i zarządzaniu działaniami testowymi. Ukazuje również, które typy testów sa bardziej istotne na określonych poziomach testów.
 
-![Relacja między QM, QA, QC i testowaniem](../assets/images/test_quadrants.png)
+![Kwadraty testowe](../assets/images/test_quadrants.png)
 
 *Rys 2. Kwadraty testowe.*
 
