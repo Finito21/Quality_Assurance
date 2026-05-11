@@ -36,7 +36,10 @@ nav:
 
       - Backend:
         - Sql: technologies/backend/sql.md
-        - API: technologies/backend/api.md
+
+      - API Testing:
+        - API Fundamentals: technologies/api_testing/api_fundamentals.md
+        - API Automation: technologies/api_testing/api_automation.md
 
   - Tools:
       - Devtools: tools/devtools.md
@@ -58,6 +61,11 @@ nav:
         - Slack: tools/test_management/slack.md
         - TestLink: tools/test_management/testlink.md
         - Xray: tools/test_management/xray.md
+      
+      - API Testing Tools:
+        - Postman: tools/api_testing_tools/postman.md
+        - SoapUI: tools/api_testing_tools/soapui.md
+        - Swagger: tools/api_testing_tools/swagger.md
 
   - Recruitment:
       - QA Questions: recruitment/qa_questions.md
