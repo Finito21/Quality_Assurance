@@ -22,20 +22,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/fundamentals/qa_fundamentals.html"/>
     </url>
     <url>
-        <loc>https://finito21.github.io/Quality_Assurance/recruitment/qa_questions.html</loc>
-        <lastmod>2026-05-12</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/qa_questions.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/qa_questions.html"/>
-    </url>
-    <url>
-        <loc>https://finito21.github.io/Quality_Assurance/recruitment/technical_tasks.html</loc>
-        <lastmod>2026-05-12</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/technical_tasks.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/technical_tasks.html"/>
-    </url>
-    <url>
         <loc>https://finito21.github.io/Quality_Assurance/sample_project/sample_project.html</loc>
         <lastmod>2026-05-12</lastmod>
         <changefreq>daily</changefreq>
@@ -202,20 +188,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/fundamentals/qa_fundamentals.html"/>
         <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/fundamentals/qa_fundamentals.html"/>
-    </url>
-    <url>
-        <loc>https://finito21.github.io/Quality_Assurance/en/recruitment/qa_questions.html</loc>
-        <lastmod>2026-05-12</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/qa_questions.html"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/qa_questions.html"/>
-    </url>
-    <url>
-        <loc>https://finito21.github.io/Quality_Assurance/en/recruitment/technical_tasks.html</loc>
-        <lastmod>2026-05-12</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://finito21.github.io/Quality_Assurance/en/recruitment/technical_tasks.html"/>
-        <xhtml:link rel="alternate" hreflang="pl" href="https://finito21.github.io/Quality_Assurance/recruitment/technical_tasks.html"/>
     </url>
     <url>
         <loc>https://finito21.github.io/Quality_Assurance/en/sample_project/sample_project.html</loc>
