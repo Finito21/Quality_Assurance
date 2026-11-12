@@ -49,6 +49,9 @@ description: "SQL for testers: SELECT, filtering, aggregation, JOIN, NULL pitfal
 !!! danger "Always with `WHERE`"
     `UPDATE` and `DELETE` without `WHERE` change **every** row in the table. Run a `SELECT` with the same condition first.
 
+!!! warning "Changing data safely"
+    Before an `UPDATE` or `DELETE`, run the same condition in a `SELECT`, and make the change in a transaction: `BEGIN; UPDATE ...; SELECT ...;`, then `COMMIT` or `ROLLBACK`. On production use a read-only account only.
+
 ## Filtering
 
 | Operator | Meaning | Example |
@@ -149,6 +152,7 @@ SELECT status, total FROM orders WHERE id = 1234;
 ## Defining the structure
 
 ```sql
+-- MySQL syntax; in PostgreSQL: id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY
 CREATE TABLE employees (
   id             INT PRIMARY KEY AUTO_INCREMENT,
   first_name     VARCHAR(50) NOT NULL,

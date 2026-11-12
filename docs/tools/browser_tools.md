@@ -24,14 +24,14 @@ Platforma chmurowa do testowania aplikacji webowych i mobilnych na **prawdziwych
 | **Automate** | uruchamianie testów automatycznych (Selenium, Cypress, Playwright…) z raportami |
 | **Percy** | wizualne testy regresji (porównywanie zrzutów) |
 
-Alternatywa: **LambdaTest**.
+Alternatywa: **TestMu AI** (dawniej LambdaTest).
 
 ## Wtyczki dla testera
 
 | Wtyczka | Zastosowanie |
 |---|---|
 | **Bug Magnet** | gotowe poprawne i niepoprawne dane do formularzy (e-maile, liczby, znaki specjalne) |
-| **LambdaTest** | strona na różnych przeglądarkach, systemach i rozdzielczościach, zrzut całej strony |
+| **LT Browser** (TestMu AI, dawniej LambdaTest) | strona na różnych przeglądarkach, systemach i rozdzielczościach, zrzut całej strony |
 | **ResolutionTest** | szybkie testy na różnych rozdzielczościach |
 | **Bird Eats Bug** | zrzuty i nagrania wraz z **logami konsoli, requestami** i informacjami o systemie |
 | **Awesome Screenshot** | zrzuty i nagrania z edycją |

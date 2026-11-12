@@ -29,6 +29,7 @@ API działa w modelu **żądanie → odpowiedź** (request → response).
 ```mermaid
 sequenceDiagram
     accTitle: Jak działa API?
+    accDescr: Klient wysyła żądanie do serwera API, serwer je uwierzytelnia, waliduje i pobiera dane z bazy, a potem zwraca odpowiedź z kodem statusu i danymi JSON.
     participant K as Klient
     participant S as Serwer API
     participant DB as Baza danych

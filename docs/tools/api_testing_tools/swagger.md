@@ -15,7 +15,7 @@ description: "Swagger i OpenAPI: czytanie specyfikacji API, testowanie endpoint√
 ## Fragment specyfikacji
 
 ```yaml
-openapi: 3.0.3
+openapi: 3.1.0
 info:
   title: Sklep API
   version: 1.0.0

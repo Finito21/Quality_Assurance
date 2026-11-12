@@ -66,6 +66,7 @@ Cele zależą od kontekstu: innych oczekuje się od testów modułowych, a innyc
 ```mermaid
 flowchart LR
     accTitle: Błąd, defekt i awaria
+    accDescr: Pomyłka człowieka (błąd) wprowadza defekt do kodu, a defekt po uruchomieniu może wywołać awarię widoczną dla użytkownika.
     E[Błąd<br/>pomyłka człowieka] --> D[Defekt<br/>wada w kodzie]
     D --> F[Awaria<br/>widoczny skutek]
 ```

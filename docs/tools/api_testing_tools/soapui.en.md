@@ -17,6 +17,7 @@ description: "SoapUI: testing SOAP and REST services, assertions, load tests and
 ```mermaid
 flowchart TB
     accTitle: Project structure
+    accDescr: A project contains test suites, a suite contains test cases, and a test case consists of steps such as a SOAP request, a property transfer and a Groovy script.
     P[Project] --> TS1[TestSuite]
     TS1 --> TC1[TestCase]
     TC1 --> S1[TestStep: SOAP Request]

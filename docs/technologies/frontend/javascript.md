@@ -114,6 +114,21 @@ const odejmij = (a, b) => a - b;   // funkcja strzałkowa
 
 Zmienne zadeklarowane w funkcji są dostępne tylko w niej (**zakres lokalny**).
 
+## Asynchroniczność
+
+Żądania sieciowe i większość akcji w narzędziach testowych są **asynchroniczne**: zwracają obietnicę (`Promise`), na której wynik trzeba poczekać słowem `await` wewnątrz funkcji `async`.
+
+```javascript
+async function pobierzUzytkownika(id) {
+  const odpowiedz = await fetch(`/api/users/${id}`);
+  const dane = await odpowiedz.json();
+  return dane;
+}
+```
+
+!!! warning "Brakujące `await`"
+    Bez `await` test kończy się, zanim asercja się wykona, i przechodzi mimo defektu. W Playwright każda akcja i asercja `expect(...)` na lokatorze wymaga `await`.
+
 ## DOM
 
 **DOM (Document Object Model)** to drzewiasta reprezentacja strony HTML. Dzięki niemu JS może zmienić dowolny element bez przeładowania strony.

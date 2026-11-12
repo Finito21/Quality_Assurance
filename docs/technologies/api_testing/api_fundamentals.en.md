@@ -29,6 +29,7 @@ An API follows the **request → response** model.
 ```mermaid
 sequenceDiagram
     accTitle: How does an API work?
+    accDescr: The client sends a request to the API server, the server authenticates and validates it and reads data from the database, then returns a response with a status code and JSON data.
     participant C as Client
     participant S as API server
     participant DB as Database

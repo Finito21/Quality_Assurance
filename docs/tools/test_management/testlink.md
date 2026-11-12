@@ -11,6 +11,7 @@ description: "TestLink: darmowe narzędzie do zarządzania testami, plany testó
 ```mermaid
 flowchart LR
     accTitle: Struktura
+    accDescr: Projekt testowy ma specyfikację z zestawami i przypadkami testowymi oraz plan testów, który dla każdego buildu zapisuje wynik: pass, fail albo blocked.
     TP[Projekt testowy] --> SP[Specyfikacja testów]
     SP --> TS[Zestawy testów]
     TS --> TC[Przypadki testowe]

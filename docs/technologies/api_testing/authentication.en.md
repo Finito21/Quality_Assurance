@@ -62,6 +62,7 @@ An **API key** is a unique identifier of an application (not a user), sent in a 
 ```mermaid
 sequenceDiagram
     accTitle: OAuth 2.0
+    accDescr: The user signs in on the authorisation server, the application receives a code and exchanges it for tokens, then calls the API with the token in the Authorization header.
     participant U as User
     participant C as Application (Client)
     participant AS as Authorization Server
@@ -85,11 +86,14 @@ sequenceDiagram
 |---|---|
 | request without a token or key | `401` |
 | expired, tampered or random token | `401` |
+| JWT with `alg: none`, a changed payload or a wrong `aud` or `iss` | `401` (the signature and claims must be checked) |
 | valid token, but no permission (role, scope) | `403` |
 | access to another user's resource by changing the ID in the URL (IDOR) | `403` or `404`, never another user's data |
 | logout | the token stops working, if the system supports revocation |
 | token refresh | the new access token works, a used refresh token does not work again (if rotation is used) |
 | many failed logins | attempt limit or lockout (`429` or a lockout message) |
 | response and log content | no passwords, tokens or keys |
+
+A `401` response should include a `WWW-Authenticate` header. In the OWASP API Security Top 10 (2023), IDOR is the **BOLA** category (API1).
 
 Hands-on in Postman (the *Authorization* tab, saving a token to a variable): [Postman](../../tools/api_testing_tools/postman.md).

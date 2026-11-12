@@ -44,7 +44,7 @@ pipeline {
     }
 
     post {
-        always  { junit 'results/*.xml' }
+        always  { junit allowEmptyResults: true, testResults: 'results/*.xml' }
         failure { slackSend channel: '#qa', message: "Testy nie przechodzą: ${env.BUILD_URL}" }
     }
 }
