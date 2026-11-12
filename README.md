@@ -3,8 +3,10 @@
 [![Deploy docs](https://github.com/Finito21/Quality_Assurance/actions/workflows/deploy.yml/badge.svg)](https://github.com/Finito21/Quality_Assurance/actions/workflows/deploy.yml)
 [![MkDocs Material](https://img.shields.io/badge/MkDocs-Material-526CFE?logo=materialformkdocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 [![ISTQB CTFL](https://img.shields.io/badge/ISTQB-CTFL%20v4.0-0b5394)](https://istqb.org/)
+[![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey)](LICENSE-CONTENT)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
 
-A structured, bilingual (Polish / English) knowledge base on **Quality Assurance and software testing**, based on self-study, a software testing courses, ISTQB CTFL preparation and hands-on work with QA tools.
+A structured, bilingual (Polish / English) knowledge base on **Quality Assurance and software testing**, based on self-study, software testing courses, ISTQB CTFL preparation and hands-on work with QA tools.
 
 **Website: https://finito21.github.io/Quality_Assurance/**
 
@@ -98,6 +100,10 @@ Every push to `main` runs the checks workflow, which builds the site and uploads
 
 Repository settings that the deployment relies on: Settings > Pages > Source is **GitHub Actions**,
 and the `github-pages` environment only accepts deployments from `main`.
+
+## Contributing
+
+Corrections and translation fixes are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md) and the issue templates. Report security problems privately as described in [SECURITY.md](SECURITY.md). Everyone taking part follows the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
