@@ -7,7 +7,8 @@ and only on Polish pages (English pages are left as they are).
 Rules:
   1. one-letter words (a, i, o, u, w, z) never stay at the end of a line,
   2. abbreviations (np., tj., tzw., wg, tys. ...) stick to the next word,
-  3. a number is not separated from its unit or from the next word,
+  3. a number is not separated from its unit, from the next word or from the next
+     group of digits ("10 000"),
   4. a relation sign (<, >, =, ≤, ≥, ±, ~) or § is not separated from the number,
   5. a dash never starts a line (non-breaking space before – and —).
 """
@@ -17,7 +18,7 @@ import re
 NBSP = " "  # written as an escape so it stays visible in editors and diffs
 
 # Tags whose content is left untouched.
-SKIP_TAGS = {"pre", "code", "kbd", "samp", "script", "style", "svg", "textarea", "math"}
+SKIP_TAGS = {"pre", "code", "kbd", "samp", "script", "style", "svg", "textarea", "math", "option", "noscript"}
 
 # Inline tags: text that ends right before one of these continues inside it,
 # so "np. <code>200</code>" must still be glued.
@@ -28,7 +29,7 @@ INLINE_TAGS = {"a", "abbr", "b", "code", "em", "i", "kbd", "mark", "samp", "smal
 TAG_RE = re.compile(r"(<!--.*?-->|<(?:[^>\"']|\"[^\"]*\"|'[^']*')*>)", re.S)
 TAG_NAME_RE = re.compile(r"<\s*(/)?\s*([a-zA-Z0-9]+)")
 
-LETTER = r"A-Za-zÀ-ÖØ-öø-ÿĀ-žА-я"
+LETTER = r"A-Za-zÀ-ÖØ-öø-ÿĀ-žЀ-ӿ"
 SPACE = r"[ \t\r\n]+"
 # Stands in for the inline tag that follows a text chunk while the rules run.
 NEXT = ""
@@ -39,8 +40,8 @@ RULES = [
     # 2. abbreviations with a full stop
     (re.compile(
         rf"(?<![{LETTER}])"
-        rf"(np|tj|tzn|tzw|ul|nr|godz|ang|ds|im|św|dr|Dr|prof|Prof|inż|mgr|m\.in"
-        rf"|rys|Rys|zob|Zob|por|Por|pkt|wg|Wg)\.{SPACE}(?=\S)"
+        rf"(np|Np|tj|Tj|tzn|Tzn|tzw|Tzw|ul|Ul|nr|Nr|godz|ang|ds|im|św|dr|Dr|prof|Prof|inż|mgr"
+        rf"|m\.in|M\.in|rys|Rys|zob|Zob|por|Por|pkt|Pkt|wg|Wg)\.{SPACE}(?=\S)"
     ), rf"\1.{NBSP}"),
     # 2a. abbreviations that also end sentences ("w 2025 r. Potem", "jest ok. Dalej"):
     #     glued only before a lowercase word, a number or an inline tag
@@ -48,9 +49,11 @@ RULES = [
         rf"(?<![{LETTER}])(ok|r|str|pt|tab|Tab|art)\.{SPACE}(?=[a-ząćęłńóśźż0-9{NEXT}])"
     ), rf"\1.{NBSP}"),
     # 2b. abbreviations written without a full stop
-    (re.compile(rf"(?<![{LETTER}])(wg|Wg|mln|mld|tys|zł){SPACE}(?=\S)"), rf"\1{NBSP}"),
+    (re.compile(rf"(?<![{LETTER}])(wg|Wg|mln|mld|tys|zł|nr|Nr|pkt|Pkt){SPACE}(?=\S)"), rf"\1{NBSP}"),
     # 3. number + unit / word
     (re.compile(rf"(?<=\d){SPACE}(?=[{LETTER}%°§{NEXT}])"), NBSP),
+    # 3a. thousands separator: "10 000", "1 500 000"
+    (re.compile(r"(?<=\d) (?=\d{3}(?!\d))"), NBSP),
     # 4. relation sign or section sign + number
     (re.compile(rf"(&lt;|&gt;|[=≤≥±~×§]){SPACE}(?=[\d{NEXT}])"), rf"\1{NBSP}"),
     # 5. a dash never starts a line
