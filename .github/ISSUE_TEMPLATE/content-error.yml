@@ -1,0 +1,28 @@
+name: Content error
+description: A fact, definition, example or code sample is wrong or out of date.
+labels: [content]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Link to the page (Polish or English).
+      placeholder: https://finito21.github.io/Quality_Assurance/fundamentals/test_techniques/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Quote the sentence or code and explain the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested correction
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: ISTQB syllabus or glossary, standard, official documentation.
