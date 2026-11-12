@@ -59,7 +59,9 @@ Przykładowy workflow tablicy:
 
 ## JQL: przydatne zapytania
 
-```sql
+JQL nie ma komentarzy, więc wklejaj samą linię zapytania, bez opisu `--` nad nią.
+
+```text
 -- moje aktywne zadania
 assignee = currentUser() AND status != Done
 

@@ -21,7 +21,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 - token ma ograniczony czas ważności, serwer sprawdza go przy każdym żądaniu,
-- często jest to **JWT (JSON Web Token)**: trzy części zakodowane w Base64URL (nagłówek, dane, podpis); zawartość można odczytać, np. na jwt.io, ale nie można jej zmienić bez unieważnienia podpisu.
+- często jest to **JWT (JSON Web Token)**: trzy części zakodowane w Base64URL (nagłówek, dane, podpis); zawartość można odczytać, np. na jwt.io, ale nie można jej zmienić bez unieważnienia podpisu. Dane są tylko zakodowane, a nie zaszyfrowane, więc nie mogą zawierać haseł ani innych danych wrażliwych.
 
 ## Basic Auth
 
@@ -68,17 +68,17 @@ sequenceDiagram
     participant AS as Authorization Server
     participant RS as API (Resource Server)
     U->>C: Zaloguj przez...
-    C->>AS: przekierowanie do logowania
+    C->>AS: przekierowanie do logowania (state, code_challenge)
     U->>AS: logowanie i zgoda na zakres
     AS-->>C: kod autoryzacyjny
-    C->>AS: wymiana kodu na tokeny
+    C->>AS: wymiana kodu na tokeny (code_verifier)
     AS-->>C: access token + refresh token
     C->>RS: żądanie z Authorization: Bearer
     RS-->>C: dane
 ```
 
 !!! tip "Authorization Code z PKCE"
-    Dla aplikacji publicznych (SPA, mobilnych) zaleca się przepływ **Authorization Code z PKCE** (RFC 7636), a przepływów **Implicit** i **Resource Owner Password** nie używa się już w nowych systemach. Warto sprawdzić, czy serwer odrzuca wymianę kodu bez poprawnego `code_verifier` oraz czy `redirect_uri` jest weryfikowany dokładnie, a nie tylko po prefiksie.
+    Dla aplikacji publicznych (SPA, mobilnych) zaleca się przepływ **Authorization Code z PKCE** (RFC 7636), a przepływów **Implicit** i **Resource Owner Password** nie używa się już w nowych systemach. Warto sprawdzić, czy serwer odrzuca wymianę kodu bez poprawnego `code_verifier`, czy `redirect_uri` jest weryfikowany dokładnie, a nie tylko po prefiksie, oraz czy aplikacja odrzuca odpowiedź z wartością `state`, której nie wysłała (ochrona przed CSRF).
 
 ## Co testować
 
@@ -87,6 +87,8 @@ sequenceDiagram
 | żądanie bez tokena lub klucza | `401` |
 | wygasły, zmodyfikowany lub losowy token | `401` |
 | JWT z `alg: none`, zmienionym payloadem albo złym `aud` lub `iss` | `401` (podpis i deklaracje muszą być sprawdzane) |
+| JWT z wygasłym `exp` albo `nbf` z przyszłości | `401` |
+| JWT podpisany `HS256` kluczem publicznym, gdy serwer oczekuje `RS256` (pomylenie algorytmów) | `401` |
 | poprawny token, ale brak uprawnień (rola, scope) | `403` |
 | dostęp do cudzego zasobu przez zmianę ID w URL (IDOR) | `403` lub `404`, nigdy dane innego użytkownika |
 | wylogowanie | token przestaje działać, jeśli system obsługuje unieważnianie |
@@ -94,6 +96,6 @@ sequenceDiagram
 | wiele błędnych logowań | limit prób lub blokada (`429` lub komunikat o blokadzie) |
 | treść odpowiedzi i logów | brak haseł, tokenów i kluczy |
 
-Odpowiedź `401` powinna zawierać nagłówek `WWW-Authenticate`. IDOR to w OWASP API Security Top 10 (2023) kategoria **BOLA** (API1).
+Odpowiedź `401` musi zawierać nagłówek `WWW-Authenticate` (RFC 9110), więc jego brak to defekt. IDOR to w OWASP API Security Top 10 (2023) kategoria **BOLA** (API1).
 
 Praktyka w Postmanie (zakładka *Authorization*, zapisywanie tokena do zmiennej): [Postman](../../tools/api_testing_tools/postman.md).

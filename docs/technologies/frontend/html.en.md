@@ -16,7 +16,7 @@ description: "HTML for testers: document structure, basic and semantic tags, for
 <html lang="en">
 <head>
   <meta charset="UTF-8">      <!-- character encoding -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- without it media queries do not work on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- without it phones render a desktop-width page and media queries do not match the screen -->
   <title>Page title</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">

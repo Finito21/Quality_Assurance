@@ -46,7 +46,7 @@ Authorization: Bearer eyJhbGci...
 | `DELETE` | deletion without permissions, deleting a resource used by other records, the resource still visible through cache |
 
 !!! tip "Concurrency and duplicates"
-    - Concurrent edits: with an `If-Match` header and a stale `ETag`, the server should return `412 Precondition Failed` instead of overwriting another user's changes.
+    - Concurrent edits: with an `If-Match` header and a stale `ETag`, the server should return `412 Precondition Failed` instead of overwriting another user's changes. If the API requires `If-Match` and the header is missing, the answer is `428 Precondition Required`.
     - Resending a `POST`: with the same `Idempotency-Key` header, no second resource should be created.
     - A `429` or `503` response should include a `Retry-After` header.
 
@@ -81,7 +81,7 @@ Authorization: Bearer eyJhbGci...
 | `304 Not Modified` | the resource has not changed, the client can use its cached copy |
 | `307` / `308` | temporary / permanent redirect that keeps the method and body |
 
-Typical defects: redirect loops, redirects to a missing resource, `POST` turned into `GET` after a `301` or `302` redirect.
+Typical defects: redirect loops, redirects to a missing resource, a lost method or body after a `301` or `302` redirect (clients may change `POST` into `GET`; `307` and `308` keep the method and body).
 
 ### 4xx: client error
 

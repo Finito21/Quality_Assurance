@@ -59,7 +59,9 @@ A sample board workflow:
 
 ## JQL: useful queries
 
-```sql
+JQL has no comments, so paste only the query line, without the `--` description above it.
+
+```text
 -- my active tasks
 assignee = currentUser() AND status != Done
 

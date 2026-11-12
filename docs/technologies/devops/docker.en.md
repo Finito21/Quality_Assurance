@@ -27,7 +27,7 @@ description: "Docker for testers: images and containers, the most useful command
 | `docker run <image>` | start a new container |
 | `docker stop <id>` | stop a container |
 | `docker rm <id>` / `docker rmi <image>` | remove a container / an image |
-| `docker exec -it <container> bash` | get a shell inside a container |
+| `docker exec -it <container> bash` | get a shell inside a container (`sh` on images without bash, e.g. Alpine) |
 | `docker logs <container>` | container logs |
 
 ## Docker Compose
@@ -37,7 +37,7 @@ A tool for defining and running **multiple containers as one application** (e.g.
 ```yaml
 services:
   app:
-    image: my-app:latest
+    image: my-app:1.4.2          # a fixed version, so every run tests the same build
     ports: ["8080:8080"]
     depends_on:
       db:
@@ -45,7 +45,7 @@ services:
   db:
     image: postgres:16
     environment:
-      POSTGRES_PASSWORD: test
+      POSTGRES_PASSWORD: test    # test environment only
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s

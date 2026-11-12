@@ -21,7 +21,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
 - the token has a limited lifetime, and the server checks it on every request,
-- it is often a **JWT (JSON Web Token)**: three Base64URL-encoded parts (header, payload, signature); the content can be read, e.g. on jwt.io, but cannot be changed without invalidating the signature.
+- it is often a **JWT (JSON Web Token)**: three Base64URL-encoded parts (header, payload, signature); the content can be read, e.g. on jwt.io, but cannot be changed without invalidating the signature. The payload is only encoded, not encrypted, so it must not contain passwords or other sensitive data.
 
 ## Basic Auth
 
@@ -68,17 +68,17 @@ sequenceDiagram
     participant AS as Authorization Server
     participant RS as API (Resource Server)
     U->>C: Sign in with...
-    C->>AS: redirect to login
+    C->>AS: redirect to login (state, code_challenge)
     U->>AS: sign-in and consent to scope
     AS-->>C: authorisation code
-    C->>AS: exchange code for tokens
+    C->>AS: exchange code for tokens (code_verifier)
     AS-->>C: access token + refresh token
     C->>RS: request with Authorization: Bearer
     RS-->>C: data
 ```
 
 !!! tip "Authorization Code with PKCE"
-    For public clients (SPAs, mobile apps) the **Authorization Code flow with PKCE** (RFC 7636) is recommended, while the **Implicit** and **Resource Owner Password** flows should not be used in new systems. Check that the server rejects a code exchange without a valid `code_verifier` and that `redirect_uri` is matched exactly, not just by prefix.
+    For public clients (SPAs, mobile apps) the **Authorization Code flow with PKCE** (RFC 7636) is recommended, while the **Implicit** and **Resource Owner Password** flows should not be used in new systems. Check that the server rejects a code exchange without a valid `code_verifier`, that `redirect_uri` is matched exactly, not just by prefix, and that the application rejects a response with a `state` value it did not send (CSRF protection).
 
 ## What to test
 
@@ -87,6 +87,8 @@ sequenceDiagram
 | request without a token or key | `401` |
 | expired, tampered or random token | `401` |
 | JWT with `alg: none`, a changed payload or a wrong `aud` or `iss` | `401` (the signature and claims must be checked) |
+| JWT with an expired `exp` or a future `nbf` | `401` |
+| JWT signed with `HS256` using the public key, when the server expects `RS256` (algorithm confusion) | `401` |
 | valid token, but no permission (role, scope) | `403` |
 | access to another user's resource by changing the ID in the URL (IDOR) | `403` or `404`, never another user's data |
 | logout | the token stops working, if the system supports revocation |
@@ -94,6 +96,6 @@ sequenceDiagram
 | many failed logins | attempt limit or lockout (`429` or a lockout message) |
 | response and log content | no passwords, tokens or keys |
 
-A `401` response should include a `WWW-Authenticate` header. In the OWASP API Security Top 10 (2023), IDOR is the **BOLA** category (API1).
+A `401` response must include a `WWW-Authenticate` header (RFC 9110), so a missing header is a defect. In the OWASP API Security Top 10 (2023), IDOR is the **BOLA** category (API1).
 
 Hands-on in Postman (the *Authorization* tab, saving a token to a variable): [Postman](../../tools/api_testing_tools/postman.md).

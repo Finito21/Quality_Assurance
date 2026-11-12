@@ -73,8 +73,8 @@ flowchart TB
 | `kubectl get events -n qa --sort-by=.lastTimestamp` | events from oldest to newest, diagnosing deployment problems |
 | `kubectl get deployments -n qa` | list of deployments |
 | `kubectl get svc -n qa` | list of services |
-| `kubectl apply -f deployment.yaml` | create / update objects from YAML |
-| `kubectl delete pod <pod>` | delete a pod (the deployment recreates it automatically) |
+| `kubectl apply -f deployment.yaml -n qa` | create / update objects from YAML |
+| `kubectl delete pod <pod> -n qa` | delete a pod (the deployment recreates it automatically) |
 
 | Pod status | Typical cause |
 |---|---|

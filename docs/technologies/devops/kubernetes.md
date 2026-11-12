@@ -73,8 +73,8 @@ flowchart TB
 | `kubectl get events -n qa --sort-by=.lastTimestamp` | zdarzenia od najstarszego, diagnoza problemów z wdrożeniem |
 | `kubectl get deployments -n qa` | lista deploymentów |
 | `kubectl get svc -n qa` | lista usług |
-| `kubectl apply -f deployment.yaml` | utworzenie / aktualizacja obiektów z YAML |
-| `kubectl delete pod <pod>` | usunięcie Poda (Deployment odtworzy go automatycznie) |
+| `kubectl apply -f deployment.yaml -n qa` | utworzenie / aktualizacja obiektów z YAML |
+| `kubectl delete pod <pod> -n qa` | usunięcie Poda (Deployment odtworzy go automatycznie) |
 
 | Status Poda | Typowa przyczyna |
 |---|---|

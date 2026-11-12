@@ -27,7 +27,7 @@ description: "Docker dla testera: obrazy i kontenery, najważniejsze komendy, cz
 | `docker run <image>` | uruchomienie nowego kontenera |
 | `docker stop <id>` | zatrzymanie kontenera |
 | `docker rm <id>` / `docker rmi <image>` | usunięcie kontenera / obrazu |
-| `docker exec -it <container> bash` | wejście do środka kontenera |
+| `docker exec -it <container> bash` | wejście do środka kontenera (`sh` w obrazach bez basha, np. Alpine) |
 | `docker logs <container>` | logi kontenera |
 
 ## Docker Compose
@@ -37,7 +37,7 @@ Narzędzie do definiowania i uruchamiania **wielu kontenerów jako jednej aplika
 ```yaml
 services:
   app:
-    image: moja-aplikacja:latest
+    image: moja-aplikacja:1.4.2  # stała wersja, żeby każde uruchomienie testowało ten sam build
     ports: ["8080:8080"]
     depends_on:
       db:
@@ -45,7 +45,7 @@ services:
   db:
     image: postgres:16
     environment:
-      POSTGRES_PASSWORD: test
+      POSTGRES_PASSWORD: test    # tylko środowisko testowe
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
