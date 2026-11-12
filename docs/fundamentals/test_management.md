@@ -70,7 +70,12 @@ Typowe strategie ustalania kolejności testów wg ISTQB:
 - **Monitorowanie**: zbieranie informacji o przebiegu testów (ręcznie lub automatycznie w narzędziach do zarządzania testami).
 - **Nadzór**: działania korygujące podejmowane na podstawie tych informacji (np. zmiana priorytetów, dodatkowe zasoby).
 
-Typowe metryki: postęp wykonania testów, liczba testów pass/fail, liczba i gęstość defektów, pokrycie wymagań i kodu, koszt testowania.
+Typowe metryki: postęp wykonania testów, liczba testów pass/fail, liczba i gęstość defektów, odsetek wykrytych defektów (DDP), średni czas naprawy, pokrycie wymagań i kodu, poziom ryzyka rezydualnego, koszt testowania.
+
+| Raport | Kiedy | Co zawiera |
+|---|---|---|
+| **Raport z postępu testów** | regularnie w trakcie testów | status względem planu, metryki, blokery, nowe ryzyka |
+| **Raport z ukończenia testów** | na koniec etapu lub projektu | podsumowanie, odchylenia od planu, ocena kryteriów wyjścia, nierozwiązane defekty, wnioski |
 
 ## Ryzyko a testowanie
 
@@ -96,6 +101,8 @@ Wg słownika ISTQB **ryzyko** to czynnik, który w przyszłości może skutkowa�
 
 **Testowanie oparte na ryzyku** oznacza, że na podstawie analizy ryzyka wybiera się zakres, priorytety i techniki testów, aby obszary najbardziej ryzykowne testować najwcześniej i najdokładniej.
 
+Na zidentyfikowane ryzyko można zareagować na cztery sposoby: **ograniczyć** je (np. dodatkowe testy, przeglądy), **zaakceptować**, **przenieść** (np. na dostawcę) albo przygotować **plan awaryjny**.
+
 ## Zarządzanie defektami
 
 Jednym z celów testowania jest znajdowanie defektów, więc **wszystkie znalezione defekty należy rejestrować**. Sposób zgłaszania zależy od kontekstu, poziomu testów i modelu wytwórczego.
@@ -107,12 +114,13 @@ Nazwy statusów różnią się między narzędziami i firmami, ale przebieg jest
 ```mermaid
 flowchart LR
     accTitle: Cykl życia defektu
-    accDescr: Nowy defekt jest przypisywany, naprawiany i trafia do retestu. Po udanym reteście jest zamykany, po nieudanym otwierany ponownie. Zgłoszenie może też zostać odrzucone, oznaczone jako duplikat albo odłożone.
+    accDescr: Nowy defekt jest przypisywany, naprawiany i trafia do retestu. Po udanym reteście jest zamykany, po nieudanym otwierany ponownie. Zgłoszenie może też zostać odrzucone, oznaczone jako duplikat, jako niemożliwe do odtworzenia albo odłożone.
     New --> Assigned --> InProgress[In Progress] --> Resolved --> RFT[Ready for Test]
     RFT -->|retest OK| Closed
     RFT -->|defekt nadal występuje| Reopened --> Assigned
     New -.-> Rejected
     New -.-> Duplicate
+    New -.-> CannotReproduce[Cannot Reproduce]
     Assigned -.-> Deferred
 ```
 
