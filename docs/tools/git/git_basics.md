@@ -33,6 +33,7 @@ description: "Podstawy Git dla testera: repozytorium, commit, gałęzie, merge i
 ```mermaid
 flowchart LR
     accTitle: Trzy obszary Gita
+    accDescr: Zmiany przechodzą z katalogu roboczego do staging area przez git add, do repozytorium lokalnego przez git commit i do zdalnego przez git push. git pull i fetch pobierają zmiany z powrotem.
     WD[Katalog roboczy] -- git add --> SA[Staging area]
     SA -- git commit --> LR[(Repozytorium lokalne)]
     LR -- git push --> RR[(Repozytorium zdalne)]

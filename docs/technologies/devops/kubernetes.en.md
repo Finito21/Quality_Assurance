@@ -18,6 +18,7 @@ description: "Kubernetes for testers: pods, deployments, services, kubectl comma
 ```mermaid
 flowchart TB
     accTitle: Cluster architecture
+    accDescr: The control plane with kube-apiserver, etcd, the scheduler and the controller manager manages the worker nodes. On each node the kubelet runs pods and kube-proxy handles network traffic.
     subgraph CP[Control Plane]
         API[kube-apiserver]
         ETCD[(etcd)]

@@ -88,6 +88,7 @@ Stosowane, gdy zachowanie systemu zależy od **aktualnego stanu** i zdarzeń (np
 ```mermaid
 stateDiagram-v2
     accTitle: Testowanie przejść pomiędzy stanami
+    accDescr: Zamówienie zaczyna się jako nowe. Po płatności jest opłacone, potem wysłane i dostarczone. Nowe zamówienie można też anulować.
     [*] --> Nowe
     Nowe --> Opłacone: płatność OK
     Nowe --> Anulowane: anulowanie

@@ -13,6 +13,7 @@ Theory: [Performance testing](../../fundamentals/performance_testing.md)
 ```mermaid
 flowchart TB
     accTitle: Test plan elements
+    accDescr: The test plan contains a thread group. The group has config elements, samplers with assertions and extractors, and listeners that collect the results.
     TP[Test Plan] --> TG[Thread Group]
     TG --> CFG[Config Elements<br/>HTTP Request Defaults, CSV Data Set]
     TG --> SMP[Sampler<br/>HTTP Request]

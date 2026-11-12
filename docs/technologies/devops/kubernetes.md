@@ -18,6 +18,7 @@ description: "Kubernetes dla testera: pody, deploymenty, serwisy, komendy kubect
 ```mermaid
 flowchart TB
     accTitle: Architektura klastra
+    accDescr: Control Plane z kube-apiserver, etcd, schedulerem i controller-managerem zarządza węzłami roboczymi. Na każdym węźle kubelet uruchamia Pody, a kube-proxy obsługuje ruch sieciowy.
     subgraph CP[Control Plane]
         API[kube-apiserver]
         ETCD[(etcd)]

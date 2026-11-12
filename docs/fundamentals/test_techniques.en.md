@@ -88,6 +88,7 @@ Used when the system's behaviour depends on its **current state** and on events 
 ```mermaid
 stateDiagram-v2
     accTitle: State transition testing
+    accDescr: An order starts as new. After payment it is paid, then shipped and delivered. A new order can also be cancelled.
     [*] --> New
     New --> Paid: payment OK
     New --> Cancelled: cancellation

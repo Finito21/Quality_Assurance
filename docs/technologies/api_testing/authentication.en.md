@@ -62,6 +62,7 @@ An **API key** is a unique identifier of an application (not a user), sent in a 
 ```mermaid
 sequenceDiagram
     accTitle: OAuth 2.0
+    accDescr: The user signs in on the authorisation server, the application receives a code and exchanges it for tokens, then calls the API with the token in the Authorization header.
     participant U as User
     participant C as Application (Client)
     participant AS as Authorization Server

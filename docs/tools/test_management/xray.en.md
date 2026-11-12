@@ -28,6 +28,7 @@ In Jira you create the appropriate issue types and map them to Xray:
 ```mermaid
 flowchart LR
     accTitle: Benefits
+    accDescr: A story is covered by a test, the test has executions, a failed execution creates a bug, and the bug blocks the story.
     S[Story] -->|tested by| T[Test]
     T --> TE[Test Execution]
     TE -->|FAIL| B[Bug]
