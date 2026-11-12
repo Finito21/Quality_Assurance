@@ -1,0 +1,209 @@
+site_name: QA Notes
+site_description: Uporządkowana baza wiedzy z zakresu Quality Assurance i testowania oprogramowania
+site_author: Grzegorz Zięba
+site_url: https://finito21.github.io/Quality_Assurance/
+repo_url: https://github.com/Finito21/Quality_Assurance
+repo_name: Finito21/Quality_Assurance
+edit_uri: edit/main/docs/
+copyright: Notatki tworzone na własny użytek edukacyjny · Grzegorz Zięba · Treść na licencji <a href="https://creativecommons.org/licenses/by/4.0/deed.pl">CC BY 4.0</a>
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: pl
+  icon:
+    repo: fontawesome/brands/github
+  favicon: assets/images/favicon.svg
+  # Inter and JetBrains Mono are loaded in extra.css with every weight it uses
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Przełącz na tryb ciemny
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Przełącz na tryb jasny
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+hooks:
+  - hooks/typography.py
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Finito21
+      name: GitHub
+
+nav:
+  - Start: index.md
+
+  - Podstawy:
+      - fundamentals/index.md
+      - Podstawy QA: fundamentals/qa_fundamentals.md
+      - Techniki testowania: fundamentals/test_techniques.md
+      - Dokumentacja testowa: fundamentals/test_documentation.md
+      - Zarządzanie testami: fundamentals/test_management.md
+      - Testy niefunkcjonalne: fundamentals/non_functional_testing.md
+      - Testy wydajnościowe: fundamentals/performance_testing.md
+      - Strategia automatyzacji: fundamentals/test_automation_strategy.md
+      - AI w testowaniu: fundamentals/ai_in_testing.md
+      - Słownik pojęć: fundamentals/glossary.md
+      - Pytania rekrutacyjne: fundamentals/interview_questions.md
+
+  - Technologie:
+      - technologies/index.md
+      - Frontend:
+        - HTML: technologies/frontend/html.md
+        - CSS: technologies/frontend/css.md
+        - JavaScript: technologies/frontend/javascript.md
+      - Backend:
+        - SQL: technologies/backend/sql.md
+      - API:
+        - Podstawy API: technologies/api_testing/api_fundamentals.md
+        - "HTTP: metody, kody, nagłówki": technologies/api_testing/http.md
+        - Uwierzytelnianie i autoryzacja: technologies/api_testing/authentication.md
+        - Automatyzacja testów API: technologies/api_testing/api_automation.md
+      - DevOps:
+        - Docker: technologies/devops/docker.md
+        - Kubernetes: technologies/devops/kubernetes.md
+
+  - Narzędzia:
+      - tools/index.md
+      - DevTools: tools/devtools.md
+      - Przeglądarki i wtyczki: tools/browser_tools.md
+      - Git:
+        - Podstawy Git: tools/git/git_basics.md
+        - GitHub: tools/git/github.md
+      - Automatyzacja UI:
+        - Playwright: tools/automation/playwright.md
+        - Cypress: tools/automation/cypress.md
+        - Selenium: tools/automation/selenium.md
+      - Testowanie API:
+        - Postman: tools/api_testing_tools/postman.md
+        - SoapUI: tools/api_testing_tools/soapui.md
+        - Swagger: tools/api_testing_tools/swagger.md
+      - Wydajność:
+        - JMeter: tools/performance/jmeter.md
+      - CI/CD:
+        - Jenkins: tools/ci_cd/jenkins.md
+        - GitHub Actions: tools/ci_cd/github_actions.md
+      - Monitoring:
+        - Grafana: tools/monitoring/grafana.md
+      - Zarządzanie testami:
+        - Jira: tools/test_management/jira.md
+        - TestLink: tools/test_management/testlink.md
+        - Xray: tools/test_management/xray.md
+      - Współpraca:
+        - Confluence: tools/collaboration/confluence.md
+        - Slack: tools/collaboration/slack.md
+
+  - Źródła: resources.md
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - locale: pl
+          name: Polski
+          build: true
+          default: true
+        - locale: en
+          name: English
+          build: true
+          site_description: A structured knowledge base on Quality Assurance and software testing
+          copyright: Notes created for personal learning · Grzegorz Zięba · Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+          # merged item by item into theme.palette, so only the labels change
+          theme:
+            palette:
+              - toggle:
+                  name: Switch to dark mode
+              - toggle:
+                  name: Switch to light mode
+          nav_translations:
+            Start: Home
+            Podstawy: Fundamentals
+            Podstawy QA: QA fundamentals
+            Techniki testowania: Test techniques
+            Dokumentacja testowa: Test documentation
+            Zarządzanie testami: Test management
+            Testy niefunkcjonalne: Non-functional testing
+            Testy wydajnościowe: Performance testing
+            Strategia automatyzacji: Test automation strategy
+            AI w testowaniu: AI in testing
+            Słownik pojęć: Glossary
+            Pytania rekrutacyjne: Interview questions
+            Technologie: Technologies
+            Podstawy API: API fundamentals
+            "HTTP: metody, kody, nagłówki": "HTTP: methods, codes, headers"
+            Uwierzytelnianie i autoryzacja: Authentication and authorisation
+            Automatyzacja testów API: API test automation
+            Narzędzia: Tools
+            Przeglądarki i wtyczki: Browsers and extensions
+            Podstawy Git: Git basics
+            Automatyzacja UI: UI automation
+            Testowanie API: API testing
+            Wydajność: Performance
+            Współpraca: Collaboration
+            Źródła: Resources
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  # tooltips for abbreviations on every page (abbr + content.tooltips)
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

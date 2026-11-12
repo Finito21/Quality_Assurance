@@ -1,0 +1,16 @@
+{#- Bilingual 404: GitHub Pages serves only the root 404.html for both languages. -#}
+{% extends "main.html" %}
+{% block extrahead %}
+  {{ super() }}
+  <meta name="robots" content="noindex">
+{% endblock %}
+{% block content %}
+  <div lang="pl">
+    <h1>404 – nie znaleziono strony</h1>
+    <p>Ta strona nie istnieje albo zmieniła adres. <a href="{{ config.site_url }}">Wróć na stronę główną</a>.</p>
+  </div>
+  <div lang="en">
+    <h2>Page not found</h2>
+    <p>This page does not exist or has moved. <a href="{{ config.site_url }}en/">Go to the home page</a>.</p>
+  </div>
+{% endblock %}
