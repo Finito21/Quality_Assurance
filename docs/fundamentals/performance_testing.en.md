@@ -11,7 +11,8 @@ description: "Performance testing: types (load, stress, soak), metrics, planning
 | Type | Question it answers |
 |---|---|
 | **Performance** | What are the response time and throughput under typical traffic? |
-| **Load** | Can the system handle the expected maximum load? |
+| **Load** | Does the system behave correctly under the anticipated load, from typical to peak? |
+| **Capacity** | How many users or transactions can it handle before exceeding acceptable thresholds? |
 | **Stress** | What happens above normal load? Where is the breaking point and does the system recover? |
 | **Spike** | How does the system react to a sudden traffic increase (e.g. the start of a sale)? |
 | **Soak / endurance** | Do memory leaks or degradation appear under prolonged load? |

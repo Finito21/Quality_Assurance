@@ -43,6 +43,9 @@ A **test plan** describes the objectives, scope, approach, resources and schedul
 
 A **test scenario** is a set of test cases needed to check a specific feature. Each scenario should reflect **exactly one feature**.
 
+!!! note "Scenarios and ISTQB terminology"
+    "Test scenario" is an industry term. In ISTQB and ISO/IEC/IEEE 29119-3 terms it corresponds to a **test suite** or a **test procedure** (test cases in the order they are executed).
+
 Elements of a scenario:
 
 - scenario identification,
