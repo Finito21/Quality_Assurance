@@ -32,7 +32,7 @@ Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpo
     Planowanie, monitorowanie i nadzór, analiza, projektowanie, implementacja, wykonanie i ukończenie testów. Czynności nie muszą iść po kolei: w Scrumie wszystkie odbywają się w każdym sprincie. Więcej: [Proces testowy](qa_fundamentals.md#proces-testowy).
 
 ??? question "Jak wygląda praca testera w Scrumie?"
-    Tester jest częścią zespołu. Uczestniczy w refinemencie (pyta o kryteria akceptacji, zgłasza ryzyka), planowaniu, daily i retrospektywie. Testuje historyjki w trakcie sprintu, automatyzuje regresję i dba o spełnienie Definition of Done. Nie czeka z testami do końca sprintu.
+    Tester jest częścią zespołu. Uczestniczy w doprecyzowywaniu backlogu (refinement; pyta o kryteria akceptacji, zgłasza ryzyka), planowaniu, daily i retrospektywie. Testuje historyjki w trakcie sprintu, automatyzuje regresję i dba o spełnienie Definition of Done. Nie czeka z testami do końca sprintu.
 
 ??? question "Opisz cykl życia defektu."
     New → Assigned → In Progress → Resolved → Ready for Test → Closed, a jeśli retest się nie powiedzie: Reopened. Zgłoszenie może też zostać odrzucone (Rejected), oznaczone jako duplikat (Duplicate), niemożliwe do odtworzenia (Cannot Reproduce) albo odłożone (Deferred). Więcej: [Cykl życia defektu](test_management.md#cykl-zycia-defektu).
@@ -83,7 +83,7 @@ Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpo
     Warto: regresję, smoke testy, testy API, testy z wieloma danymi. Nie warto: testów jednorazowych, często zmieniających się funkcji, oceny użyteczności. Więcej: [Strategia automatyzacji](test_automation_strategy.md).
 
 ??? question "Czym jest piramida testów?"
-    Model proporcji: najwięcej szybkich testów modułowych, mniej integracyjnych i API, najmniej wolnych testów E2E przez UI. Odwrócona piramida daje wolny i kruchy zestaw testów.
+    Model proporcji: najwięcej szybkich testów modułowych, mniej integracyjnych i API, najmniej wolnych testów E2E przez UI. Odwrócona piramida daje wolny i kruchy zestaw testowy.
 
 ??? question "Czym jest niestabilny (flaky) test i jak sobie z nim radzić?"
     Test, który raz przechodzi, a raz nie, bez zmian w kodzie. Typowe przyczyny to sztywne opóźnienia, zależności między testami i współdzielone dane. Rozwiązania: czekanie na warunek, niezależne dane, stabilne lokatory, kwarantanna i naprawa.

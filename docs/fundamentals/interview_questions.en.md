@@ -83,7 +83,7 @@ Typical questions in an interview for a tester role (junior / mid) with short an
     Worth it: regression, smoke tests, API tests, tests with many data sets. Not worth it: one-off tests, features that change often, judging usability. More: [Test automation strategy](test_automation_strategy.md).
 
 ??? question "What is the test pyramid?"
-    A model of proportions: the most fast component tests, fewer integration and API tests, the fewest slow E2E tests through the UI. An inverted pyramid gives a slow and brittle test suite.
+    A model of proportions: fast component tests are the most numerous, integration and API tests are fewer, and slow E2E tests through the UI are the fewest. An inverted pyramid leads to a slow, brittle test suite.
 
 ??? question "What is a flaky test and how do you deal with it?"
     A test that sometimes passes and sometimes fails without code changes. Typical causes are fixed delays, dependencies between tests and shared data. Solutions: waiting for a condition, independent data, stable locators, quarantine and a fix.

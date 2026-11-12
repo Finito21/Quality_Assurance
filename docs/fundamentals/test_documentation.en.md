@@ -113,7 +113,7 @@ A **test procedure** is an ordered sequence of steps for executing test cases, a
 
 ## Defect report
 
-A good report lets a developer **reproduce the bug without asking follow-up questions**.
+A good report lets a developer **reproduce the defect without asking follow-up questions**.
 
 | Field | Example |
 |---|---|

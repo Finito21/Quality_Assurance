@@ -7,7 +7,7 @@ description: "HTML for testers: document structure, basic and semantic tags, for
 **HTML (HyperText Markup Language)** defines the **structure** of a web page. Elements are described with **tags** in angle brackets `< >`.
 
 !!! tip "Why should a tester know HTML?"
-    The HTML structure is the basis for **locators** in automation (Selenium, Cypress), for analysing bugs in [DevTools](../../tools/devtools.md) and for accessibility testing.
+    The HTML structure is the basis for **locators** in automation (Selenium, Cypress), for investigating defects in [DevTools](../../tools/devtools.md) and for accessibility testing.
 
 ## Document structure
 

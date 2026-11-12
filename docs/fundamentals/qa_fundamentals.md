@@ -12,7 +12,7 @@ Najważniejsze pojęcia z zakresu zapewniania jakości i testowania oprogramowan
 :   System zarządzania jakością w organizacji obejmujący politykę jakości, cele jakościowe, procesy, nadzór oraz ciągłe doskonalenie, w celu zapewnienia zgodności produktów lub usług z wymaganiami klienta i normami. Obejmuje QA i QC.
 
 **QA (Quality Assurance)**
-:   Działania związane z zapewnieniem jakości poprzez tworzenie i nadzorowanie procesów, procedur oraz standardów, które mają zapobiegać powstawaniu błędów.
+:   Działania związane z zapewnieniem jakości poprzez tworzenie i nadzorowanie procesów, procedur oraz standardów, które mają zapobiegać powstawaniu defektów.
 
 **QC (Quality Control)**
 :   Działania związane z kontrolą i oceną jakości produktu, usługi, modułu lub systemu.
@@ -41,7 +41,7 @@ flowchart TB
 
 | | Testowanie | Debugowanie |
 |---|---|---|
-| **Cel** | wykrycie, że coś działa niepoprawnie | znalezienie przyczyny błędu i jego naprawa |
+| **Cel** | wykrycie, że coś działa niepoprawnie | znalezienie przyczyny defektu i jego naprawa |
 | **Kto** | głównie tester | głównie programista |
 | **Jak** | uruchamianie testów i porównywanie wyniku oczekiwanego z rzeczywistym | analiza kodu po otrzymaniu raportu o defekcie |
 
@@ -161,7 +161,7 @@ Szczegóły planowania i kryteriów: [Zarządzanie testami](test_management.md).
 
 | Poziom | Co sprawdza |
 |---|---|
-| **Testy jednostkowe (modułowe)** | małe fragmenty kodu, wykonywane głównie przez programistów |
+| **Testy modułowe (jednostkowe)** | małe fragmenty kodu, wykonywane głównie przez programistów |
 | **Testy integracyjne** | współpracę między modułami (testy integracji modułów) lub między systemami (testy integracji systemów) |
 | **Testy systemowe** | zachowanie i możliwości całego systemu, w tym zadania end-to-end i cechy niefunkcjonalne |
 | **Testy akceptacyjne** | czy system spełnia potrzeby użytkowników, klienta i wymagania biznesowe |

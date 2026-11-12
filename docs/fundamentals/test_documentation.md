@@ -58,7 +58,7 @@ Elementy scenariusza:
 
 Przypadek testowy odpowiada na pytanie: **„Jak sprawdzę dany warunek testowy?”** (warunek testowy odpowiada na pytanie „co sprawdzam?”). Opisuje jeden konkretny test: warunki wstępne, dane, kroki i wynik oczekiwany.
 
-**Zestaw testów (test suite)** to zbiór przypadków testowych zgrupowanych w celu wspólnego wykonania, np. wszystkie testy regresji koszyka albo smoke testy wykonywane po każdym wdrożeniu.
+**Zestaw testowy (test suite)** to zbiór przypadków testowych zgrupowanych w celu wspólnego wykonania, np. wszystkie testy regresji koszyka albo smoke testy wykonywane po każdym wdrożeniu.
 
 | Pole | Opis |
 |---|---|
@@ -118,13 +118,13 @@ Dobry raport pozwala programiście **odtworzyć defekt bez dopytywania**.
 | Pole | Przykład |
 |---|---|
 | ID | `BUG-142` |
-| Tytuł | *Koszyk: zmiana ilości na 0 nie usuwa produktu* |
+| Tytuł | *Koszyk: zmiana liczby sztuk na 0 nie usuwa produktu* |
 | Środowisko | Chrome 130, Windows 11, środowisko QA, build 1.4.2 |
-| Kroki do odtworzenia | 1. Dodaj produkt do koszyka 2. Zmień ilość na 0 3. Kliknij „Przelicz” |
+| Kroki do odtworzenia | 1. Dodaj produkt do koszyka 2. Zmień liczbę sztuk na 0 3. Kliknij „Przelicz” |
 | Wynik oczekiwany | produkt zostaje usunięty z koszyka |
-| Wynik rzeczywisty | produkt zostaje z ilością 0, suma = 0 zł |
+| Wynik rzeczywisty | produkt zostaje z liczbą sztuk 0, suma = 0 zł |
 | Ważność / priorytet | Poważna / Średni |
-| Załączniki | zrzut ekranu, nagranie, logi z konsoli, request z zakładki Network |
+| Załączniki | zrzut ekranu, nagranie, logi z konsoli, żądanie z zakładki Network |
 
 ??? abstract "Pola raportu o defekcie wg ISTQB CTFL v4.0"
 
@@ -161,7 +161,7 @@ Typowe skale: ważność **krytyczna / poważna / średnia / niska**, priorytet 
 
 === "Dobry raport"
 
-    **Tytuł:** Koszyk: zmiana ilości na 0 nie usuwa produktu
+    **Tytuł:** Koszyk: zmiana liczby sztuk na 0 nie usuwa produktu
 
     **Środowisko:** Chrome 130, Windows 11, środowisko QA, build 1.4.2
 
@@ -169,11 +169,11 @@ Typowe skale: ważność **krytyczna / poważna / średnia / niska**, priorytet 
 
     1. Zaloguj się jako `jan@test.pl`.
     2. Dodaj do koszyka produkt *Kubek QA*.
-    3. W koszyku zmień ilość na `0`.
+    3. W koszyku zmień liczbę sztuk na `0`.
     4. Kliknij **Przelicz**.
 
     **Wynik oczekiwany:** produkt zostaje usunięty z koszyka.
-    **Wynik rzeczywisty:** produkt zostaje z ilością 0, suma = 0 zł. Odtwarzalność: 5/5.
+    **Wynik rzeczywisty:** produkt zostaje z liczbą sztuk 0, suma = 0 zł. Odtwarzalność: 5/5.
 
     **Załączniki:** nagranie ekranu, odpowiedź `PATCH /cart/items/17` z zakładki Network.
 

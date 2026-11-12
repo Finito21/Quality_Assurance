@@ -17,7 +17,7 @@ description: "SoapUI w pracy testera: testowanie usług SOAP i REST, WSDL, aserc
 ```mermaid
 flowchart TB
     accTitle: Struktura projektu
-    accDescr: Projekt zawiera zestawy testów, zestaw zawiera przypadki testowe, a przypadek składa się z kroków, np. żądania SOAP, przeniesienia właściwości i skryptu Groovy.
+    accDescr: Projekt zawiera zestawy testowe, zestaw zawiera przypadki testowe, a przypadek składa się z kroków, np. żądania SOAP, przeniesienia właściwości i skryptu Groovy.
     P[Projekt] --> TS1[TestSuite]
     TS1 --> TC1[TestCase]
     TC1 --> S1[TestStep: SOAP Request]

@@ -66,4 +66,4 @@ docker compose down -v   # the same, plus remove volumes (clean database)
 - quickly setting up a **test environment** or a database with test data,
 - running tests in a reproducible environment in CI (e.g. the `cypress/included` image),
 - **Selenium Grid** in containers for testing on many browsers,
-- analysing bugs with `docker logs` and `docker exec`.
+- investigating failures with `docker logs` and `docker exec`.

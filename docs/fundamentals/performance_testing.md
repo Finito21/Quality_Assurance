@@ -56,13 +56,13 @@ description: "Testy wydajnościowe: rodzaje (obciążeniowe, przeciążeniowe, d
 === "Postman nie nadaje się do"
 
     - testów wydajnościowych na dużą skalę,
-    - tysięcy równoległych requestów,
+    - tysięcy równoległych żądań,
     - pomiaru RPS / latency / p95 / p99,
     - symulacji wielu użytkowników.
 
 === "JMeter nie nadaje się do"
 
-    - szybkiego debugowania pojedynczego requestu,
+    - szybkiego debugowania pojedynczego żądania,
     - eksploracji API,
     - czytelnych testów biznesowych,
     - wygodnej pracy „developerskiej”.

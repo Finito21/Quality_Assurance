@@ -42,7 +42,7 @@ Otwieranie: ++f12++ lub ++ctrl+shift+i++ (macOS: ++cmd+option+i++).
 - sprawdzanie, jak ładują się zasoby (waterfall) i jak szybko odpowiada serwer,
 - **throttling**: spowolnienie internetu (np. *Slow 3G*) albo tryb offline,
 - **Preserve log**: zachowanie logów po przeładowaniu i przekierowaniu,
-- **Copy as cURL / fetch**: szybkie odtworzenie requestu w terminalu lub Postmanie,
+- **Copy as cURL / fetch**: szybkie odtworzenie żądania w terminalu lub Postmanie,
 - eksport do pliku **HAR** jako załącznik do zgłoszenia defektu.
 
 ## Application: dane przeglądarki
@@ -51,7 +51,7 @@ Otwieranie: ++f12++ lub ++ctrl+shift+i++ (macOS: ++cmd+option+i++).
 |---|---|
 | **Local Storage** | trwały, do ręcznego usunięcia |
 | **Session Storage** | znika po zamknięciu karty / sesji |
-| **Cookies** | zależnie od `Expires` / `Max-Age`, wysyłane z każdym requestem |
+| **Cookies** | zależnie od `Expires` / `Max-Age`, wysyłane z każdym żądaniem |
 
 **Clear site data** pozwala wejść na stronę „jak nowy użytkownik”.
 

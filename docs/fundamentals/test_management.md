@@ -40,7 +40,7 @@ Czynności planowania:
 | | Kryteria wejścia | Kryteria wyjścia |
 |---|---|---|
 | **Co określają** | warunki, które muszą być spełnione **przed** rozpoczęciem czynności testowej | warunki, po spełnieniu których dany poziom lub zbiór testów uznaje się za **zakończony** |
-| **Przykłady** | dostępne środowisko testowe, gotowe dane testowe, kod przeszedł testy jednostkowe, dostępna dokumentacja | wykonane wszystkie zaplanowane testy, osiągnięte pokrycie, brak otwartych defektów krytycznych, gęstość defektów poniżej progu |
+| **Przykłady** | dostępne środowisko testowe, gotowe dane testowe, kod przeszedł testy modułowe, dostępna dokumentacja | wykonane wszystkie zaplanowane testy, osiągnięte pokrycie, brak otwartych defektów krytycznych, gęstość defektów poniżej progu |
 
 !!! note "Definition of Ready / Definition of Done"
     W metodykach zwinnych odpowiednikami są **DoR** (kryteria wejścia dla historyjki) i **DoD** (kryteria wyjścia).

@@ -25,7 +25,7 @@ description: "Grafana dla testera: dashboardy i panele, wyniki testów wydajnoś
 - **wyniki testów wydajnościowych na żywo**: JMeter / k6 → InfluxDB → Grafana (czasy odpowiedzi, RPS, błędy),
 - monitorowanie środowisk testowych (CPU, RAM, błędy aplikacji),
 - dashboard **jakości**: liczba testów, pass rate, czas wykonania pipeline'ów,
-- analiza logów (Loki) przy szukaniu przyczyny błędu.
+- analiza logów (Loki) przy szukaniu przyczyny awarii.
 
 ```sql
 -- przykładowy panel: średni czas odpowiedzi API w czasie

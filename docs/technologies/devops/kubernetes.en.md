@@ -52,7 +52,7 @@ flowchart TB
 
 | Object | Description |
 |---|---|
-| **Pod** | the smallest unit, usually one container. Testers analyse its logs |
+| **Pod** | the smallest unit, usually one container. Testers read its logs |
 | **Deployment** | how many copies of the application should run and how to update it |
 | **ReplicaSet** | keeps the number of running Pods in check |
 | **Service** | communication between Pods and exposing the application (e.g. an API) |
@@ -65,7 +65,7 @@ flowchart TB
 | Command | Description |
 |---|---|
 | `kubectl get pods -n qa` | list of pods in the `qa` namespace |
-| `kubectl logs <pod> -n qa` | pod logs (bug analysis) |
+| `kubectl logs <pod> -n qa` | pod logs (investigating failures) |
 | `kubectl logs <pod> -n qa --previous` | logs of the previous container when the pod keeps restarting |
 | `kubectl rollout status deployment/<name> -n qa` | whether the rollout of a new version has finished |
 | `kubectl port-forward svc/<service> 8080:80 -n qa` | reach a service from your own machine at `localhost:8080` |
@@ -88,5 +88,5 @@ flowchart TB
 2. The tester checks the deployment: `kubectl get pods -n qa` (status `Running`, no restarts).
 3. Runs automated tests (e.g. an API collection in Postman or Newman).
 4. If tests fail, fetches the logs: `kubectl logs <pod> -n qa`.
-5. Reports the bug in Jira **with the logs and the pod name**, DevOps / a developer analyses the cause.
+5. Reports the defect in Jira **with the logs and the pod name**, DevOps / a developer investigates the cause.
 6. After the fix: retest and regression testing.
