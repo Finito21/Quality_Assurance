@@ -43,6 +43,12 @@ class Abbreviations(unittest.TestCase):
     def test_capitalised_and_figure_abbreviations(self):
         self.assertEqual(fix("Dr. Nowak, Rys. 1, zob. tabelę, wg. ISTQB"), "Dr.~Nowak, Rys.~1, zob.~tabelę, wg.~ISTQB")
 
+    def test_sentence_ending_abbreviations(self):
+        self.assertEqual(fix("w 2025 r. Potem"), "w~2025~r. Potem")
+        self.assertEqual(fix("jest ok. Dalej"), "jest ok. Dalej")
+        self.assertEqual(fix("ok. 5 minut, art. 12, str. 3, tab. 2"), "ok.~5~minut, art.~12, str.~3, tab.~2")
+        self.assertEqual(fix("w 2025 r. wydano"), "w~2025~r.~wydano")
+
     def test_before_inline_code(self):
         self.assertEqual(fix("np. <code>200</code>"), "np.~<code>200</code>")
         self.assertEqual(fix("wg <strong>ISTQB</strong>"), "wg~<strong>ISTQB</strong>")

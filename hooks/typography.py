@@ -39,8 +39,13 @@ RULES = [
     # 2. abbreviations with a full stop
     (re.compile(
         rf"(?<![{LETTER}])"
-        rf"(np|tj|tzn|tzw|ok|ul|nr|str|godz|ang|ds|im|św|dr|Dr|prof|Prof|inż|mgr|m\.in|pt|r"
-        rf"|rys|Rys|tab|Tab|zob|Zob|por|Por|art|pkt|wg|Wg)\.{SPACE}(?=\S)"
+        rf"(np|tj|tzn|tzw|ul|nr|godz|ang|ds|im|św|dr|Dr|prof|Prof|inż|mgr|m\.in"
+        rf"|rys|Rys|zob|Zob|por|Por|pkt|wg|Wg)\.{SPACE}(?=\S)"
+    ), rf"\1.{NBSP}"),
+    # 2a. abbreviations that also end sentences ("w 2025 r. Potem", "jest ok. Dalej"):
+    #     glued only before a lowercase word, a number or an inline tag
+    (re.compile(
+        rf"(?<![{LETTER}])(ok|r|str|pt|tab|Tab|art)\.{SPACE}(?=[a-ząćęłńóśźż0-9{NEXT}])"
     ), rf"\1.{NBSP}"),
     # 2b. abbreviations written without a full stop
     (re.compile(rf"(?<![{LETTER}])(wg|Wg|mln|mld|tys|zł){SPACE}(?=\S)"), rf"\1{NBSP}"),
