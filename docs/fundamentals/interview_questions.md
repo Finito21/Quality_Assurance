@@ -4,7 +4,7 @@ description: "Pytania rekrutacyjne dla testera z przykładowymi odpowiedziami: z
 
 # Pytania rekrutacyjne
 
-Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpowiedziami. Odpowiedź rozwiń, zanim ją przeczytasz: najpierw spróbuj odpowiedzieć sam. Na rozmowie lepiej podać własny przykład z praktyki niż recytować definicję.
+Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpowiedziami. Odpowiedź rozwiń, zanim ją przeczytasz: najpierw spróbuj odpowiedzieć samodzielnie. Na rozmowie lepiej podać własny przykład z praktyki niż recytować definicję.
 
 ## Podstawy
 
@@ -91,7 +91,7 @@ Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpo
 ## O sobie
 
 ??? question "Dlaczego chcesz zostać testerem?"
-    Odpowiedz szczerze i konkretnie: co Cię w testowaniu interesuje, czego już się nauczyłeś (kurs, ISTQB, własne projekty) i jak to pokazujesz. Dobrze mieć przykład defektu, który znalazłeś w prawdziwej aplikacji.
+    Odpowiedz szczerze i konkretnie: co cię w testowaniu interesuje, czego już się udało nauczyć (kurs, ISTQB, własne projekty) i jak to pokazujesz. Dobrze mieć przykład defektu znalezionego w prawdziwej aplikacji.
 
 ??? question "Jak się uczysz i skąd czerpiesz wiedzę?"
     Wymień konkretne źródła (sylabus ISTQB, dokumentacja narzędzi, kursy, społeczności), projekty do ćwiczeń (np. publiczne aplikacje demo) i co z nich wyniosłeś. Lista źródeł: [Źródła](../resources.md).
