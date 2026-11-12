@@ -20,6 +20,8 @@ jobs:
 
   deploy:
     needs: checks
+    # A manual run from another branch runs the checks but never deploys.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

@@ -1,6 +1,6 @@
 ---
 description: Push the current branch and open a pull request filled in from the PR template
-allowed-tools: Bash(git status*), Bash(git log*), Bash(git diff*), Bash(git branch*), Bash(git push*), Bash(gh pr *), Bash(gh auth status*), Bash(python -m unittest*), Bash(python scripts/check_translations.py), Bash(mkdocs build*), Read, Grep, Glob
+allowed-tools: Bash(git status*), Bash(git log*), Bash(git diff*), Bash(git branch*), Bash(git push -u origin HEAD), Bash(gh pr create *), Bash(gh pr view *), Bash(gh auth status*), Bash(python -m unittest*), Bash(python scripts/check_translations.py), Bash(mkdocs build*), Read, Grep, Glob
 ---
 
 Open a pull request for the current branch, with a description that follows `.github/pull_request_template.md`.
@@ -32,7 +32,7 @@ Extra notes from the user (may be empty): $ARGUMENTS
 5. **Title.** Short, imperative, in English, max ~70 characters, summarising the whole branch.
 
 6. **Push and create.**
-   - `git push -u origin <branch>`
+   - `git push -u origin HEAD` (pushes the current branch; step 1 already stopped on `main`)
    - Write the description to a temporary file and run `gh pr create --base main --title "<title>" --body-file <file>`.
    - If `gh` is not installed or not logged in (`gh auth status` fails), do not push. Print the title and the full description in a code block, plus the link `https://github.com/Finito21/Quality_Assurance/compare/main...<branch>?expand=1`, and tell the user to run `gh auth login`.
 
