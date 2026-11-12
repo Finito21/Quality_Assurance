@@ -42,10 +42,10 @@ flowchart LR
 
 ## Scenariusz testowy
 
-**Scenariusz testowy** to zbiór przypadków testowych potrzebnych do sprawdzenia określonej funkcjonalności. Każdy scenariusz powinien odzwierciedlać **dokładnie jedną funkcjonalność**.
+**Scenariusz testowy** to zbiór przypadków testowych, które razem sprawdzają jedną funkcjonalność lub jeden przepływ użytkownika, np. zakup biletu.
 
 !!! note "Scenariusz a terminologia ISTQB"
-    „Scenariusz testowy” to określenie z praktyki branżowej. W terminologii ISTQB i ISO/IEC/IEEE 29119-3 odpowiada mu **zestaw testowy** (test suite) albo **procedura testowa** (test procedure, czyli przypadki testowe w kolejności wykonania).
+    „Scenariusz testowy” to określenie z praktyki branżowej. W terminologii ISTQB i ISO/IEC/IEEE 29119-3 najbliżej mu do **zestawu testowego** (test suite). Gdy liczy się kolejność kroków, odpowiada mu **procedura testowa** (test procedure, czyli przypadki testowe w kolejności wykonania).
 
 Elementy scenariusza:
 
@@ -109,7 +109,7 @@ Przypadek testowy odpowiada na pytanie: **„Jak sprawdzę dany warunek testowy?
     | 64 znaki | konto utworzone |
     | 65 znaków | błąd walidacji *„Hasło może mieć najwyżej 64 znaki”* |
 
-**Skrypt testowy** to ręczny lub zautomatyzowany zestaw instrukcji implementujących przypadek testowy. Ten sam przypadek można wykonać wielokrotnie w różnych konfiguracjach, np. w Chrome, Firefox i Safari.
+**Procedura testowa** to uporządkowany ciąg kroków wykonania przypadków testowych, a **skrypt testowy** to jej zautomatyzowana postać. Ten sam przypadek można wykonać wielokrotnie w różnych konfiguracjach, np. w Chrome, Firefox i Safari.
 
 ## Raport o defekcie
 

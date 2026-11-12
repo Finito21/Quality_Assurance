@@ -35,7 +35,7 @@ Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpo
     Tester jest częścią zespołu. Uczestniczy w refinemencie (pyta o kryteria akceptacji, zgłasza ryzyka), planowaniu, daily i retrospektywie. Testuje historyjki w trakcie sprintu, automatyzuje regresję i dba o spełnienie Definition of Done. Nie czeka z testami do końca sprintu.
 
 ??? question "Opisz cykl życia defektu."
-    New → Assigned → In Progress → Resolved → Ready for Test → Closed, a jeśli retest się nie powiedzie: Reopened. Zgłoszenie może też zostać odrzucone (Rejected), oznaczone jako duplikat (Duplicate) albo odłożone (Deferred). Więcej: [Cykl życia defektu](test_management.md#cykl-zycia-defektu).
+    New → Assigned → In Progress → Resolved → Ready for Test → Closed, a jeśli retest się nie powiedzie: Reopened. Zgłoszenie może też zostać odrzucone (Rejected), oznaczone jako duplikat (Duplicate), niemożliwe do odtworzenia (Cannot Reproduce) albo odłożone (Deferred). Więcej: [Cykl życia defektu](test_management.md#cykl-zycia-defektu).
 
 ??? question "Czym różni się ważność od priorytetu? Podaj przykład."
     **Ważność** opisuje wpływ defektu, **priorytet** pilność naprawy. Literówka w nazwie firmy na stronie głównej: niska ważność, wysoki priorytet. Awaria rzadko używanego raportu rocznego: wysoka ważność, niski priorytet. Więcej: [Ważność a priorytet](test_documentation.md#waznosc-a-priorytet).
@@ -55,7 +55,7 @@ Typowe pytania na rozmowie na stanowisko testera (junior / mid) z krótkimi odpo
     Klasy równoważności: np. 10 (niepoprawna), 30 (poprawna), 80 (niepoprawna). Wartości brzegowe (wersja 2-wartościowa): 17, 18, 65, 66. Do tego zgadywanie błędów: pole puste, litery, liczba ujemna, ułamek, spacje, bardzo duża liczba.
 
 ??? question "Jak przetestujesz długopis (windę, kubek, formularz logowania)?"
-    To pytanie sprawdza sposób myślenia, a nie wiedzę. Zacznij od pytań: kto będzie używał, do czego, jakie są wymagania. Potem podziel testy na funkcjonalne (czy pisze), niefunkcjonalne (wygoda, trwałość, bezpieczeństwo), negatywne (upadek, mróz) i graniczne (ostatnia kropla tuszu).
+    To pytanie sprawdza sposób myślenia, a nie wiedzę. Zacznij od pytań: kto będzie używał, do czego, jakie są wymagania. Potem podziel testy na funkcjonalne (czy pisze), niefunkcjonalne (wygoda, trwałość: upadek, mróz, bezpieczeństwo), negatywne (pisanie po mokrej lub tłustej powierzchni) i graniczne (ostatnia kropla tuszu).
 
 ## API, bazy danych i narzędzia
 

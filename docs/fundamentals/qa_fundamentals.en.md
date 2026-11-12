@@ -101,7 +101,7 @@ flowchart LR
 **Sequential**: development activities are performed linearly, and the next phase starts when the previous one ends.
 
 - **Waterfall**: testing starts when all other development activities are finished. Used for products with detailed documentation and well-defined requirements that rarely change.
-- **V-model**: unlike waterfall, it introduces early testing. Each development stage has a corresponding test level.
+- **V-model**: each development stage has a corresponding test level. Test planning and design start early, together with that stage, but test execution is still sequential, after the software is built.
 
 **Iterative and incremental**: software is built in short cycles, and every cycle adds features.
 
@@ -150,8 +150,8 @@ A **retrospective** is a team meeting after an iteration or project stage. The t
 | **Test planning** | test plan: objectives, approach, techniques, schedule |
 | **Test monitoring and control** | progress reports, decisions on corrective actions |
 | **Test analysis** | test conditions based on specifications, diagrams and requirements |
-| **Test design** | test cases and test suites |
-| **Test implementation** | ready test suites, test data, environment |
+| **Test design** | test cases, coverage items, test data and test environment requirements |
+| **Test implementation** | test procedures, automated test scripts, test suites, test data, a ready environment |
 | **Test execution** | test results, defect reports |
 | **Test completion** | test completion report, archived testware, lessons learned |
 
@@ -163,14 +163,14 @@ Planning and criteria in detail: [Test management](test_management.md).
 |---|---|
 | **Unit (component) testing** | small pieces of code, done mainly by developers |
 | **Integration testing** | interaction between components (component integration testing) or between systems (system integration testing) |
-| **System testing** | the whole application as a whole |
+| **System testing** | the behaviour and capabilities of the whole system, including end-to-end tasks and non-functional characteristics |
 | **Acceptance testing** | whether the system meets the needs of users, the customer and business requirements |
 
 Types of acceptance testing:
 
 - **UAT (User Acceptance Testing)**: done by end users, checks real usage scenarios.
 - **OAT (Operational Acceptance Testing)**: done by administrators or operators, focuses on operating the system, e.g. security, backups, disaster recovery.
-- **Compliance testing**: checks compliance with contracts, standards or regulations.
+- **Contractual and regulatory acceptance testing**: checks compliance with a contract, standards or regulations.
 - **Alpha**: in the producer's environment, by testers, potential customers or an independent team.
 - **Beta**: by users or customers in their own environment, outside the producer's premises.
 
@@ -180,8 +180,9 @@ Types of acceptance testing:
 |---|---|
 | **Code execution** | **static** (no execution: reviews of specifications, architecture, code) / **dynamic** (with a running component or system) |
 | **Purpose** | **functional** (what the system does) / **non-functional** (how it works: performance, security, usability) |
-| **Test basis** | **black-box** (specification) / **white-box** (code structure) / **experience-based** |
-| **Execution** | **manual** (exploration, UX, validation) / **automated** (regression, repeatable tests) |
+| **Test basis** | **black-box** (specification) / **white-box** (code structure) |
+
+Experience-based techniques (e.g. exploratory testing) are a category of test techniques, not a test type. The split into **manual** (exploration, UX, validation) and **automated** (regression, repeatable tests) testing is practical, but it is not part of the ISTQB classification.
 
 Change-related testing:
 
@@ -219,9 +220,9 @@ Test design techniques and statement and branch coverage are described on the [T
 | Type | Formality | Characteristics |
 |---|---|---|
 | **Informal review** | lowest | quickly finding problems and exchanging ideas, common in agile teams |
-| **Walkthrough** | low to high | the author presents the material to the team, goal: defects, improvements, shared understanding. A scribe is mandatory |
+| **Walkthrough** | low to high | the author presents the material to the team, goal: defects, improvements, shared understanding. Can be informal or very formal |
 | **Technical review** | high | technical experts assess quality and look for solutions. Individual preparation is mandatory, usually ends with a report |
-| **Inspection** | highest | defined roles and procedures, all roles are mandatory and cannot be combined, the report is used for future improvement |
+| **Inspection** | highest | defined roles and procedures, formal entry and exit criteria, collected metrics; the author cannot be the review leader or the scribe, and the report is used for future improvement |
 
 ### Roles in a formal review
 
@@ -229,7 +230,7 @@ Author, management, facilitator (moderator), review leader, reviewers, scribe.
 
 ## Documentation and defects
 
-Test cases, defect reports and the test plan are described on the [Test documentation](test_documentation.md) page. The defect lifecycle, from **New** to **Closed**, including the **Rejected**, **Duplicate** and **Deferred** statuses, is described in [Test management](test_management.md#defect-management).
+Test cases, defect reports and the test plan are described on the [Test documentation](test_documentation.md) page. The defect lifecycle, from **New** to **Closed**, including the **Rejected**, **Duplicate**, **Deferred** and **Cannot Reproduce** statuses, is described in [Test management](test_management.md#defect-management).
 
 ### Requirements specification
 

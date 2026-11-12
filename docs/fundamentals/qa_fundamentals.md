@@ -101,7 +101,7 @@ flowchart LR
 **Sekwencyjne**: kolejne czynności wytwórcze wykonuje się liniowo, a następna faza zaczyna się po zakończeniu poprzedniej.
 
 - **Kaskadowy (waterfall)**: czynności testowe zaczynają się, gdy wszystkie inne czynności wytwórcze zostaną ukończone. Model stosuje się dla produktów z dokładną dokumentacją i dobrze zdefiniowanymi wymaganiami, które rzadko się zmieniają.
-- **Model V**: w przeciwieństwie do kaskadowego wprowadza zasadę wczesnego testowania. Każdemu etapowi wytwarzania odpowiada powiązany poziom testów.
+- **Model V**: każdemu etapowi wytwarzania odpowiada powiązany poziom testów. Planowanie i projektowanie testów zaczyna się wcześnie, razem z danym etapem, ale wykonanie testów nadal następuje sekwencyjnie, po zbudowaniu oprogramowania.
 
 **Iteracyjno-przyrostowe**: oprogramowanie powstaje w krótkich cyklach, a z każdym cyklem przybywa funkcji.
 
@@ -150,8 +150,8 @@ W praktyce: [Jenkins](../tools/ci_cd/jenkins.md), [GitHub Actions](../tools/ci_c
 | **Planowanie testów** | plan testów: cele, podejście, techniki, harmonogram |
 | **Monitorowanie i nadzór** | raporty z postępu, decyzje o działaniach korygujących |
 | **Analiza testów** | warunki testowe na podstawie specyfikacji, diagramów i wymagań |
-| **Projektowanie testów** | przypadki testowe i zestawy testów |
-| **Implementacja testów** | gotowe zestawy testowe, dane testowe, środowisko |
+| **Projektowanie testów** | przypadki testowe, elementy pokrycia, wymagania dotyczące danych i środowiska testowego |
+| **Implementacja testów** | procedury testowe, skrypty automatyczne, zestawy testowe, dane testowe, gotowe środowisko |
 | **Wykonywanie testów** | wyniki testów, raporty o defektach |
 | **Ukończenie testów** | raport końcowy, archiwizacja testaliów, wnioski na przyszłość |
 
@@ -163,14 +163,14 @@ Szczegóły planowania i kryteriów: [Zarządzanie testami](test_management.md).
 |---|---|
 | **Testy jednostkowe (modułowe)** | małe fragmenty kodu, wykonywane głównie przez programistów |
 | **Testy integracyjne** | współpracę między modułami (testy integracji modułów) lub między systemami (testy integracji systemów) |
-| **Testy systemowe** | całą aplikację jako całość |
+| **Testy systemowe** | zachowanie i możliwości całego systemu, w tym zadania end-to-end i cechy niefunkcjonalne |
 | **Testy akceptacyjne** | czy system spełnia potrzeby użytkowników, klienta i wymagania biznesowe |
 
 Rodzaje testów akceptacyjnych:
 
 - **UAT (User Acceptance Testing)**: wykonywane przez użytkowników końcowych, sprawdzają rzeczywiste scenariusze użycia.
 - **OAT (Operational Acceptance Testing)**: wykonywane przez administratorów lub operatorów, dotyczą utrzymania systemu, np. bezpieczeństwa, kopii zapasowych, odtwarzania po awarii.
-- **Testy zgodności**: sprawdzają zgodność z umowami, normami lub przepisami prawa.
+- **Testy akceptacyjne zgodności z umową i przepisami**: sprawdzają zgodność z umową, normami lub przepisami prawa.
 - **Alfa**: w środowisku producenta, przez testerów, potencjalnych klientów lub niezależny zespół.
 - **Beta**: przez użytkowników lub klientów w ich własnym środowisku, poza siedzibą producenta.
 
@@ -180,8 +180,9 @@ Rodzaje testów akceptacyjnych:
 |---|---|
 | **Uruchamianie kodu** | **statyczne** (bez uruchamiania: przeglądy specyfikacji, architektury, kodu) / **dynamiczne** (z uruchomionym modułem lub systemem) |
 | **Cel** | **funkcjonalne** (co system robi) / **niefunkcjonalne** (jak działa: wydajność, bezpieczeństwo, użyteczność) |
-| **Podstawa testów** | **czarnoskrzynkowe** (specyfikacja) / **białoskrzynkowe** (struktura kodu) / **oparte na doświadczeniu** |
-| **Sposób wykonania** | **manualne** (eksploracja, UX, walidacja) / **automatyczne** (regresja, testy powtarzalne) |
+| **Podstawa testów** | **czarnoskrzynkowe** (specyfikacja) / **białoskrzynkowe** (struktura kodu) |
+
+Techniki oparte na doświadczeniu (np. testowanie eksploracyjne) to kategoria technik testowania, a nie typ testów. Podział na testy **manualne** (eksploracja, UX, walidacja) i **automatyczne** (regresja, testy powtarzalne) jest praktyczny, ale nie należy do klasyfikacji ISTQB.
 
 Testy związane ze zmianami:
 
@@ -219,9 +220,9 @@ Techniki projektowania testów i pokrycie instrukcji oraz gałęzi opisuje stron
 | Typ | Formalność | Charakterystyka |
 |---|---|---|
 | **Przegląd nieformalny** | najniższa | szybkie wykrywanie problemów i wymiana pomysłów, częsty w zespołach zwinnych |
-| **Przejrzenie (walkthrough)** | niska do wysokiej | autor prezentuje materiał zespołowi, cel: defekty, usprawnienia, wspólne zrozumienie. Protokolant obowiązkowy |
+| **Przejrzenie (walkthrough)** | niska do wysokiej | autor prezentuje materiał zespołowi, cel: defekty, usprawnienia, wspólne zrozumienie. Może być nieformalne albo bardzo formalne |
 | **Przegląd techniczny** | wysoka | eksperci techniczni oceniają jakość i szukają rozwiązań. Obowiązkowe przygotowanie indywidualne, zwykle raport |
-| **Inspekcja** | najwyższa | ustalone role i procedury, wszystkie role obowiązkowe i nie można ich łączyć, raport służy przyszłym usprawnieniom |
+| **Inspekcja** | najwyższa | ustalone role i procedury, formalne kryteria wejścia i wyjścia, zbierane metryki; autor nie może być liderem przeglądu ani protokolantem, a raport służy przyszłym usprawnieniom |
 
 ### Role w przeglądzie formalnym
 
@@ -229,7 +230,7 @@ Autor, kierownictwo, facylitator (moderator), lider przeglądu, przeglądający,
 
 ## Dokumentacja i defekty
 
-Przypadek testowy, raport o defekcie i plan testów opisuje strona [Dokumentacja testowa](test_documentation.md). Cykl życia defektu, od **New** do **Closed**, razem ze statusami **Rejected**, **Duplicate** i **Deferred**, opisuje [Zarządzanie testami](test_management.md#zarzadzanie-defektami).
+Przypadek testowy, raport o defekcie i plan testów opisuje strona [Dokumentacja testowa](test_documentation.md). Cykl życia defektu, od **New** do **Closed**, razem ze statusami **Rejected**, **Duplicate**, **Deferred** i **Cannot Reproduce**, opisuje [Zarządzanie testami](test_management.md#zarzadzanie-defektami).
 
 ### Specyfikacja wymagań
 

@@ -81,7 +81,7 @@ Typical metrics: test execution progress, number of passed/failed tests, number 
 
 According to the ISTQB glossary, a **risk** is a factor that could result in future negative consequences. It is described by **likelihood** and **impact**.
 
-**Risk level = likelihood × impact**
+The **risk level** is determined by likelihood and impact. It can be assessed qualitatively in a risk matrix or numerically, e.g. as **likelihood × impact** on a 1–5 scale.
 
 <div class="grid cards" markdown>
 
@@ -114,7 +114,7 @@ Status names differ between tools and companies, but the flow is similar.
 ```mermaid
 flowchart LR
     accTitle: Defect lifecycle
-    accDescr: A new defect is assigned, fixed and sent for a retest. After a successful retest it is closed, after a failed one it is reopened. A report can also be rejected, marked as a duplicate, marked as cannot reproduce or deferred.
+    accDescr: A new defect is assigned, fixed and sent for a retest. After a successful retest it is closed, after a failed one it is reopened. A report can also be rejected or marked as a duplicate, and is then closed. A report that cannot be reproduced goes back to work once more information is added, or is closed, and a deferred one is assigned again when its time comes.
     New --> Assigned --> InProgress[In Progress] --> Resolved --> RFT[Ready for Test]
     RFT -->|retest OK| Closed
     RFT -->|defect still occurs| Reopened --> Assigned
@@ -122,6 +122,11 @@ flowchart LR
     New -.-> Duplicate
     New -.-> CannotReproduce[Cannot Reproduce]
     Assigned -.-> Deferred
+    Rejected --> Closed
+    Duplicate --> Closed
+    CannotReproduce -->|new information| Assigned
+    CannotReproduce --> Closed
+    Deferred -->|later| Assigned
 ```
 
 | Status | Meaning |
@@ -131,7 +136,7 @@ flowchart LR
 | **In Progress** | the fix is in progress |
 | **Resolved** | the developer considers the defect fixed |
 | **Ready for Test** | the fix is in a build on the test environment and waits for a retest |
-| **Closed** | the retest passed |
+| **Closed** | the retest passed, or the report was closed without a fix (rejected, duplicate, cannot reproduce) |
 | **Reopened** | the retest showed that the defect still occurs |
 | **Rejected** | not a defect, e.g. the behaviour matches the specification or the test was wrong |
 | **Duplicate** | the same defect has already been reported; the report is linked to the original |

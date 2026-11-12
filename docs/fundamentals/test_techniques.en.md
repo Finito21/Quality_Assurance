@@ -115,7 +115,7 @@ Tests can cover all **states**, all **valid transitions**, or also **invalid tra
 
 | Technique | What it measures | Notes |
 |---|---|---|
-| **Statement testing** | % of executed code statements | weakest coverage criterion |
+| **Statement testing** | % of executed code statements | weaker than branch coverage (100% branch coverage gives 100% statement coverage, not the other way round) |
 | **Branch testing** | % of executed branches (decision outcomes) | 100% branches ⇒ 100% statements, but not the other way round |
 
 **Coverage** = coverage items exercised by tests / all coverage items × 100%.

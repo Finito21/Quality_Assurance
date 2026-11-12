@@ -64,7 +64,7 @@ Narzędzia: **axe DevTools**, **Lighthouse** w [DevTools](../tools/devtools.md),
 
 Testy użyteczności sprawdzają, czy użytkownicy potrafią **skutecznie, sprawnie i z satysfakcją** wykonać swoje zadania.
 
-- **Testy z użytkownikami**: kilka osób z grupy docelowej wykonuje zadania (np. „kup bilet na jutro”), a obserwator notuje, gdzie się gubią. Już 5 uczestników ujawnia większość poważnych problemów.
+- **Testy z użytkownikami**: kilka osób z grupy docelowej wykonuje zadania (np. „kup bilet na jutro”), a obserwator notuje, gdzie się gubią. Według reguły kciuka Jakoba Nielsena już 5 uczestników z jednej grupy użytkowników ujawnia większość poważnych problemów.
 - **Ocena heurystyczna**: ekspert sprawdza interfejs według zasad, np. 10 heurystyk Nielsena (widoczny status systemu, zapobieganie błędom, spójność).
 - **Ankiety**: np. kwestionariusz SUS po zakończeniu zadań.
 

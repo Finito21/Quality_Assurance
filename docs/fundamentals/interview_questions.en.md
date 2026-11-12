@@ -35,7 +35,7 @@ Typical questions in an interview for a tester role (junior / mid) with short an
     The tester is part of the team. They take part in refinement (asking about acceptance criteria, raising risks), planning, the Daily Scrum and the retrospective. They test stories during the sprint, automate regression and make sure the Definition of Done is met. They do not leave testing until the end of the sprint.
 
 ??? question "Describe the defect lifecycle."
-    New → Assigned → In Progress → Resolved → Ready for Test → Closed, and if the retest fails: Reopened. A report can also be rejected (Rejected), marked as a duplicate (Duplicate) or postponed (Deferred). More: [Defect lifecycle](test_management.md#defect-lifecycle).
+    New → Assigned → In Progress → Resolved → Ready for Test → Closed, and if the retest fails: Reopened. A report can also be rejected (Rejected), marked as a duplicate (Duplicate), impossible to reproduce (Cannot Reproduce) or postponed (Deferred). More: [Defect lifecycle](test_management.md#defect-lifecycle).
 
 ??? question "How does severity differ from priority? Give an example."
     **Severity** describes the impact of a defect, **priority** the urgency of the fix. A typo in the company name on the home page: low severity, high priority. A crash in a rarely used annual report: high severity, low priority. More: [Severity vs priority](test_documentation.md#severity-vs-priority).
@@ -55,7 +55,7 @@ Typical questions in an interview for a tester role (junior / mid) with short an
     Equivalence partitions: e.g. 10 (invalid), 30 (valid), 80 (invalid). Boundary values (2-value version): 17, 18, 65, 66. Plus error guessing: an empty field, letters, a negative number, a fraction, spaces, a very large number.
 
 ??? question "How would you test a pen (a lift, a mug, a login form)?"
-    This question checks your way of thinking, not your knowledge. Start with questions: who will use it, for what, what the requirements are. Then split the tests into functional (does it write), non-functional (comfort, durability, safety), negative (dropping it, frost) and boundary (the last drop of ink).
+    This question checks your way of thinking, not your knowledge. Start with questions: who will use it, for what, what the requirements are. Then split the tests into functional (does it write), non-functional (comfort, durability: dropping it, frost, safety), negative (writing on a wet or greasy surface) and boundary (the last drop of ink).
 
 ## APIs, databases and tools
 

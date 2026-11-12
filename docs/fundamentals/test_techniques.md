@@ -115,7 +115,7 @@ Testy mogą pokrywać wszystkie **stany**, wszystkie **poprawne przejścia** lub
 
 | Technika | Co mierzy | Uwagi |
 |---|---|---|
-| **Testowanie instrukcji** | % wykonanych instrukcji kodu | najsłabsze kryterium pokrycia |
+| **Testowanie instrukcji** | % wykonanych instrukcji kodu | słabsze niż pokrycie gałęzi (100% gałęzi daje 100% instrukcji, ale nie odwrotnie) |
 | **Testowanie gałęzi** | % wykonanych gałęzi (wyników decyzji) | 100% gałęzi ⇒ 100% instrukcji, ale nie odwrotnie |
 
 **Pokrycie** = elementy pokrycia wykonane przez testy / wszystkie elementy pokrycia × 100%.
