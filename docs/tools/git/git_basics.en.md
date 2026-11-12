@@ -33,6 +33,7 @@ description: "Git basics for testers: repositories, commits, branches, merges an
 ```mermaid
 flowchart LR
     accTitle: The three areas of Git
+    accDescr: Changes move from the working directory to the staging area with git add, to the local repository with git commit and to the remote with git push. git pull and fetch bring changes back.
     WD[Working directory] -- git add --> SA[Staging area]
     SA -- git commit --> LR[(Local repository)]
     LR -- git push --> RR[(Remote repository)]

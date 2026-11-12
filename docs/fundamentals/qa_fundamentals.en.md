@@ -66,6 +66,7 @@ Objectives depend on the context: component testing has different objectives fro
 ```mermaid
 flowchart LR
     accTitle: Error, defect and failure
+    accDescr: A human mistake (error) introduces a defect into the code, and the defect can cause a failure visible to the user when the code runs.
     E[Error<br/>human mistake] --> D[Defect<br/>flaw in the code]
     D --> F[Failure<br/>visible effect]
 ```

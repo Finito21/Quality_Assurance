@@ -7,7 +7,7 @@ hide:
 
 <div class="qa-hero" markdown>
 
-# Quality Assurance Notes
+# Quality Assurance Notes { lang=en }
 
 Notatki testera oprogramowania: od teorii ISTQB CTFL v4.0, przez testowanie API i bazy danych, po narzędzia, automatyzację i CI/CD. Dla osób, które zaczynają w QA albo przygotowują się do egzaminu i rozmowy rekrutacyjnej.
 

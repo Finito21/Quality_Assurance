@@ -11,6 +11,7 @@ description: "TestLink: a free test management tool, test plans, test cases, bui
 ```mermaid
 flowchart LR
     accTitle: Structure
+    accDescr: A test project has a specification with test suites and test cases, and a test plan that records a pass, fail or blocked result for each build.
     TP[Test project] --> SP[Test specification]
     SP --> TS[Test suites]
     TS --> TC[Test cases]
