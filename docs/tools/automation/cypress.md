@@ -38,7 +38,7 @@ describe("Logowanie", () => {
 
   it("loguje użytkownika poprawnymi danymi", () => {
     cy.get("[data-cy=email]").type("jan@test.pl");
-    cy.get("[data-cy=password]").type("Haslo123!");
+    cy.get("[data-cy=password]").type(Cypress.env("TEST_PASSWORD"), { log: false }); // hasło z CYPRESS_TEST_PASSWORD
     cy.get("[data-cy=submit]").click();
 
     cy.url().should("include", "/dashboard");

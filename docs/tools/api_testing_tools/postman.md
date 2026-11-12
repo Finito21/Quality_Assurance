@@ -128,7 +128,7 @@ Uruchamia całe kolekcje lub foldery z testami. Pozwala:
 - podać plik z danymi (**data-driven testing**),
 - zaplanować uruchomienia (harmonogram) lub uruchomić ręcznie.
 
-W CI kolekcje uruchamia się przez **Newman** lub **Postman CLI**.
+W CI kolekcje uruchamia się przez **Postman CLI** (zalecany przez Postmana) lub starszy **Newman**.
 
 ## Examples i Mock Servers
 

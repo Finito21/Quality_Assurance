@@ -45,6 +45,11 @@ Authorization: Bearer eyJhbGci...
 | `PATCH` | fields that were not sent get changed, changed fields not validated, inconsistent data |
 | `DELETE` | deletion without permissions, deleting a resource used by other records, the resource still visible through cache |
 
+!!! tip "Concurrency and duplicates"
+    - Concurrent edits: with an `If-Match` header and a stale `ETag`, the server should return `412 Precondition Failed` instead of overwriting another user's changes.
+    - Resending a `POST`: with the same `Idempotency-Key` header, no second resource should be created.
+    - A `429` or `503` response should include a `Retry-After` header.
+
 !!! info "Hard delete and soft delete"
     With a **hard delete** the record is removed from the database. With a **soft delete** it is marked as deleted (e.g. `deleted_at`). Check that a "deleted" resource does not come back in lists, search or reports.
 

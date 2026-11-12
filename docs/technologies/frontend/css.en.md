@@ -57,7 +57,9 @@ Every element is a rectangle: **content → padding → border → margin**.
 | `inline` | flows with the text, ignores width/height |
 | `inline-block` | flows inline but respects dimensions |
 | `flex` / `grid` | modern layouts (flexbox, grid) |
-| `none` | element hidden and invisible to the user |
+| `none` | element hidden: takes no space and is also gone for screen readers |
+
+Other ways of hiding behave differently in tests: `visibility: hidden` leaves an empty space, and `opacity: 0` leaves the element clickable and reachable with the keyboard. Automation tools treat each of them differently, e.g. they report that an element is not visible or is covered.
 
 ## Responsiveness
 

@@ -114,6 +114,21 @@ const subtract = (a, b) => a - b;   // arrow function
 
 Variables declared inside a function are only available inside it (**local scope**).
 
+## Asynchronous code
+
+Network requests and most actions in test tools are **asynchronous**: they return a promise (`Promise`) whose result you wait for with `await` inside an `async` function.
+
+```javascript
+async function getUser(id) {
+  const response = await fetch(`/api/users/${id}`);
+  const data = await response.json();
+  return data;
+}
+```
+
+!!! warning "A missing `await`"
+    Without `await` the test ends before the assertion runs and passes despite the defect. In Playwright every action and every `expect(...)` assertion on a locator needs `await`.
+
 ## DOM
 
 The **DOM (Document Object Model)** is a tree representation of an HTML page. It lets JS change any element without reloading the page.

@@ -49,6 +49,9 @@ description: "SQL dla testera: SELECT, filtrowanie, agregacja, JOIN, pułapki NU
 !!! danger "Zawsze z `WHERE`"
     `UPDATE` i `DELETE` bez `WHERE` zmienią **wszystkie** wiersze w tabeli. Najpierw uruchom `SELECT` z tym samym warunkiem.
 
+!!! warning "Bezpieczna zmiana danych"
+    Przed `UPDATE` lub `DELETE` uruchom ten sam warunek w `SELECT`, a zmianę wykonaj w transakcji: `BEGIN; UPDATE ...; SELECT ...;`, a potem `COMMIT` albo `ROLLBACK`. Na produkcji używaj tylko konta do odczytu.
+
 ## Filtrowanie
 
 | Operator | Znaczenie | Przykład |
@@ -149,6 +152,7 @@ SELECT status, suma FROM zamowienia WHERE id = 1234;
 ## Definiowanie struktury
 
 ```sql
+-- składnia MySQL; w PostgreSQL: id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY
 CREATE TABLE pracownicy (
   id         INT PRIMARY KEY AUTO_INCREMENT,
   imie       VARCHAR(50) NOT NULL,
