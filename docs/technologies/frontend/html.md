@@ -1,5 +1,5 @@
 ---
-description: "HTML dla testera: struktura dokumentu, formularze, atrybuty i to, jak budowa strony wpływa na testy i automatyzację."
+description: "HTML dla testera: struktura dokumentu, tagi podstawowe i semantyczne, formularze, identyfikatory i klasy oraz wpływ budowy strony na testy i automatyzację."
 ---
 
 # HTML

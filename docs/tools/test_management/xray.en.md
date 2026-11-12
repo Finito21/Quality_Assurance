@@ -1,5 +1,5 @@
 ---
-description: "Xray for Jira: test cases, executions and test plans, requirements coverage and importing automated results."
+description: "Xray for Jira: test cases, test executions and test plans, requirements coverage, and importing automated test results from CI pipelines."
 ---
 
 # Xray

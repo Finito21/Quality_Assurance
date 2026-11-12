@@ -1,5 +1,5 @@
 ---
-description: "Test documentation: test plan, test conditions and test cases, and the defect report with good and weak examples."
+description: "Test documentation in practice: the test plan, test conditions and test cases, and how to write a defect report, with good and weak examples."
 ---
 
 # Test documentation

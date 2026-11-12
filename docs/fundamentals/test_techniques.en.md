@@ -1,5 +1,5 @@
 ---
-description: "Test techniques: equivalence partitioning, boundary values, decision tables, state transitions and code coverage."
+description: "Test design techniques with examples: equivalence partitioning, boundary value analysis, decision tables, state transitions and code coverage."
 ---
 
 # Test techniques

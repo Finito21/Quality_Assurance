@@ -1,5 +1,5 @@
 ---
-description: "Podstawy API dla testera: REST, JSON, GraphQL, kontrakty i to, co sprawdzać w każdym endpoincie."
+description: "Podstawy API dla testera: jak działa REST, format JSON, GraphQL, kontrakty API i lista rzeczy do sprawdzenia w każdym testowanym endpoincie."
 ---
 
 # Podstawy API

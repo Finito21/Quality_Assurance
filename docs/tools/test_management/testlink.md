@@ -1,5 +1,5 @@
 ---
-description: "TestLink: darmowe narzędzie do zarządzania testami, plany testów, przypadki, buildy i raporty."
+description: "TestLink dla testera: darmowe narzędzie open source do zarządzania testami, planami testów, przypadkami testowymi, buildami i raportami."
 ---
 
 # TestLink

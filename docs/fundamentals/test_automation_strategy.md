@@ -1,5 +1,5 @@
 ---
-description: "Strategia automatyzacji testów: piramida testów, co automatyzować, wybór narzędzi, testy w CI i utrzymanie testów."
+description: "Strategia automatyzacji testów: piramida testów, decyzja, co automatyzować, wybór narzędzi, testy w CI i utrzymanie zestawu testów w dobrym stanie."
 ---
 
 # Strategia automatyzacji testów

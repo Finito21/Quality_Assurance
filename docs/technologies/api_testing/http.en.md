@@ -1,5 +1,5 @@
 ---
-description: "HTTP for testers: methods, idempotency, status codes, headers and typical defects found at the protocol level."
+description: "HTTP for testers: request methods, idempotency, status codes, headers, caching and the typical defects that can be found at the protocol level."
 ---
 
 # HTTP: methods, codes, headers

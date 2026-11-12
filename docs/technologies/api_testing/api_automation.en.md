@@ -1,5 +1,5 @@
 ---
-description: "API test automation: Postman assertions, chained requests, test data and running collections in CI with Newman."
+description: "API test automation: Postman assertions, chained requests, test data, schema validation and running collections in CI with Newman."
 ---
 
 # API test automation

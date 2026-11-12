@@ -1,5 +1,5 @@
 ---
-description: "Selenium WebDriver: setup, locators, waits, the Page Object pattern and a sample test in Python."
+description: "Selenium WebDriver for testers: setup with Selenium Manager, locators, explicit waits, the Page Object pattern and a sample test in Python."
 ---
 
 # Selenium

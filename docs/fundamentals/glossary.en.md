@@ -1,5 +1,5 @@
 ---
-description: "Glossary of testing terms in Polish and English, aligned with ISTQB terminology: defect, failure, test case and more."
+description: "Glossary of software testing terms in Polish and English, aligned with ISTQB terminology: error, defect, failure, test case, test condition and more."
 ---
 
 # Glossary

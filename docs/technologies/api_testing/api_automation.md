@@ -1,5 +1,5 @@
 ---
-description: "Automatyzacja testów API: asercje w Postmanie, łańcuchy żądań, dane testowe i uruchamianie kolekcji w CI przez Newmana."
+description: "Automatyzacja testów API: asercje w Postmanie, łańcuchy żądań, dane testowe, walidacja schematu i uruchamianie kolekcji w CI przez Newmana."
 ---
 
 # Automatyzacja testów API

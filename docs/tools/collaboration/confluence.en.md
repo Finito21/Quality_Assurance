@@ -1,5 +1,5 @@
 ---
-description: "Confluence for testers: test documentation, page templates, test reports and integration with Jira."
+description: "Confluence for testers: organising test documentation, page templates for test plans and reports, and linking pages with Jira issues."
 ---
 
 # Confluence

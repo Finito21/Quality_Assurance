@@ -1,5 +1,5 @@
 ---
-description: "Authentication and authorisation in APIs: Basic, API keys, JWT, OAuth 2.0 and OpenID Connect, with test cases."
+description: "Authentication and authorisation in APIs: Basic auth, API keys, JWT, OAuth 2.0 and OpenID Connect, with test cases and typical security defects."
 ---
 
 # Authentication and authorisation

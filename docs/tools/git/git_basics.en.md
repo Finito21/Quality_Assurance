@@ -1,5 +1,5 @@
 ---
-description: "Git basics for testers: repositories, commits, branches, merges and the most used commands."
+description: "Git basics for testers: repositories, commits, branches, merging, resolving conflicts and the commands you use most often when working on test code."
 ---
 
 # Git basics

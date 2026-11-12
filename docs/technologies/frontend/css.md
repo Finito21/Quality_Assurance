@@ -1,5 +1,5 @@
 ---
-description: "CSS dla testera: selektory, model pudełkowy, widoczność elementów i responsywność, przydatne przy lokatorach i testach UI."
+description: "CSS dla testera: selektory, model pudełkowy, widoczność elementów i responsywność, ze wskazówkami do pisania stabilnych lokatorów i testów UI."
 ---
 
 # CSS

@@ -1,5 +1,5 @@
 ---
-description: "Zarządzanie testami: planowanie, estymacja, ryzyko, metryki, kryteria wejścia i wyjścia oraz cykl życia defektu."
+description: "Zarządzanie testami: planowanie, techniki estymacji, testowanie oparte na ryzyku, metryki, kryteria wejścia i wyjścia oraz cykl życia defektu."
 ---
 
 # Zarządzanie testami

@@ -1,5 +1,5 @@
 ---
-description: "Playwright: installation, locators, auto-waiting, sample tests and a comparison with Cypress and Selenium."
+description: "Playwright for testers: installation, locators, auto-waiting, sample tests, the trace viewer and a comparison with Cypress and Selenium."
 ---
 
 # Playwright

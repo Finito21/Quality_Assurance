@@ -1,5 +1,5 @@
 ---
-description: "Performance testing: types (load, stress, soak), metrics, planning and analysing the results."
+description: "Performance testing for testers: test types (load, stress, soak, spike), key metrics, planning a test, preparing data and analysing the results."
 ---
 
 # Performance testing

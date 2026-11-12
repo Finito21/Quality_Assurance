@@ -1,5 +1,5 @@
 ---
-description: "Cypress: installation, test structure, selectors, a login test example and running tests in CI."
+description: "Cypress for testers: installation, test structure, selectors and commands, a login test example, network stubbing and running tests in CI."
 ---
 
 # Cypress

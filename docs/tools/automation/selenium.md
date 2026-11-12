@@ -1,5 +1,5 @@
 ---
-description: "Selenium WebDriver: konfiguracja, lokatory, oczekiwania, wzorzec Page Object i przykładowy test w Pythonie."
+description: "Selenium WebDriver dla testera: konfiguracja z Selenium Manager, lokatory, jawne oczekiwania, wzorzec Page Object i przykładowy test w Pythonie."
 ---
 
 # Selenium

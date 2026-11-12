@@ -1,5 +1,5 @@
 ---
-description: "Podstawy QA: czym jest testowanie, siedem zasad, poziomy i typy testów, proces testowy i rola testera w zespole."
+description: "Podstawy QA według ISTQB: czym jest testowanie, siedem zasad testowania, poziomy i typy testów, proces testowy oraz rola testera w zespole."
 ---
 
 # Podstawy QA

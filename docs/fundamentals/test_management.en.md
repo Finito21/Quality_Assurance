@@ -1,5 +1,5 @@
 ---
-description: "Test management: planning, estimation, risk, metrics, entry and exit criteria, and the defect lifecycle."
+description: "Test management: test planning, estimation techniques, risk-based testing, test metrics, entry and exit criteria, and the defect lifecycle."
 ---
 
 # Test management

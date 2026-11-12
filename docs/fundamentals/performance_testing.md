@@ -1,5 +1,5 @@
 ---
-description: "Testy wydajnościowe: rodzaje (obciążeniowe, przeciążeniowe, długotrwałe), metryki, planowanie i analiza wyników."
+description: "Testy wydajnościowe: rodzaje (obciążeniowe, przeciążeniowe, długotrwałe, skokowe), najważniejsze metryki, planowanie testu i analiza wyników."
 ---
 
 # Testy wydajnościowe

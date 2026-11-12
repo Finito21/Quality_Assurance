@@ -1,5 +1,5 @@
 ---
-description: "Confluence w pracy testera: dokumentacja testowa, szablony stron, raporty z testów i integracja z Jirą."
+description: "Confluence w pracy testera: porządkowanie dokumentacji testowej, szablony stron dla planów i raportów z testów oraz łączenie stron ze zgłoszeniami w Jirze."
 ---
 
 # Confluence

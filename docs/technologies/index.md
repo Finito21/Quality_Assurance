@@ -1,5 +1,5 @@
 ---
-description: "Technologie, które tester powinien znać: frontend, SQL, API, HTTP, uwierzytelnianie, Docker i Kubernetes."
+description: "Technologie, które tester powinien znać: podstawy frontendu, SQL, API, HTTP, uwierzytelnianie, Docker i Kubernetes, opisane z perspektywy testera."
 ---
 
 # Technologie

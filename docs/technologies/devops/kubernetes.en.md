@@ -1,5 +1,5 @@
 ---
-description: "Kubernetes for testers: pods, deployments, services, kubectl commands and diagnosing problems in an environment."
+description: "Kubernetes for testers: pods, deployments and services, the kubectl commands you need most and diagnosing problems in a test environment."
 ---
 
 # Kubernetes

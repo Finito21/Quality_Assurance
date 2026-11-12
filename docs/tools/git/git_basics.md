@@ -1,5 +1,5 @@
 ---
-description: "Podstawy Git dla testera: repozytorium, commit, gałęzie, merge i najczęściej używane komendy."
+description: "Podstawy Git dla testera: repozytorium, commity, gałęzie, scalanie, rozwiązywanie konfliktów i najczęściej używane komendy przy pracy z kodem testów."
 ---
 
 # Podstawy Git

@@ -1,5 +1,5 @@
 ---
-description: "HTML for testers: document structure, forms, attributes and how page markup affects testing and automation."
+description: "HTML for testers: document structure, basic and semantic tags, forms, IDs and classes, and how page markup affects accessibility, testing and automation."
 ---
 
 # HTML

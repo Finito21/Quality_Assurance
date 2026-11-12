@@ -1,5 +1,5 @@
 ---
-description: "Tester interview questions with sample answers: testing principles, techniques, defect lifecycle, APIs and SQL."
+description: "Tester job interview questions with sample answers: testing principles, test techniques, the defect lifecycle, APIs, SQL and test automation."
 ---
 
 # Interview questions

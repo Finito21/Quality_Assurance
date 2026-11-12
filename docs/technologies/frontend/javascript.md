@@ -1,5 +1,5 @@
 ---
-description: "JavaScript dla testera: zmienne, typy, tablice, funkcje i podstawy potrzebne w testach Cypress, Playwright i Postman."
+description: "JavaScript dla testera: zmienne, typy, tablice, obiekty, funkcje i podstawy asynchroniczności potrzebne w testach Cypress, Playwright i Postman."
 ---
 
 # JavaScript

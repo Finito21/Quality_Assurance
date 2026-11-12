@@ -1,5 +1,5 @@
 ---
-description: "Narzędzia testera: DevTools, Git, automatyzacja, testy API, CI/CD, monitoring, zarządzanie testami i współpraca."
+description: "Narzędzia testera: DevTools, Git, automatyzacja testów, testy API, CI/CD, monitoring, zarządzanie testami i współpraca w zespole, z praktycznymi wskazówkami."
 ---
 
 # Narzędzia

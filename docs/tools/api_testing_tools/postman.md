@@ -1,5 +1,5 @@
 ---
-description: "Postman w pracy testera: kolekcje, zmienne i środowiska, skrypty testowe pm.* oraz uruchamianie testów w CI."
+description: "Postman w pracy testera: kolekcje, zmienne i środowiska, skrypty testowe pm.*, łączenie żądań i uruchamianie kolekcji z linii poleceń w CI."
 ---
 
 # Postman

@@ -1,5 +1,5 @@
 ---
-description: "Jira w pracy testera: zgłoszenia, workflow defektu, zapytania JQL, dashboardy i praca w sprincie."
+description: "Jira w pracy testera: typy zgłoszeń, workflow defektu, zapytania JQL, filtry i dashboardy oraz praca testera z zespołem w trakcie sprintu."
 ---
 
 # Jira

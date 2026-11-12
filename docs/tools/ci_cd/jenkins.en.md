@@ -1,5 +1,5 @@
 ---
-description: "Jenkins: a Jenkinsfile pipeline, test stages, JUnit reports and integration with test tools."
+description: "Jenkins for testers: CI versus CD, pipeline as code in a Jenkinsfile, stages with tests, JUnit reports, key concepts and integration with test tools."
 ---
 
 # Jenkins

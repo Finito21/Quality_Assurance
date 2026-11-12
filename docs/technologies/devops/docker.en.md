@@ -1,5 +1,5 @@
 ---
-description: "Docker for testers: images, containers, key commands and a test environment in Docker Compose."
+description: "Docker for testers: images and containers, the most useful commands, reading logs and building a repeatable test environment with Docker Compose."
 ---
 
 # Docker

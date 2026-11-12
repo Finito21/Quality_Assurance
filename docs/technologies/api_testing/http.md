@@ -1,5 +1,5 @@
 ---
-description: "HTTP dla testera: metody, idempotentność, kody statusu, nagłówki i typowe defekty wykrywane na poziomie protokołu."
+description: "HTTP dla testera: metody żądań, idempotentność, kody statusu, nagłówki, cache i typowe defekty, które można wykryć na poziomie protokołu."
 ---
 
 # HTTP: metody, kody, nagłówki

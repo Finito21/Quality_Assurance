@@ -1,5 +1,5 @@
 ---
-description: "Docker dla testera: obrazy, kontenery, najważniejsze komendy i środowisko testowe w Docker Compose."
+description: "Docker dla testera: obrazy i kontenery, najważniejsze komendy, czytanie logów i budowanie powtarzalnego środowiska testowego w Docker Compose."
 ---
 
 # Docker

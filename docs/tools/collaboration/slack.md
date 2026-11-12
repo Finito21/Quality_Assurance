@@ -1,5 +1,5 @@
 ---
-description: "Slack w pracy testera: kanały zespołu, powiadomienia z CI i dobre praktyki komunikacji o defektach."
+description: "Slack w pracy testera: kanały zespołu i alertów, powiadomienia z CI, wątki oraz dobre praktyki komunikacji o defektach i wydaniach."
 ---
 
 # Slack

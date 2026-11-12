@@ -1,5 +1,5 @@
 ---
-description: "Kubernetes dla testera: pody, deploymenty, serwisy, komendy kubectl i diagnozowanie problemów na środowisku."
+description: "Kubernetes dla testera: pody, deploymenty i serwisy, najpotrzebniejsze komendy kubectl oraz diagnozowanie problemów na środowisku testowym."
 ---
 
 # Kubernetes

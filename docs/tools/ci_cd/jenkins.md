@@ -1,5 +1,5 @@
 ---
-description: "Jenkins: pipeline w Jenkinsfile, etapy z testami, raporty JUnit i integracja z narzędziami testowymi."
+description: "Jenkins dla testera: CI a CD, pipeline jako kod w Jenkinsfile, etapy z testami, raporty JUnit, podstawowe pojęcia i integracja z narzędziami testowymi."
 ---
 
 # Jenkins

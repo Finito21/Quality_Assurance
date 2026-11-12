@@ -1,5 +1,5 @@
 ---
-description: "QA fundamentals: what testing is, the seven principles, test levels and types, the test process and the tester's role."
+description: "QA fundamentals based on ISTQB: what testing is, the seven testing principles, test levels and types, the test process and the tester's role in a team."
 ---
 
 # QA fundamentals

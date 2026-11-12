@@ -1,5 +1,5 @@
 ---
-description: "Grafana dla testera: dashboardy, wyniki testów wydajnościowych na żywo, monitorowanie środowisk i analiza logów."
+description: "Grafana dla testera: dashboardy i panele, wyniki testów wydajnościowych na żywo, monitorowanie środowisk testowych i analiza logów."
 ---
 
 # Grafana

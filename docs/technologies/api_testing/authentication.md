@@ -1,5 +1,5 @@
 ---
-description: "Uwierzytelnianie i autoryzacja w API: Basic, klucze API, JWT, OAuth 2.0 i OpenID Connect oraz przypadki testowe."
+description: "Uwierzytelnianie i autoryzacja w API: Basic, klucze API, JWT, OAuth 2.0 i OpenID Connect, z przypadkami testowymi i typowymi lukami bezpieczeństwa."
 ---
 
 # Uwierzytelnianie i autoryzacja

@@ -1,5 +1,5 @@
 ---
-description: "API basics for testers: REST, JSON, GraphQL, contracts and what to check in every endpoint."
+description: "API basics for testers: how REST works, JSON, GraphQL, API contracts and a checklist of what to verify in every endpoint you test."
 ---
 
 # API fundamentals

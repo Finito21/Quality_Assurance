@@ -1,5 +1,5 @@
 ---
-description: "Chrome DevTools for testers: Elements, Console, Network and Application, device emulation and diagnosing defects."
+description: "Chrome DevTools for testers: the Elements, Console, Network and Application panels, device emulation, throttling and diagnosing defects in the browser."
 ---
 
 # DevTools

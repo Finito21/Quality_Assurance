@@ -1,5 +1,5 @@
 ---
-description: "GitHub dla testera: issues, pull requesty, przegląd kodu i zgłaszanie defektów z szablonem."
+description: "GitHub dla testera: zgłoszenia i etykiety, pull requesty, przegląd kodu zmian w testach i zgłaszanie defektów z użyciem szablonu zgłoszenia."
 ---
 
 # GitHub

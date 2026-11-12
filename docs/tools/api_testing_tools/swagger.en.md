@@ -1,5 +1,5 @@
 ---
-description: "Swagger and OpenAPI: reading an API specification, trying endpoints from the docs and contract testing."
+description: "Swagger and OpenAPI for testers: reading an API specification, trying endpoints from the documentation, schema validation and contract testing."
 ---
 
 # Swagger / OpenAPI

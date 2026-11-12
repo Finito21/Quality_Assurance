@@ -1,5 +1,5 @@
 ---
-description: "GitHub Actions dla testera: workflow z testami API i E2E, artefakty, bezpieczeństwo i przykład z tego repozytorium."
+description: "GitHub Actions dla testera: workflow z testami API i E2E, artefakty i raporty z testów, bezpieczeństwo workflow i przykład z tego repozytorium."
 ---
 
 # GitHub Actions

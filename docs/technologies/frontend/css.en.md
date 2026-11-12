@@ -1,5 +1,5 @@
 ---
-description: "CSS for testers: selectors, the box model, element visibility and responsiveness, useful for locators and UI tests."
+description: "CSS for testers: selectors, the box model, element visibility and responsive layouts, with tips for writing stable locators and UI tests."
 ---
 
 # CSS

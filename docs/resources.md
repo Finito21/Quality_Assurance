@@ -1,5 +1,5 @@
 ---
-description: "Źródła i materiały do nauki testowania: sylabusy ISTQB, standardy, dokumentacja narzędzi i polecane kursy."
+description: "Źródła i materiały do nauki testowania oprogramowania: sylabusy ISTQB, normy i standardy, dokumentacja narzędzi oraz polecane kursy i książki."
 ---
 
 # Źródła

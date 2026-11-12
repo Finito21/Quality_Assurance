@@ -1,5 +1,5 @@
 ---
-description: "SoapUI: testowanie usług SOAP i REST, asercje, testy obciążeniowe i porównanie z Postmanem."
+description: "SoapUI w pracy testera: testowanie usług SOAP i REST, WSDL, asercje, testy sterowane danymi, proste testy obciążeniowe i porównanie z Postmanem."
 ---
 
 # SoapUI

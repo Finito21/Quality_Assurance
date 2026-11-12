@@ -1,5 +1,5 @@
 ---
-description: "Playwright: instalacja, lokatory, automatyczne oczekiwanie, przykładowe testy i porównanie z Cypressem i Selenium."
+description: "Playwright dla testera: instalacja, lokatory, automatyczne oczekiwanie, przykładowe testy, trace viewer i porównanie z Cypressem i Selenium."
 ---
 
 # Playwright

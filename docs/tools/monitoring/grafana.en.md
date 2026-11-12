@@ -1,5 +1,5 @@
 ---
-description: "Grafana for testers: dashboards, live performance test results, environment monitoring and log analysis."
+description: "Grafana for testers: dashboards and panels, watching performance test results live, monitoring test environments and analysing logs."
 ---
 
 # Grafana

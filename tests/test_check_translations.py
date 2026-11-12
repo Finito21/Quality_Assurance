@@ -31,7 +31,11 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 """
 
-PAGE = "---\ndescription: Short summary.\n---\n# Title\n\nText.\n"
+DESCRIPTION = (
+    "A short summary of the page used as the meta description in search results, "
+    "long enough to pass the length check of the script."
+)
+PAGE = f"---\ndescription: {DESCRIPTION}\n---\n# Title\n\nText.\n"
 
 
 class CheckTranslations(unittest.TestCase):
@@ -123,7 +127,7 @@ class CheckTranslations(unittest.TestCase):
         self.assertEqual(self.errors(), [])
 
     def test_bom_and_front_matter(self):
-        (self.docs / "a.md").write_text("﻿---\ntitle: x\ndescription: y\n# not a heading\n---\n# Title\n", encoding="utf-8")
+        (self.docs / "a.md").write_text(f"﻿---\ntitle: x\ndescription: {DESCRIPTION}\n# not a heading\n---\n# Title\n", encoding="utf-8")
         self.assertEqual(self.errors(), [])
 
     def test_external_nav_entry(self):
@@ -168,6 +172,26 @@ class CheckTranslations(unittest.TestCase):
         self.assertError("a.md: no description in front matter")
         self.write("a.md", "---\ndescription: ''\n---\n# Title\n")
         self.assertError("a.md: no description in front matter")
+
+    def test_description_length(self):
+        for length in (119, 161):
+            with self.subTest(length=length):
+                self.write("a.md", f"---\ndescription: {'x' * length}\n---\n# Title\n")
+                self.assertError(f"a.md: description has {length} characters, expected 120-160")
+        for length in (120, 160):
+            with self.subTest(length=length):
+                self.write("a.md", f"---\ndescription: {'x' * length}\n---\n# Title\n")
+                self.assertEqual(self.errors(), [])
+
+    def test_emoji_and_nbsp_in_front_matter(self):
+        self.write("a.md", PAGE.replace("summary", "summary \U0001F680"))
+        self.assertError("a.md: emoji")
+        self.write("a.md", PAGE.replace("A short", "A&nbsp;short"))
+        self.assertError("hand-written &nbsp;")
+
+    def test_nbsp_entity_in_inline_code_is_allowed(self):
+        self.write("a.md", PAGE + "Do not write `&nbsp;` by hand.\n")
+        self.assertEqual(self.errors(), [])
 
     def test_polish_in_english_front_matter(self):
         self.write("a.en.md", "---\ndescription: Opis strony z błędami\n---\n# Title\n")
