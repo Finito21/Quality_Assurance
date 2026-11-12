@@ -4,7 +4,7 @@ description: "Jira for testers: issues, the defect workflow, JQL queries, dashbo
 
 # Jira
 
-**Jira** (Atlassian) is a platform for organising work and running and monitoring team processes. It supports **Scrum** and **Kanban** boards, sprint planning and integrations with other tools. It is used by testers, developers, analysts, DevOps, Project Managers and Product Owners.
+**Jira** (Atlassian) is a platform for organising work and running and monitoring team processes. It supports **Scrum** and **Kanban** boards, sprint planning and integrations with other tools. It is used by testers, developers, analysts, DevOps, project managers and product owners.
 
 ## Work structure
 

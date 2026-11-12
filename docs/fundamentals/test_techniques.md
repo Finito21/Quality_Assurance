@@ -81,13 +81,13 @@ Służą do testowania **kombinacji warunków** i wynikających z nich akcji. Ka
     | **Rabat 10%** | | ✔ | | |
     | **Darmowa dostawa** | ✔ | | ✔ | |
 
-### Testowanie przejść pomiędzy stanami
+### Testowanie przejść między stanami
 
 Stosowane, gdy zachowanie systemu zależy od **aktualnego stanu** i zdarzeń (np. status zamówienia, blokada konta po 3 błędnych hasłach).
 
 ```mermaid
 stateDiagram-v2
-    accTitle: Testowanie przejść pomiędzy stanami
+    accTitle: Testowanie przejść między stanami
     [*] --> Nowe
     Nowe --> Opłacone: płatność OK
     Nowe --> Anulowane: anulowanie

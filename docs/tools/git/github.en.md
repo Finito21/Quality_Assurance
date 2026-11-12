@@ -18,7 +18,7 @@ description: "GitHub for testers: issues, pull requests, code review and reporti
 | **Pages** | free hosting for static sites (this site runs on it) |
 | **Releases / Tags** | marking versions |
 
-## Pull Request step by step
+## Pull request step by step
 
 1. Create a branch and push it (`git push -u origin <branch>`).
 2. On GitHub, click **Compare & pull request**.

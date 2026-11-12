@@ -18,7 +18,7 @@ description: "Git basics for testers: repositories, commits, branches, merges an
 
     ---
 
-    A hosting platform for Git repositories. It enables collaboration, **Pull Requests**, Issues, GitHub Actions and GitHub Pages.
+    A hosting platform for Git repositories. It enables collaboration, **pull requests**, issues, GitHub Actions and GitHub Pages.
 
 -   **GitHub Desktop / GitKraken: GUI**
 
@@ -67,7 +67,7 @@ git switch -c feature/login-tests
 git add .
 git commit -m "Add login tests"
 git push -u origin feature/login-tests
-# then a Pull Request on GitHub and code review
+# then a pull request on GitHub and code review
 ```
 
 !!! tip "Good commits"
@@ -106,6 +106,6 @@ const timeout = 10000;
 ## Git in a tester's work
 
 - keeping automated tests and Postman collections together with the code,
-- reviewing changes in Pull Requests (what exactly changed, i.e. what to test),
+- reviewing changes in pull requests (what exactly changed, i.e. what to test),
 - running tests on a specific branch or version,
 - `.gitignore` for files that are not versioned (e.g. `node_modules`, reports, secrets).
