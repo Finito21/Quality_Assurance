@@ -29,7 +29,7 @@
   --qa-th-fg: #2a2870;
   --qa-nav-active-bg: rgba(79, 70, 229, 0.1);
   --qa-hero-from: #4338ca;
-  --qa-hero-to: #0e7490;
+  --qa-hero-to: #0b5f75;
   --qa-hero-btn-fg: #312e81;
   --qa-hero-btn-hover: #eef2ff;
   --qa-shadow: 0 1px 2px rgba(20, 20, 40, 0.04), 0 8px 24px -16px rgba(20, 20, 40, 0.18);
@@ -387,7 +387,17 @@
   outline: 2px solid var(--md-accent-fg-color);
   outline-offset: 2px;
 }
-.md-typeset .grid.cards.qa-links > ul > li > p > a:focus-visible { outline: none; }
+/* Hide the link's own outline only where :has() can outline the card instead */
+@supports selector(:has(*)) {
+  .md-typeset .grid.cards.qa-links > ul > li > p > a:focus-visible { outline: none; }
+}
+
+/* Keyboard focus in the side navigation and table of contents */
+.md-sidebar .md-nav__link:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: -2px;
+  color: var(--md-default-fg-color);
+}
 
 /* =========================================================
    Home page hero
@@ -428,14 +438,14 @@
   margin: 0 0 1.4rem;
   font-size: 0.92rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.94);
+  color: #fff;
   max-width: 36rem;
 }
 .md-typeset .qa-hero p:last-child { margin-bottom: 0; }
 
 .md-typeset .qa-hero .md-button {
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 0.5rem;
   padding: 0.55em 1.2em;
   font-size: 0.74rem;

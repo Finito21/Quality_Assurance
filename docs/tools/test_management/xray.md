@@ -28,6 +28,7 @@ W Jirze tworzy się odpowiednie typy zgłoszeń i mapuje je do Xraya:
 ```mermaid
 flowchart LR
     accTitle: Zalety
+    accDescr: Historyjka jest pokryta testem, test ma wykonania, nieudane wykonanie tworzy defekt, a defekt blokuje historyjkę.
     S[Story] -->|tested by| T[Test]
     T --> TE[Test Execution]
     TE -->|FAIL| B[Bug]

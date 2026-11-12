@@ -9,6 +9,7 @@ Dokumentacja testowa porządkuje proces testowy, ułatwia komunikację w zespole
 ```mermaid
 flowchart LR
     accTitle: Dokumentacja testowa
+    accDescr: Z planu testów powstają scenariusze, z nich przypadki testowe, które się wykonuje. Niezgodność kończy się raportem o defekcie, a całość raportem z testów.
     A[Plan testów] --> B[Scenariusze testowe]
     B --> C[Przypadki testowe]
     C --> D[Wykonanie testów]

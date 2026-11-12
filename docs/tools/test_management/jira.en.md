@@ -4,13 +4,14 @@ description: "Jira for testers: issues, the defect workflow, JQL queries, dashbo
 
 # Jira
 
-**Jira** (Atlassian) is a platform for organising work and running and monitoring team processes. It supports **Scrum** and **Kanban** boards, sprint planning and integrations with other tools. It is used by testers, developers, analysts, DevOps, Project Managers and Product Owners.
+**Jira** (Atlassian) is a platform for organising work and running and monitoring team processes. It supports **Scrum** and **Kanban** boards, sprint planning and integrations with other tools. It is used by testers, developers, analysts, DevOps, project managers and product owners.
 
 ## Work structure
 
 ```mermaid
 flowchart TB
     accTitle: Work structure
+    accDescr: A project is split into epics, epics into stories and tasks, and stories into sub-tasks. Bugs, components and versions also belong to the project.
     PR[Project] --> EP[Epic]
     EP --> ST[Story]
     EP --> TA[Task]
@@ -76,6 +77,7 @@ Filters can be saved and shared with the team.
 ```mermaid
 stateDiagram-v2
     accTitle: Bug lifecycle
+    accDescr: A reported defect is assigned and fixed, then sent for a retest. After a successful retest it is closed, after a failed one it is reopened.
     [*] --> New: tester reports
     New --> Assigned: assigned to a developer
     Assigned --> InProgress: developer fixes

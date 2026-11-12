@@ -9,6 +9,7 @@ Test documentation organises the test process, makes team communication easier a
 ```mermaid
 flowchart LR
     accTitle: Test documentation
+    accDescr: The test plan leads to scenarios and then test cases, which are executed. A mismatch leads to a defect report, and the whole effort to a test report.
     A[Test plan] --> B[Test scenarios]
     B --> C[Test cases]
     C --> D[Test execution]

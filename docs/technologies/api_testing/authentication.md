@@ -62,6 +62,7 @@ Authorization: Basic dGVzdGVyOmhhc2xvMTIz
 ```mermaid
 sequenceDiagram
     accTitle: OAuth 2.0
+    accDescr: Użytkownik loguje się na serwerze autoryzacji, aplikacja dostaje kod i wymienia go na tokeny, a potem wywołuje API z tokenem w nagłówku Authorization.
     participant U as Użytkownik
     participant C as Aplikacja (Client)
     participant AS as Authorization Server

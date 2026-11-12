@@ -11,6 +11,7 @@ description: "Jira w pracy testera: zgłoszenia, workflow defektu, zapytania JQL
 ```mermaid
 flowchart TB
     accTitle: Struktura pracy
+    accDescr: Projekt dzieli się na epiki, epiki na historyjki i zadania, a historyjki na podzadania. Do projektu należą też zgłoszenia defektów, komponenty i wersje.
     PR[Projekt] --> EP[Epic]
     EP --> ST[Story]
     EP --> TA[Task]
@@ -76,6 +77,7 @@ Filtry można zapisywać i udostępniać zespołowi.
 ```mermaid
 stateDiagram-v2
     accTitle: Cykl życia defektu (Bug lifecycle)
+    accDescr: Zgłoszony defekt jest przypisywany i naprawiany, a potem trafia do retestu. Po udanym reteście jest zamykany, po nieudanym otwierany ponownie.
     [*] --> New: tester zgłasza
     New --> Assigned: przypisanie do programisty
     Assigned --> InProgress: programista naprawia

@@ -66,6 +66,7 @@ Cele zależą od kontekstu: innych oczekuje się od testów modułowych, a innyc
 ```mermaid
 flowchart LR
     accTitle: Błąd, defekt i awaria
+    accDescr: Pomyłka człowieka (błąd) wprowadza defekt do kodu, a defekt po uruchomieniu może wywołać awarię widoczną dla użytkownika.
     E[Błąd<br/>pomyłka człowieka] --> D[Defekt<br/>wada w kodzie]
     D --> F[Awaria<br/>widoczny skutek]
 ```
@@ -189,8 +190,8 @@ Testy związane ze zmianami:
 
 Inne często używane nazwy:
 
-- **Smoke tests**: szybkie sprawdzenie nowego buildu lub wdrożenia, czy aplikacja się uruchamia i działają jej główne funkcje. Jeśli nie, dalsze testy nie mają sensu.
-- **Sanity tests**: wąskie, szybkie sprawdzenie obszaru, którego dotyczyła zmiana, i najbliższych funkcji. To powierzchowny test regresji, a nie retest konkretnego defektu.
+- **Smoke testy**: szybkie sprawdzenie nowego buildu lub wdrożenia, czy aplikacja się uruchamia i działają jej główne funkcje. Jeśli nie, dalsze testy nie mają sensu.
+- **Sanity testy**: wąskie, szybkie sprawdzenie obszaru, którego dotyczyła zmiana, i najbliższych funkcji. To powierzchowny test regresji, a nie retest konkretnego defektu.
 - **Testowanie eksploracyjne**: tester jednocześnie poznaje aplikację, projektuje i wykonuje testy, kierując się celem sesji (karta testu). Opis w [Technikach testowania](test_techniques.md#testowanie-eksploracyjne).
 
 **Testowanie pielęgnacyjne** dotyczy oprogramowania już używanego na produkcji. Wyzwalaczami są:

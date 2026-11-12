@@ -13,6 +13,7 @@ Teoria: [Testy wydajnościowe](../../fundamentals/performance_testing.md)
 ```mermaid
 flowchart TB
     accTitle: Elementy planu testu
+    accDescr: Plan testu zawiera grupę wątków. Grupa ma elementy konfiguracji, samplery z asercjami i ekstraktorami oraz listenery, które zbierają wyniki.
     TP[Test Plan] --> TG[Thread Group]
     TG --> CFG[Config Elements<br/>HTTP Request Defaults, CSV Data Set]
     TG --> SMP[Sampler<br/>HTTP Request]
