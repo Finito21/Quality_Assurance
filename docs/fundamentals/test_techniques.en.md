@@ -100,6 +100,15 @@ stateDiagram-v2
 
 Tests can cover all **states**, all **valid transitions**, or also **invalid transitions** (e.g. trying to ship an unpaid order).
 
+### Coverage in black-box techniques
+
+| Technique | Coverage = exercised / all |
+|---|---|
+| Equivalence partitioning | partitions covered by at least one test / all identified partitions |
+| Boundary value analysis | boundary values tested / all identified boundary values |
+| Decision tables | columns (rules) tested / all feasible columns |
+| State transitions | states visited, valid transitions or all transitions exercised / their total number |
+
 ---
 
 ## White-box techniques
@@ -152,8 +161,9 @@ Tests are performed according to a **checklist**, a list of things to check, e.g
 
 ## Collaboration-based approaches
 
-- **User stories** in the format *As a [role] I want [goal] so that [benefit]* with **acceptance criteria**.
-- **ATDD / BDD**: test cases written together with the business before implementation, e.g. in Gherkin syntax:
+- **User stories** in the format *As a [role] I want [goal] so that [benefit]* with **acceptance criteria**. A story has three parts (**3C**): Card, Conversation and Confirmation (the acceptance criteria). A good story meets the **INVEST** criteria: independent, negotiable, valuable, estimable, small and testable.
+- **Acceptance criteria** are written as rules (a list of conditions) or as scenarios (Given/When/Then).
+- **ATDD** (acceptance test-driven development): test cases written together with the business from the acceptance criteria before implementation. **BDD** is a similar approach in which behaviour is described in Gherkin syntax:
 
 ```gherkin
 Scenario: Logging in with valid credentials

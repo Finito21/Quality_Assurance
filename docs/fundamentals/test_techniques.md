@@ -100,6 +100,15 @@ stateDiagram-v2
 
 Testy mogą pokrywać wszystkie **stany**, wszystkie **poprawne przejścia** lub również **przejścia niepoprawne** (np. próba wysłania nieopłaconego zamówienia).
 
+### Pokrycie w technikach czarnoskrzynkowych
+
+| Technika | Pokrycie = wykonane / wszystkie |
+|---|---|
+| Klasy równoważności | klasy pokryte co najmniej jednym testem / wszystkie zidentyfikowane klasy |
+| Wartości brzegowe | przetestowane wartości brzegowe / wszystkie zidentyfikowane wartości brzegowe |
+| Tablice decyzyjne | przetestowane kolumny (reguły) / wszystkie wykonalne kolumny |
+| Przejścia między stanami | odwiedzone stany, wykonane poprawne przejścia albo wszystkie przejścia / ich łączna liczba |
+
 ---
 
 ## Techniki białoskrzynkowe
@@ -152,8 +161,9 @@ Testy wykonuje się według **listy kontrolnej (checklist)**, czyli listy rzeczy
 
 ## Podejścia oparte na współpracy
 
-- **Historyjki użytkownika** w formacie *Jako [rola] chcę [cel], aby [korzyść]* z **kryteriami akceptacji**.
-- **ATDD / BDD**: przypadki testowe pisane razem z biznesem przed implementacją, np. w składni Gherkin:
+- **Historyjki użytkownika** w formacie *Jako [rola] chcę [cel], aby [korzyść]* z **kryteriami akceptacji**. Historyjka ma trzy elementy (**3C**): kartę (Card), rozmowę (Conversation) i potwierdzenie (Confirmation, czyli kryteria akceptacji). Dobra historyjka spełnia kryteria **INVEST**: niezależna, negocjowalna, wartościowa, możliwa do oszacowania, mała i testowalna.
+- **Kryteria akceptacji** zapisuje się jako reguły (lista warunków) albo jako scenariusze (Given/When/Then).
+- **ATDD** (wytwarzanie sterowane testami akceptacyjnymi): przypadki testowe pisane razem z biznesem z kryteriów akceptacji przed implementacją. **BDD** to podobne podejście, w którym zachowanie opisuje się w składni Gherkin:
 
 ```gherkin
 Scenario: Logowanie poprawnymi danymi

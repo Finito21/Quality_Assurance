@@ -57,7 +57,9 @@ Każdy element to prostokąt: **content → padding → border → margin**.
 | `inline` | w linii z tekstem, ignoruje szerokość/wysokość |
 | `inline-block` | w linii, ale respektuje wymiary |
 | `flex` / `grid` | nowoczesne układy (flexbox, siatka) |
-| `none` | element ukryty i niewidoczny dla użytkownika |
+| `none` | element ukryty: nie zajmuje miejsca i znika też dla czytników ekranu |
+
+Inne sposoby ukrywania mają inne skutki w testach: `visibility: hidden` zostawia puste miejsce, a `opacity: 0` zostawia element klikalny i dostępny z klawiatury. Narzędzia do automatyzacji traktują każdy z nich inaczej, np. zgłaszają, że element jest niewidoczny albo zasłonięty.
 
 ## Responsywność
 

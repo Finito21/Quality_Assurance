@@ -128,7 +128,7 @@ Runs whole collections or folders with tests. It lets you:
 - provide a data file (**data-driven testing**),
 - schedule runs or run them manually.
 
-In CI, collections are run with **Newman** or the **Postman CLI**.
+In CI, collections are run with the **Postman CLI** (recommended by Postman) or the older **Newman**.
 
 ## Examples and Mock Servers
 

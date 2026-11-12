@@ -11,7 +11,7 @@ Functional tests check **what** the system does. Non-functional tests check **ho
 | Characteristic | Tester's question | Example tests |
 |---|---|---|
 | **Performance efficiency** | Does the system respond quickly and handle the load? | [performance testing](performance_testing.md), load, stress |
-| **Compatibility** | Does it work in different browsers and with other systems? | cross-browser tests, integration tests |
+| **Compatibility** | Does it work in different browsers and with other systems? | cross-browser tests, co-existence and interoperability tests |
 | **Interaction capability** | Is it easy to learn, convenient and accessible? | usability tests, accessibility tests |
 | **Reliability** | Does it run stably and recover from failures? | recovery tests, failover tests |
 | **Security** | Does it protect data and resist attacks? | security tests, penetration tests |

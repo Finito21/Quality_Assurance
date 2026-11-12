@@ -56,7 +56,8 @@ Najczęściej używane pojęcia z testowania, z angielskim odpowiednikiem, któr
 |---|---|---|
 | **Środowisko testowe** | test environment | sprzęt, oprogramowanie i dane, na których wykonuje się testy |
 | **Build** | build | konkretna, zbudowana wersja aplikacji |
-| **Atrapa, zaślepka** | mock, stub | zastępstwo prawdziwego komponentu lub usługi w teście |
+| **Atrapa** | mock | zastępnik komponentu, który dodatkowo sprawdza, czy został wywołany w oczekiwany sposób |
+| **Zaślepka** | stub | zastępnik komponentu, który zwraca z góry ustalone odpowiedzi |
 | **Niestabilny test** | flaky test | test, który raz przechodzi, a raz nie, bez zmian w kodzie |
 | **Lokator** | locator | sposób wskazania elementu strony w teście automatycznym |
 | **Potok CI/CD** | pipeline | automatyczny ciąg kroków: budowanie, testy, wdrożenie |

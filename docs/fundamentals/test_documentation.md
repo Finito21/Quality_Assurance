@@ -44,6 +44,9 @@ flowchart LR
 
 **Scenariusz testowy** to zbiór przypadków testowych potrzebnych do sprawdzenia określonej funkcjonalności. Każdy scenariusz powinien odzwierciedlać **dokładnie jedną funkcjonalność**.
 
+!!! note "Scenariusz a terminologia ISTQB"
+    „Scenariusz testowy” to określenie z praktyki branżowej. W terminologii ISTQB i ISO/IEC/IEEE 29119-3 odpowiada mu **zestaw testowy** (test suite) albo **procedura testowa** (test procedure, czyli przypadki testowe w kolejności wykonania).
+
 Elementy scenariusza:
 
 - identyfikacja scenariusza,
