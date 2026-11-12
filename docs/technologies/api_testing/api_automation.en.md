@@ -1,5 +1,5 @@
 ---
-description: "API test automation: Postman assertions, chained requests, test data and running collections in CI with Newman."
+description: "API test automation: Postman assertions, chained requests, test data, schema validation and running collections in CI with Newman."
 ---
 
 # API test automation
@@ -32,10 +32,9 @@ pm.test("A list of users was returned", () => {
   const body = pm.response.json();
   pm.expect(body).to.be.an("array").that.is.not.empty;
   pm.expect(body[0]).to.have.property("email");
+  // store a value in a variable for the next requests
+  pm.collectionVariables.set("userId", body[0].id);
 });
-
-// store a value in a variable for the next requests
-pm.collectionVariables.set("userId", pm.response.json()[0].id);
 ```
 
 ### Example: validating an error response (RFC 9457 *Problem Details*)
@@ -46,6 +45,8 @@ Requirements:
 - the `x-correlation-id` header is present (traceability / tracing),
 - `correlationId` in the body is **identical** to the header value,
 - the `detail` message matches the specification.
+
+RFC 9457 makes all members optional (`type` defaults to `about:blank`), so the required fields below are the project's API contract, and `correlationId` is an extension member.
 
 ```javascript
 const body = pm.response.json();

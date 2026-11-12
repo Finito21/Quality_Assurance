@@ -1,5 +1,5 @@
 ---
-description: "Slack for testers: team channels, CI notifications and good practice when communicating about defects."
+description: "Slack for testers: team and alert channels, notifications from CI, threads and good practice when communicating about defects and releases."
 ---
 
 # Slack

@@ -1,5 +1,5 @@
 ---
-description: "Postman for testers: collections, variables and environments, pm.* test scripts and running tests in CI."
+description: "Postman for testers: collections, variables and environments, pm.* test scripts, chaining requests and running collections from the command line in CI."
 ---
 
 # Postman

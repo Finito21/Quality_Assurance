@@ -42,10 +42,10 @@ flowchart LR
 
 ## Scenariusz testowy
 
-**Scenariusz testowy** to zbiór przypadków testowych potrzebnych do sprawdzenia określonej funkcjonalności. Każdy scenariusz powinien odzwierciedlać **dokładnie jedną funkcjonalność**.
+**Scenariusz testowy** to zbiór przypadków testowych, które razem sprawdzają jedną funkcjonalność lub jeden przepływ użytkownika, np. zakup biletu.
 
 !!! note "Scenariusz a terminologia ISTQB"
-    „Scenariusz testowy” to określenie z praktyki branżowej. W terminologii ISTQB i ISO/IEC/IEEE 29119-3 odpowiada mu **zestaw testowy** (test suite) albo **procedura testowa** (test procedure, czyli przypadki testowe w kolejności wykonania).
+    „Scenariusz testowy” to określenie z praktyki branżowej. W terminologii ISTQB i ISO/IEC/IEEE 29119-3 najbliżej mu do **zestawu testowego** (test suite). Gdy liczy się kolejność kroków, odpowiada mu **procedura testowa** (test procedure, czyli przypadki testowe w kolejności wykonania).
 
 Elementy scenariusza:
 
@@ -58,7 +58,7 @@ Elementy scenariusza:
 
 Przypadek testowy odpowiada na pytanie: **„Jak sprawdzę dany warunek testowy?”** (warunek testowy odpowiada na pytanie „co sprawdzam?”). Opisuje jeden konkretny test: warunki wstępne, dane, kroki i wynik oczekiwany.
 
-**Zestaw testów (test suite)** to zbiór przypadków testowych zgrupowanych w celu wspólnego wykonania, np. wszystkie testy regresji koszyka albo smoke testy wykonywane po każdym wdrożeniu.
+**Zestaw testowy (test suite)** to zbiór przypadków testowych zgrupowanych w celu wspólnego wykonania, np. wszystkie testy regresji koszyka albo smoke testy wykonywane po każdym wdrożeniu.
 
 | Pole | Opis |
 |---|---|
@@ -109,7 +109,7 @@ Przypadek testowy odpowiada na pytanie: **„Jak sprawdzę dany warunek testowy?
     | 64 znaki | konto utworzone |
     | 65 znaków | błąd walidacji *„Hasło może mieć najwyżej 64 znaki”* |
 
-**Skrypt testowy** to ręczny lub zautomatyzowany zestaw instrukcji implementujących przypadek testowy. Ten sam przypadek można wykonać wielokrotnie w różnych konfiguracjach, np. w Chrome, Firefox i Safari.
+**Procedura testowa** to uporządkowany ciąg kroków wykonania przypadków testowych, a **skrypt testowy** to jej zautomatyzowana postać. Ten sam przypadek można wykonać wielokrotnie w różnych konfiguracjach, np. w Chrome, Firefox i Safari.
 
 ## Raport o defekcie
 
@@ -118,13 +118,13 @@ Dobry raport pozwala programiście **odtworzyć defekt bez dopytywania**.
 | Pole | Przykład |
 |---|---|
 | ID | `BUG-142` |
-| Tytuł | *Koszyk: zmiana ilości na 0 nie usuwa produktu* |
+| Tytuł | *Koszyk: zmiana liczby sztuk na 0 nie usuwa produktu* |
 | Środowisko | Chrome 130, Windows 11, środowisko QA, build 1.4.2 |
-| Kroki do odtworzenia | 1. Dodaj produkt do koszyka 2. Zmień ilość na 0 3. Kliknij „Przelicz” |
+| Kroki do odtworzenia | 1. Dodaj produkt do koszyka 2. Zmień liczbę sztuk na 0 3. Kliknij „Przelicz” |
 | Wynik oczekiwany | produkt zostaje usunięty z koszyka |
-| Wynik rzeczywisty | produkt zostaje z ilością 0, suma = 0 zł |
+| Wynik rzeczywisty | produkt zostaje z liczbą sztuk 0, suma = 0 zł |
 | Ważność / priorytet | Poważna / Średni |
-| Załączniki | zrzut ekranu, nagranie, logi z konsoli, request z zakładki Network |
+| Załączniki | zrzut ekranu, nagranie, logi z konsoli, żądanie z zakładki Network |
 
 ??? abstract "Pola raportu o defekcie wg ISTQB CTFL v4.0"
 
@@ -161,7 +161,7 @@ Typowe skale: ważność **krytyczna / poważna / średnia / niska**, priorytet 
 
 === "Dobry raport"
 
-    **Tytuł:** Koszyk: zmiana ilości na 0 nie usuwa produktu
+    **Tytuł:** Koszyk: zmiana liczby sztuk na 0 nie usuwa produktu
 
     **Środowisko:** Chrome 130, Windows 11, środowisko QA, build 1.4.2
 
@@ -169,11 +169,11 @@ Typowe skale: ważność **krytyczna / poważna / średnia / niska**, priorytet 
 
     1. Zaloguj się jako `jan@test.pl`.
     2. Dodaj do koszyka produkt *Kubek QA*.
-    3. W koszyku zmień ilość na `0`.
+    3. W koszyku zmień liczbę sztuk na `0`.
     4. Kliknij **Przelicz**.
 
     **Wynik oczekiwany:** produkt zostaje usunięty z koszyka.
-    **Wynik rzeczywisty:** produkt zostaje z ilością 0, suma = 0 zł. Odtwarzalność: 5/5.
+    **Wynik rzeczywisty:** produkt zostaje z liczbą sztuk 0, suma = 0 zł. Odtwarzalność: 5/5.
 
     **Załączniki:** nagranie ekranu, odpowiedź `PATCH /cart/items/17` z zakładki Network.
 

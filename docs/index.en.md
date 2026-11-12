@@ -1,5 +1,5 @@
 ---
-description: "Notes on Quality Assurance and software testing: ISTQB theory, test techniques, APIs, SQL, automation and tester tools."
+description: "Notes on Quality Assurance and software testing: ISTQB theory, test techniques, APIs, SQL, test automation and the tools a tester uses every day."
 hide:
   - navigation
   - toc

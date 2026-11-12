@@ -1,5 +1,5 @@
 ---
-description: "Tester interview questions with sample answers: testing principles, techniques, defect lifecycle, APIs and SQL."
+description: "Tester job interview questions with sample answers: testing principles, test techniques, the defect lifecycle, APIs, SQL and test automation."
 ---
 
 # Interview questions
@@ -35,7 +35,7 @@ Typical questions in an interview for a tester role (junior / mid) with short an
     The tester is part of the team. They take part in refinement (asking about acceptance criteria, raising risks), planning, the Daily Scrum and the retrospective. They test stories during the sprint, automate regression and make sure the Definition of Done is met. They do not leave testing until the end of the sprint.
 
 ??? question "Describe the defect lifecycle."
-    New → Assigned → In Progress → Resolved → Ready for Test → Closed, and if the retest fails: Reopened. A report can also be rejected (Rejected), marked as a duplicate (Duplicate) or postponed (Deferred). More: [Defect lifecycle](test_management.md#defect-lifecycle).
+    New → Assigned → In Progress → Resolved → Ready for Test → Closed, and if the retest fails: Reopened. A report can also be rejected (Rejected), marked as a duplicate (Duplicate), impossible to reproduce (Cannot Reproduce) or postponed (Deferred). More: [Defect lifecycle](test_management.md#defect-lifecycle).
 
 ??? question "How does severity differ from priority? Give an example."
     **Severity** describes the impact of a defect, **priority** the urgency of the fix. A typo in the company name on the home page: low severity, high priority. A crash in a rarely used annual report: high severity, low priority. More: [Severity vs priority](test_documentation.md#severity-vs-priority).
@@ -55,7 +55,7 @@ Typical questions in an interview for a tester role (junior / mid) with short an
     Equivalence partitions: e.g. 10 (invalid), 30 (valid), 80 (invalid). Boundary values (2-value version): 17, 18, 65, 66. Plus error guessing: an empty field, letters, a negative number, a fraction, spaces, a very large number.
 
 ??? question "How would you test a pen (a lift, a mug, a login form)?"
-    This question checks your way of thinking, not your knowledge. Start with questions: who will use it, for what, what the requirements are. Then split the tests into functional (does it write), non-functional (comfort, durability, safety), negative (dropping it, frost) and boundary (the last drop of ink).
+    This question checks your way of thinking, not your knowledge. Start with questions: who will use it, for what, what the requirements are. Then split the tests into functional (does it write), non-functional (comfort, durability: dropping it, frost, safety), negative (writing on a wet or greasy surface) and boundary (the last drop of ink).
 
 ## APIs, databases and tools
 
@@ -83,7 +83,7 @@ Typical questions in an interview for a tester role (junior / mid) with short an
     Worth it: regression, smoke tests, API tests, tests with many data sets. Not worth it: one-off tests, features that change often, judging usability. More: [Test automation strategy](test_automation_strategy.md).
 
 ??? question "What is the test pyramid?"
-    A model of proportions: the most fast component tests, fewer integration and API tests, the fewest slow E2E tests through the UI. An inverted pyramid gives a slow and brittle test suite.
+    A model of proportions: fast component tests are the most numerous, integration and API tests are fewer, and slow E2E tests through the UI are the fewest. An inverted pyramid leads to a slow, brittle test suite.
 
 ??? question "What is a flaky test and how do you deal with it?"
     A test that sometimes passes and sometimes fails without code changes. Typical causes are fixed delays, dependencies between tests and shared data. Solutions: waiting for a condition, independent data, stable locators, quarantine and a fix.

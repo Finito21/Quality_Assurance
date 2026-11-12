@@ -56,6 +56,11 @@ class Abbreviations(unittest.TestCase):
     def test_not_glued_before_block_tag(self):
         self.assertEqual(fix("np.\n<ul>"), "np.\n<ul>")
 
+    def test_capitalised_at_sentence_start(self):
+        self.assertEqual(fix("Np. test, Tzw. mock, Tzn. nic, M.in. Jira"), "Np.~test, Tzw.~mock, Tzn.~nic, M.in.~Jira")
+
+    def test_number_abbreviations_without_full_stop(self):
+        self.assertEqual(fix("jak w pkt 3, zgłoszenie nr 5, Nr 7"), "jak w~pkt~3, zgłoszenie nr~5, Nr~7")
 
 class Numbers(unittest.TestCase):
     def test_number_and_unit(self):
@@ -71,6 +76,11 @@ class Numbers(unittest.TestCase):
     def test_number_before_inline_tag(self):
         self.assertEqual(fix("500 <strong>ms</strong>"), "500~<strong>ms</strong>")
         self.assertEqual(fix("czas &lt; <code>5</code>"), "czas &lt;~<code>5</code>")
+
+    def test_thousands_separator(self):
+        self.assertEqual(fix("10 000 użytkowników"), "10~000~użytkowników")
+        self.assertEqual(fix("1 500 000 zł"), "1~500~000~zł")
+        self.assertEqual(fix("od 5 do 10"), "od 5~do 10")
 
     def test_section_sign(self):
         self.assertEqual(fix("§ 5"), "§~5")
@@ -91,6 +101,13 @@ class SkippedContent(unittest.TestCase):
     def test_pre_and_nested_code_are_untouched(self):
         html = '<pre class="mermaid"><code>A --> B i C</code></pre> i koniec'
         self.assertEqual(fix(html), '<pre class="mermaid"><code>A --> B i C</code></pre> i~koniec')
+
+    def test_option_is_untouched(self):
+        self.assertEqual(fix("<option>a b</option>"), "<option>a b</option>")
+
+    def test_cyrillic_letter_yo_counts_as_letter(self):
+        # "a" ends the word "Ёa", so it is not a one-letter word
+        self.assertEqual(fix("Ёa b"), "Ёa b")
 
     def test_kbd_is_untouched(self):
         self.assertEqual(fix("<kbd>I</kbd> (macOS)"), "<kbd>I</kbd> (macOS)")

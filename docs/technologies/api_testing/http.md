@@ -1,5 +1,5 @@
 ---
-description: "HTTP dla testera: metody, idempotentność, kody statusu, nagłówki i typowe defekty wykrywane na poziomie protokołu."
+description: "HTTP dla testera: metody żądań, idempotentność, kody statusu, nagłówki, cache i typowe defekty, które można wykryć na poziomie protokołu."
 ---
 
 # HTTP: metody, kody, nagłówki
@@ -46,7 +46,7 @@ Authorization: Bearer eyJhbGci...
 | `DELETE` | usunięcie bez uprawnień, usunięcie zasobu używanego przez inne rekordy, zasób nadal widoczny przez cache |
 
 !!! tip "Współbieżność i duplikaty"
-    - Równoczesna edycja: z nagłówkiem `If-Match` i nieaktualnym `ETag` serwer powinien zwrócić `412 Precondition Failed`, a nie nadpisać cudze zmiany.
+    - Równoczesna edycja: z nagłówkiem `If-Match` i nieaktualnym `ETag` serwer powinien zwrócić `412 Precondition Failed`, a nie nadpisać cudze zmiany. Jeśli API wymaga `If-Match`, a nagłówka brakuje, odpowiedzią jest `428 Precondition Required`.
     - Ponowne wysłanie `POST`: z tym samym nagłówkiem `Idempotency-Key` nie powinien powstać drugi zasób.
     - Odpowiedź `429` lub `503` powinna zawierać nagłówek `Retry-After`.
 
@@ -81,7 +81,7 @@ Authorization: Bearer eyJhbGci...
 | `304 Not Modified` | zasób się nie zmienił, klient może użyć wersji z cache |
 | `307` / `308` | przekierowanie tymczasowe / stałe z zachowaniem metody i body |
 
-Typowe defekty: pętle przekierowań, przekierowanie do nieistniejącego zasobu, `POST` zamieniony w `GET` po przekierowaniu `301` lub `302`.
+Typowe defekty: pętle przekierowań, przekierowanie do nieistniejącego zasobu, utrata metody lub body po przekierowaniu `301` lub `302` (klienci mogą zamienić `POST` w `GET`; `307` i `308` zachowują metodę i body).
 
 ### 4xx: błąd klienta
 

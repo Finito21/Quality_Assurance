@@ -19,10 +19,10 @@ description: "JavaScript for testers: variables, types, arrays, functions and th
 - **Client side (browser)**: speeds up the page, takes load off the server, improves UX.
 - **Server side (Node.js)**: a runtime outside the browser (APIs, backend, CLI tools). Running a file: `node main.js`.
 
-Linking a script in HTML (usually at the end of `<body>`, so the page loads faster):
+Linking a script in HTML (in `<head>` with `defer`, so it does not block page rendering; the older way is to put it at the end of `<body>`):
 
 ```html
-<script src="path/to/file.js"></script>
+<script src="path/to/file.js" defer></script>
 ```
 
 ## Variables and data types

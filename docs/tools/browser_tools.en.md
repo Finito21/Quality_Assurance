@@ -1,5 +1,5 @@
 ---
-description: "Browsers and extensions for testers: cross-browser testing, cloud device farms and useful extensions."
+description: "Browsers and extensions for testers: cross-browser testing, cloud device farms, screenshots and screen recordings, and extensions that speed up testing."
 ---
 
 # Browsers and extensions

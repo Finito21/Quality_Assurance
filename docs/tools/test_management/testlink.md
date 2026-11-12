@@ -1,10 +1,10 @@
 ---
-description: "TestLink: darmowe narzędzie do zarządzania testami, plany testów, przypadki, buildy i raporty."
+description: "TestLink dla testera: darmowe narzędzie open source do zarządzania testami, planami testów, przypadkami testowymi, buildami i raportami."
 ---
 
 # TestLink
 
-**TestLink** to narzędzie open source do **zarządzania testami** działające w przeglądarce. Obsługuje przypadki testowe, zestawy testów, plany testów, projekty testowe, zarządzanie użytkownikami oraz raporty. Integruje się z [Jirą](jira.md) i innymi bug trackerami.
+**TestLink** to narzędzie open source do **zarządzania testami** działające w przeglądarce. Obsługuje przypadki testowe, zestawy testowe, plany testów, projekty testowe, zarządzanie użytkownikami oraz raporty. Integruje się z [Jirą](jira.md) i innymi bug trackerami.
 
 ## Struktura
 

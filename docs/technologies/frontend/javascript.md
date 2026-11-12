@@ -1,5 +1,5 @@
 ---
-description: "JavaScript dla testera: zmienne, typy, tablice, funkcje i podstawy potrzebne w testach Cypress, Playwright i Postman."
+description: "JavaScript dla testera: zmienne, typy, tablice, obiekty, funkcje i podstawy asynchroniczności potrzebne w testach Cypress, Playwright i Postman."
 ---
 
 # JavaScript
@@ -19,10 +19,10 @@ description: "JavaScript dla testera: zmienne, typy, tablice, funkcje i podstawy
 - **Po stronie klienta (przeglądarka)**: przyspiesza działanie strony, odciąża serwer, poprawia UX.
 - **Po stronie serwera (Node.js)**: środowisko uruchomieniowe poza przeglądarką (API, backend, narzędzia CLI). Uruchomienie pliku: `node main.js`.
 
-Podłączenie skryptu do HTML (zwykle na końcu `<body>`, żeby strona wczytała się szybciej):
+Podłączenie skryptu do HTML (w `<head>` z atrybutem `defer`, żeby nie blokował renderowania strony; starszy sposób to umieszczenie go na końcu `<body>`):
 
 ```html
-<script src="sciezka/do/pliku.js"></script>
+<script src="sciezka/do/pliku.js" defer></script>
 ```
 
 ## Zmienne i typy danych

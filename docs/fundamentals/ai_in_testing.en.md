@@ -1,5 +1,5 @@
 ---
-description: "How a tester can use AI: generating test cases and test data, reviewing test code, and the limits and risks."
+description: "How a tester can use AI tools: generating test cases and test data, reviewing test code, and the limits, risks and checks that AI output always needs."
 ---
 
 # AI in testing

@@ -1,5 +1,5 @@
 ---
-description: "Test automation strategy: the test pyramid, what to automate, choosing tools, tests in CI and test maintenance."
+description: "Test automation strategy: the test pyramid, deciding what to automate, choosing tools, running tests in CI and keeping the test suite maintainable."
 ---
 
 # Test automation strategy

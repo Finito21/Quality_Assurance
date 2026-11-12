@@ -1,5 +1,5 @@
 ---
-description: "GitHub for testers: issues, pull requests, code review and reporting defects with a template."
+description: "GitHub for testers: issues and labels, pull requests, code review of test changes and reporting defects with an issue template."
 ---
 
 # GitHub

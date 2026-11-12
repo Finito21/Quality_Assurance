@@ -1,5 +1,5 @@
 ---
-description: "Test documentation: test plan, test conditions and test cases, and the defect report with good and weak examples."
+description: "Test documentation in practice: the test plan, test conditions and test cases, and how to write a defect report, with good and weak examples."
 ---
 
 # Test documentation
@@ -42,10 +42,10 @@ A **test plan** describes the objectives, scope, approach, resources and schedul
 
 ## Test scenario
 
-A **test scenario** is a set of test cases needed to check a specific feature. Each scenario should reflect **exactly one feature**.
+A **test scenario** is a set of test cases that together check one feature or one user flow, e.g. buying a ticket.
 
 !!! note "Scenarios and ISTQB terminology"
-    "Test scenario" is an industry term. In ISTQB and ISO/IEC/IEEE 29119-3 terms it corresponds to a **test suite** or a **test procedure** (test cases in the order they are executed).
+    "Test scenario" is an industry term. In ISTQB and ISO/IEC/IEEE 29119-3 terms it is closest to a **test suite**. When the order of steps matters, it corresponds to a **test procedure** (test cases in the order they are executed).
 
 Elements of a scenario:
 
@@ -109,11 +109,11 @@ A **test suite** is a set of test cases grouped to be executed together, e.g. al
     | 64 characters | account created |
     | 65 characters | validation error *“The password can have at most 64 characters”* |
 
-A **test script** is a manual or automated set of instructions that implements a test case. The same test case can be executed many times in different configurations, e.g. in Chrome, Firefox and Safari.
+A **test procedure** is an ordered sequence of steps for executing test cases, and a **test script** is its automated form. The same test case can be executed many times in different configurations, e.g. in Chrome, Firefox and Safari.
 
 ## Defect report
 
-A good report lets a developer **reproduce the bug without asking follow-up questions**.
+A good report lets a developer **reproduce the defect without asking follow-up questions**.
 
 | Field | Example |
 |---|---|

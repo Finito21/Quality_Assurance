@@ -1,5 +1,5 @@
 ---
-description: "Jira for testers: issues, the defect workflow, JQL queries, dashboards and working in a sprint."
+description: "Jira for testers: issue types, the defect workflow, JQL queries, filters and dashboards, and how a tester works with the team during a sprint."
 ---
 
 # Jira
@@ -59,7 +59,9 @@ A sample board workflow:
 
 ## JQL: useful queries
 
-```sql
+JQL has no comments, so paste only the query line, without the `--` description above it.
+
+```text
 -- my active tasks
 assignee = currentUser() AND status != Done
 

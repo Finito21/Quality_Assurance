@@ -1,5 +1,5 @@
 ---
-description: "Automatyzacja testów API: asercje w Postmanie, łańcuchy żądań, dane testowe i uruchamianie kolekcji w CI przez Newmana."
+description: "Automatyzacja testów API: asercje w Postmanie, łańcuchy żądań, dane testowe, walidacja schematu i uruchamianie kolekcji w CI przez Newmana."
 ---
 
 # Automatyzacja testów API
@@ -32,10 +32,9 @@ pm.test("Zwrócono listę użytkowników", () => {
   const body = pm.response.json();
   pm.expect(body).to.be.an("array").that.is.not.empty;
   pm.expect(body[0]).to.have.property("email");
+  // zapis wartości do zmiennej na potrzeby kolejnych żądań
+  pm.collectionVariables.set("userId", body[0].id);
 });
-
-// zapis wartości do zmiennej na potrzeby kolejnych requestów
-pm.collectionVariables.set("userId", pm.response.json()[0].id);
 ```
 
 ### Przykład: walidacja odpowiedzi błędu (RFC 9457 *Problem Details*)
@@ -46,6 +45,8 @@ Wymagania:
 - obecny jest nagłówek `x-correlation-id` (identyfikowalność / tracing),
 - `correlationId` w body jest **identyczne** z wartością nagłówka,
 - komunikat `detail` jest zgodny ze specyfikacją.
+
+RFC 9457 nie wymaga żadnego pola (`type` domyślnie ma wartość `about:blank`), więc pola wymagane w schemacie poniżej to kontrakt API projektu, a `correlationId` to pole rozszerzenia.
 
 ```javascript
 const body = pm.response.json();

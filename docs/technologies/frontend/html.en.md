@@ -1,5 +1,5 @@
 ---
-description: "HTML for testers: document structure, forms, attributes and how page markup affects testing and automation."
+description: "HTML for testers: document structure, basic and semantic tags, forms, IDs and classes, and how page markup affects accessibility, testing and automation."
 ---
 
 # HTML
@@ -7,7 +7,7 @@ description: "HTML for testers: document structure, forms, attributes and how pa
 **HTML (HyperText Markup Language)** defines the **structure** of a web page. Elements are described with **tags** in angle brackets `< >`.
 
 !!! tip "Why should a tester know HTML?"
-    The HTML structure is the basis for **locators** in automation (Selenium, Cypress), for analysing bugs in [DevTools](../../tools/devtools.md) and for accessibility testing.
+    The HTML structure is the basis for **locators** in automation (Selenium, Cypress), for investigating defects in [DevTools](../../tools/devtools.md) and for accessibility testing.
 
 ## Document structure
 
@@ -16,7 +16,7 @@ description: "HTML for testers: document structure, forms, attributes and how pa
 <html lang="en">
 <head>
   <meta charset="UTF-8">      <!-- character encoding -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- without it media queries do not work on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- without it phones render a desktop-width page and media queries do not match the screen -->
   <title>Page title</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">

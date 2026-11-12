@@ -1,5 +1,5 @@
 ---
-description: "Xray dla Jiry: przypadki testowe, wykonania i plany testów, pokrycie wymagań i import wyników z automatyzacji."
+description: "Xray dla Jiry: przypadki testowe, wykonania i plany testów, pokrycie wymagań oraz import wyników testów automatycznych z pipeline'ów CI."
 ---
 
 # Xray

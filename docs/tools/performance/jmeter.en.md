@@ -1,5 +1,5 @@
 ---
-description: "Apache JMeter: test plans, thread groups, samplers, assertions, running from the command line and reports."
+description: "Apache JMeter for testers: test plans, thread groups, samplers, assertions, running tests from the command line and reading the HTML report."
 ---
 
 # Apache JMeter

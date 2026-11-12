@@ -1,5 +1,5 @@
 ---
-description: "Zarządzanie testami: planowanie, estymacja, ryzyko, metryki, kryteria wejścia i wyjścia oraz cykl życia defektu."
+description: "Zarządzanie testami: planowanie, techniki estymacji, testowanie oparte na ryzyku, metryki, kryteria wejścia i wyjścia oraz cykl życia defektu."
 ---
 
 # Zarządzanie testami
@@ -40,7 +40,7 @@ Czynności planowania:
 | | Kryteria wejścia | Kryteria wyjścia |
 |---|---|---|
 | **Co określają** | warunki, które muszą być spełnione **przed** rozpoczęciem czynności testowej | warunki, po spełnieniu których dany poziom lub zbiór testów uznaje się za **zakończony** |
-| **Przykłady** | dostępne środowisko testowe, gotowe dane testowe, kod przeszedł testy jednostkowe, dostępna dokumentacja | wykonane wszystkie zaplanowane testy, osiągnięte pokrycie, brak otwartych defektów krytycznych, gęstość defektów poniżej progu |
+| **Przykłady** | dostępne środowisko testowe, gotowe dane testowe, kod przeszedł testy modułowe, dostępna dokumentacja | wykonane wszystkie zaplanowane testy, osiągnięte pokrycie, brak otwartych defektów krytycznych, gęstość defektów poniżej progu |
 
 !!! note "Definition of Ready / Definition of Done"
     W metodykach zwinnych odpowiednikami są **DoR** (kryteria wejścia dla historyjki) i **DoD** (kryteria wyjścia).
@@ -81,7 +81,7 @@ Typowe metryki: postęp wykonania testów, liczba testów pass/fail, liczba i g�
 
 Wg słownika ISTQB **ryzyko** to czynnik, który w przyszłości może skutkować negatywnymi konsekwencjami. Opisuje się je przez **prawdopodobieństwo** i **wpływ**.
 
-**Poziom ryzyka = prawdopodobieństwo × wpływ**
+**Poziom ryzyka** wynika z prawdopodobieństwa i wpływu. Można go ocenić jakościowo w macierzy ryzyka albo liczbowo, np. jako **prawdopodobieństwo × wpływ** na skali 1–5.
 
 <div class="grid cards" markdown>
 
@@ -114,7 +114,7 @@ Nazwy statusów różnią się między narzędziami i firmami, ale przebieg jest
 ```mermaid
 flowchart LR
     accTitle: Cykl życia defektu
-    accDescr: Nowy defekt jest przypisywany, naprawiany i trafia do retestu. Po udanym reteście jest zamykany, po nieudanym otwierany ponownie. Zgłoszenie może też zostać odrzucone, oznaczone jako duplikat, jako niemożliwe do odtworzenia albo odłożone.
+    accDescr: Nowy defekt jest przypisywany, naprawiany i trafia do retestu. Po udanym reteście jest zamykany, po nieudanym otwierany ponownie. Zgłoszenie może też zostać odrzucone lub oznaczone jako duplikat i wtedy jest zamykane. Zgłoszenie niemożliwe do odtworzenia wraca do pracy po uzupełnieniu informacji albo jest zamykane, a odłożone wraca do przypisania, gdy przyjdzie na nie czas.
     New --> Assigned --> InProgress[In Progress] --> Resolved --> RFT[Ready for Test]
     RFT -->|retest OK| Closed
     RFT -->|defekt nadal występuje| Reopened --> Assigned
@@ -122,6 +122,11 @@ flowchart LR
     New -.-> Duplicate
     New -.-> CannotReproduce[Cannot Reproduce]
     Assigned -.-> Deferred
+    Rejected --> Closed
+    Duplicate --> Closed
+    CannotReproduce -->|nowe informacje| Assigned
+    CannotReproduce --> Closed
+    Deferred -->|później| Assigned
 ```
 
 | Status | Znaczenie |
@@ -131,7 +136,7 @@ flowchart LR
 | **In Progress** | trwa naprawa |
 | **Resolved** | programista uznał defekt za naprawiony |
 | **Ready for Test** | poprawka jest w buildzie na środowisku testowym, czeka na retest |
-| **Closed** | retest zakończony sukcesem |
+| **Closed** | retest zakończony sukcesem albo zgłoszenie zamknięte bez naprawy (odrzucone, duplikat, nie do odtworzenia) |
 | **Reopened** | retest wykazał, że defekt nadal występuje |
 | **Rejected** | to nie defekt, np. działanie zgodne ze specyfikacją albo błąd w teście |
 | **Duplicate** | ten sam defekt został już zgłoszony; zgłoszenie łączy się z pierwotnym |

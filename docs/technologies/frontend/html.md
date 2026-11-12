@@ -1,5 +1,5 @@
 ---
-description: "HTML dla testera: struktura dokumentu, formularze, atrybuty i to, jak budowa strony wpływa na testy i automatyzację."
+description: "HTML dla testera: struktura dokumentu, tagi podstawowe i semantyczne, formularze, identyfikatory i klasy oraz wpływ budowy strony na testy i automatyzację."
 ---
 
 # HTML
@@ -16,7 +16,7 @@ description: "HTML dla testera: struktura dokumentu, formularze, atrybuty i to, 
 <html lang="pl">
 <head>
   <meta charset="UTF-8">      <!-- kodowanie znaków (polskie litery) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- bez tego media queries nie działają na telefonach -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- bez tego telefon renderuje stronę w szerokości desktopu i media queries nie pasują do ekranu -->
   <title>Tytuł strony</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">

@@ -1,5 +1,5 @@
 ---
-description: "SQL dla testera: SELECT, filtrowanie, agregacja, JOIN, pułapki NULL i weryfikacja danych w bazie podczas testów."
+description: "SQL dla testera: zapytania SELECT, filtrowanie, agregacja, rodzaje JOIN, pułapki z NULL i weryfikacja danych w bazie podczas testów aplikacji."
 ---
 
 # SQL

@@ -1,5 +1,5 @@
 ---
-description: "Jak tester może korzystać z AI: generowanie przypadków i danych testowych, przegląd kodu testów, ograniczenia i ryzyka."
+description: "Jak tester może korzystać z AI: generowanie przypadków i danych testowych, przegląd kodu testów oraz ograniczenia i ryzyka, które trzeba kontrolować."
 ---
 
 # AI w testowaniu

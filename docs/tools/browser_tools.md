@@ -1,5 +1,5 @@
 ---
-description: "Przeglądarki i wtyczki dla testera: testy w wielu przeglądarkach, chmurowe farmy urządzeń i przydatne rozszerzenia."
+description: "Przeglądarki i wtyczki dla testera: testy w wielu przeglądarkach, chmurowe farmy urządzeń, zrzuty i nagrania ekranu oraz przydatne rozszerzenia."
 ---
 
 # Przeglądarki i wtyczki

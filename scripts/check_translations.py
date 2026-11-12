@@ -10,8 +10,9 @@ Fails (exit code 1) when:
   4. an English page contains Polish words, also inside code samples, Mermaid
      diagrams and front matter (a sign of an untranslated fragment); Polish quoted
      on purpose is marked with lang="pl",
-  5. a page does not have exactly one H1, has no `description` in its front matter,
-     or contains emoji / icon shortcodes / hand-written `&nbsp;` (rules from CLAUDE.md).
+  5. a page does not have exactly one H1, has no `description` of 120-160 characters
+     in its front matter, or contains emoji / icon shortcodes / hand-written `&nbsp;`
+     (front matter included; rules from CLAUDE.md).
 
 Usage:  python scripts/check_translations.py
 """
@@ -43,12 +44,13 @@ SAME_NAV_TITLES = {
 # A closing fence may be longer than the opening one (CommonMark).
 FENCE_RE = re.compile(r"^([ \t]*)(`{3,}|~{3,}).*?^\1\2[`~]*[ \t]*$", re.M | re.S)
 INLINE_CODE_RE = re.compile(r"(`+)(?!`)(.+?)(?<!`)\1(?!`)")
-URL_RE = re.compile(r"\]\([^)]*\)|https?://\S+")
+# Only the link target is skipped; a link title ("...") stays in the scanned text.
+URL_RE = re.compile(r"\]\(\s*(?:<[^>]*>|[^\s)]*)|https?://\S+")
 FRONT_MATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.S)
 NBSP_RE = re.compile(r"&nbsp;|&#160;|&#x0*a0;| ", re.I)
 # Polish deliberately quoted on an English page (e.g. the glossary) is marked with
 # lang="pl", which screen readers also need, and is not reported.
-LANG_PL_RE = re.compile(r"<(\w+)\b[^>]*\blang=\"pl\"[^>]*>.*?</\1>", re.S)
+LANG_PL_RE = re.compile(r"<(\w+)\b[^>]*\blang=([\"'])pl\2[^>]*>.*?</\1>", re.S)
 POLISH_WORD_RE = re.compile(rf"\w*[{POLISH_CHARS}]\w*")
 # Common Polish words without diacritics; in lowercase they never occur in English
 # prose, so they catch untranslated sentences that POLISH_WORD_RE misses
@@ -57,9 +59,13 @@ POLISH_STOP_WORDS = {"jest", "nie", "oraz", "dla", "przez", "jak", "aby", "lub",
 STOP_WORD_RE = re.compile(rf"\b({'|'.join(sorted(POLISH_STOP_WORDS))})\b")
 H1_RE = re.compile(r"^# \S", re.M)
 # Emoji and pictograph blocks, misc symbols and dingbats, and the emoji variation
-# selector; the plain check and cross marks used in decision tables are allowed.
-EMOJI_RE = re.compile("[\U0001F000-\U0001FAFF⌀-⏿■-◿ℹ⃣☀-➿⬀-⯿️]")
-ALLOWED_SYMBOLS = {"✓", "✔", "✗", "✘"}
+# selector, and a few emoji-style punctuation marks and arrows; the plain check and
+# cross marks used in decision tables and the keyboard symbols used in shortcut
+# tables are allowed.
+EMOJI_RE = re.compile("[\U0001F000-\U0001FAFF⌀-⏿■-◿ℹ⃣☀-➿⬀-⯿️‼⁉↩↪⤴⤵]")
+ALLOWED_SYMBOLS = {"✓", "✔", "✗", "✘", "⌘", "⌥", "⌃", "⌫", "⏎"}
+# Meta description length recommended for search result snippets (CLAUDE.md).
+DESCRIPTION_MIN, DESCRIPTION_MAX = 120, 160
 ICON_RE = re.compile(r":(?:material|fontawesome|octicons|simple)-[\w-]+:")
 
 
@@ -179,16 +185,23 @@ def check(docs: Path = DOCS, mkdocs: Path = MKDOCS) -> list:
 
     # 5. content rules from CLAUDE.md
     for page in all_md:
-        raw = read_page(page)
-        body = FENCE_RE.sub("", raw)
+        source = read_source(page)
+        body = FENCE_RE.sub("", read_page(page))
         h1 = len(H1_RE.findall(body))
         if h1 != 1:
             errors.append(f"{rel(page, docs)}: expected exactly one H1, found {h1}")
-        if has_emoji(raw) or ICON_RE.search(raw):
+        if has_emoji(source) or ICON_RE.search(source):
             errors.append(f"{rel(page, docs)}: emoji or icon shortcode (not allowed)")
-        if not str(front_matter(page).get("description") or "").strip():
+        description = str(front_matter(page).get("description") or "").strip()
+        if not description:
             errors.append(f"{rel(page, docs)}: no description in front matter (used for search snippets)")
-        if NBSP_RE.search(body):
+        elif not DESCRIPTION_MIN <= len(description) <= DESCRIPTION_MAX:
+            errors.append(
+                f"{rel(page, docs)}: description has {len(description)} characters, "
+                f"expected {DESCRIPTION_MIN}-{DESCRIPTION_MAX}"
+            )
+        # Inline code may show the entity itself (e.g. a page explaining `&nbsp;`).
+        if NBSP_RE.search(INLINE_CODE_RE.sub("", FENCE_RE.sub("", source))):
             errors.append(f"{rel(page, docs)}: hand-written &nbsp; (handled by hooks/typography.py)")
 
     return errors

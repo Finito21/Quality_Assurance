@@ -62,7 +62,7 @@ Dane wejściowe dzieli się na **klasy (partycje)**, w których system powinien 
 
 ### Analiza wartości brzegowych
 
-Defekty bardzo często występują **na granicach** klas równoważności (np. `<` zamiast `<=`). Technika zakłada testowanie wartości granicznych:
+Defekty bardzo często występują **na granicach** klas równoważności (np. `<` zamiast `<=`). Technika zakłada testowanie wartości brzegowych:
 
 - **wersja 2-wartościowa**: wartość brzegowa i jej najbliższy sąsiad z drugiej klasy, np. `17, 18` oraz `65, 66`,
 - **wersja 3-wartościowa**: wartość brzegowa i obaj sąsiedzi, np. `17, 18, 19` oraz `64, 65, 66`.
@@ -115,7 +115,7 @@ Testy mogą pokrywać wszystkie **stany**, wszystkie **poprawne przejścia** lub
 
 | Technika | Co mierzy | Uwagi |
 |---|---|---|
-| **Testowanie instrukcji** | % wykonanych instrukcji kodu | najsłabsze kryterium pokrycia |
+| **Testowanie instrukcji** | % wykonanych instrukcji kodu | słabsze niż pokrycie gałęzi (100% gałęzi daje 100% instrukcji, ale nie odwrotnie) |
 | **Testowanie gałęzi** | % wykonanych gałęzi (wyników decyzji) | 100% gałęzi ⇒ 100% instrukcji, ale nie odwrotnie |
 
 **Pokrycie** = elementy pokrycia wykonane przez testy / wszystkie elementy pokrycia × 100%.
@@ -148,7 +148,7 @@ Najczęściej prowadzi się je w formie **sesji ograniczonych czasowo** (session
 4. **Omówienie (debrief)** z liderem testów lub zespołem: wyniki, zgłoszone defekty, ryzyka, dalsze kroki.
 
 !!! example "Przykład karty testu"
-    **Zbadaj** koszyk w sklepie internetowym **przy pomocy** zmian ilości produktów, kodów rabatowych i kilku kart przeglądarki **w poszukiwaniu** błędnie przeliczanych sum i niespójnego stanu koszyka.
+    **Zbadaj** koszyk w sklepie internetowym **za pomocą** zmian liczby sztuk produktów, kodów rabatowych i kilku kart przeglądarki **w poszukiwaniu** błędnie przeliczanych sum i niespójnego stanu koszyka.
 
     Czas: 90 min · Środowisko: QA, build 2.3.0 · Tester: A. Kowalska
 

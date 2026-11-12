@@ -1,5 +1,5 @@
 ---
-description: "Jira w pracy testera: zgłoszenia, workflow defektu, zapytania JQL, dashboardy i praca w sprincie."
+description: "Jira w pracy testera: typy zgłoszeń, workflow defektu, zapytania JQL, filtry i dashboardy oraz praca testera z zespołem w trakcie sprintu."
 ---
 
 # Jira
@@ -59,7 +59,9 @@ Przykładowy workflow tablicy:
 
 ## JQL: przydatne zapytania
 
-```sql
+JQL nie ma komentarzy, więc wklejaj samą linię zapytania, bez opisu `--` nad nią.
+
+```text
 -- moje aktywne zadania
 assignee = currentUser() AND status != Done
 

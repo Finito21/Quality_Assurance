@@ -1,5 +1,5 @@
 ---
-description: "Cypress: instalacja, struktura testów, selektory, przykład testu logowania i uruchamianie w CI."
+description: "Cypress dla testera: instalacja, struktura testów, selektory i komendy, przykład testu logowania, podmiana żądań sieciowych i uruchamianie w CI."
 ---
 
 # Cypress

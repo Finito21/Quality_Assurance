@@ -1,5 +1,5 @@
 ---
-description: "SQL for testers: SELECT, filtering, aggregation, JOIN, NULL pitfalls and checking data in the database during tests."
+description: "SQL for testers: SELECT queries, filtering, aggregation, JOIN types, NULL pitfalls and checking data in the database while testing an application."
 ---
 
 # SQL

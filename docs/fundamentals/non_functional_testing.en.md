@@ -64,7 +64,7 @@ Tools: **axe DevTools**, **Lighthouse** in [DevTools](../tools/devtools.md), **W
 
 Usability tests check whether users can complete their tasks **effectively, efficiently and with satisfaction**.
 
-- **Tests with users**: a few people from the target group perform tasks (e.g. “buy a ticket for tomorrow”), and an observer notes where they get lost. As few as 5 participants reveal most serious problems.
+- **Tests with users**: a few people from the target group perform tasks (e.g. “buy a ticket for tomorrow”), and an observer notes where they get lost. According to Jakob Nielsen's rule of thumb, as few as 5 participants from one user group reveal most serious problems.
 - **Heuristic evaluation**: an expert checks the interface against principles, e.g. Nielsen's 10 heuristics (visibility of system status, error prevention, consistency).
 - **Questionnaires**: e.g. the SUS questionnaire after the tasks.
 

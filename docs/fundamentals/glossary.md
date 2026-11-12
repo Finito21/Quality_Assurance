@@ -1,5 +1,5 @@
 ---
-description: "Słownik pojęć testowania po polsku i angielsku zgodny z terminologią ISTQB: defekt, awaria, przypadek testowy i inne."
+description: "Słownik pojęć testowania oprogramowania po polsku i angielsku, zgodny z terminologią ISTQB: błąd, defekt, awaria, przypadek testowy, warunek testowy i inne."
 ---
 
 # Słownik pojęć

@@ -1,5 +1,5 @@
 ---
-description: "TestLink: a free test management tool, test plans, test cases, builds and reports."
+description: "TestLink for testers: a free, open-source test management tool for test plans, test cases, builds, test execution and progress reports."
 ---
 
 # TestLink

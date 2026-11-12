@@ -1,5 +1,5 @@
 ---
-description: "Apache JMeter: plan testu, grupy wątków, samplery, asercje, uruchamianie z linii poleceń i raporty."
+description: "Apache JMeter dla testera: plan testu, grupy wątków, samplery, asercje, uruchamianie testów z linii poleceń i czytanie raportu HTML."
 ---
 
 # Apache JMeter

@@ -1,5 +1,5 @@
 ---
-description: "Tester tools: DevTools, Git, automation, API testing, CI/CD, monitoring, test management and collaboration."
+description: "Tools a tester uses: DevTools, Git, test automation, API testing, CI/CD, monitoring, test management and team collaboration, with practical tips."
 ---
 
 # Tools
