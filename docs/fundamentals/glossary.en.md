@@ -56,7 +56,8 @@ The most common testing terms, with the Polish equivalent used on the Polish ver
 |---|---|---|
 | **Test environment** | <span lang="pl">środowisko testowe</span> | hardware, software and data that tests run on |
 | **Build** | <span lang="pl">build</span> | a specific, built version of the application |
-| **Mock, stub** | <span lang="pl">atrapa, zaślepka</span> | a stand-in for a real component or service in a test |
+| **Mock** | <span lang="pl">atrapa</span> | a stand-in for a component that also checks it was called as expected |
+| **Stub** | <span lang="pl">zaślepka</span> | a stand-in for a component that returns canned responses |
 | **Flaky test** | <span lang="pl">niestabilny test</span> | a test that sometimes passes and sometimes fails without code changes |
 | **Locator** | <span lang="pl">lokator</span> | a way to point to a page element in an automated test |
 | **Pipeline** | <span lang="pl">potok CI/CD</span> | an automated sequence of steps: build, tests, deployment |

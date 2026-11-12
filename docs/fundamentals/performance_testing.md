@@ -11,7 +11,8 @@ description: "Testy wydajnościowe: rodzaje (obciążeniowe, przeciążeniowe, d
 | Rodzaj | Pytanie, na które odpowiada |
 |---|---|
 | **Wydajnościowe (performance)** | Jaki jest czas odpowiedzi i przepustowość przy typowym ruchu? |
-| **Obciążeniowe (load)** | Czy system wytrzyma oczekiwane, maksymalne obciążenie? |
+| **Obciążeniowe (load)** | Czy system działa poprawnie przy oczekiwanym obciążeniu, od typowego do szczytowego? |
+| **Pojemnościowe (capacity)** | Ilu użytkowników lub transakcji system obsłuży, zanim przekroczy dopuszczalne progi? |
 | **Przeciążeniowe (stress)** | Co się stanie powyżej normy? Gdzie jest punkt załamania i czy system się podnosi? |
 | **Skokowe (spike)** | Jak system reaguje na nagły wzrost ruchu (np. start promocji)? |
 | **Wytrzymałościowe (soak / endurance)** | Czy przy długotrwałym obciążeniu nie pojawiają się wycieki pamięci i degradacja? |

@@ -11,7 +11,7 @@ Testy funkcjonalne sprawdzają, **co** system robi. Testy niefunkcjonalne sprawd
 | Charakterystyka | Pytanie testera | Przykładowe testy |
 |---|---|---|
 | **Wydajność** | Czy system odpowiada szybko i wytrzymuje obciążenie? | [testy wydajnościowe](performance_testing.md), obciążeniowe, przeciążeniowe |
-| **Kompatybilność** | Czy działa w różnych przeglądarkach i współpracuje z innymi systemami? | testy cross-browser, testy integracji |
+| **Kompatybilność** | Czy działa w różnych przeglądarkach i współpracuje z innymi systemami? | testy cross-browser, testy współistnienia i interoperacyjności |
 | **Interakcja z użytkownikiem** | Czy jest łatwy w nauce, wygodny i dostępny? | testy użyteczności, testy dostępności |
 | **Niezawodność** | Czy działa stabilnie i podnosi się po awarii? | testy odtwarzania, testy przełączania awaryjnego (failover) |
 | **Bezpieczeństwo** | Czy chroni dane i odpiera ataki? | testy bezpieczeństwa, testy penetracyjne |

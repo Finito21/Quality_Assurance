@@ -70,7 +70,12 @@ Typical test prioritisation strategies according to ISTQB:
 - **Monitoring**: gathering information about test progress (manually or automatically in test management tools).
 - **Control**: corrective actions taken based on that information (e.g. changing priorities, adding resources).
 
-Typical metrics: test execution progress, number of passed/failed tests, number and density of defects, requirements and code coverage, cost of testing.
+Typical metrics: test execution progress, number of passed/failed tests, number and density of defects, defect detection percentage (DDP), mean time to fix, requirements and code coverage, residual risk level, cost of testing.
+
+| Report | When | What it contains |
+|---|---|---|
+| **Test progress report** | regularly during testing | status against the plan, metrics, blockers, new risks |
+| **Test completion report** | at the end of a stage or project | summary, deviations from the plan, exit criteria assessment, unresolved defects, lessons learned |
 
 ## Risk and testing
 
@@ -96,6 +101,8 @@ According to the ISTQB glossary, a **risk** is a factor that could result in fut
 
 **Risk-based testing** means that the scope, priorities and test techniques are chosen based on risk analysis, so that the riskiest areas are tested first and most thoroughly.
 
+There are four ways to respond to an identified risk: **mitigate** it (e.g. extra testing, reviews), **accept** it, **transfer** it (e.g. to a supplier) or prepare a **contingency plan**.
+
 ## Defect management
 
 One of the objectives of testing is to find defects, so **all defects found should be logged**. How they are reported depends on the context, the test level and the development model.
@@ -107,12 +114,13 @@ Status names differ between tools and companies, but the flow is similar.
 ```mermaid
 flowchart LR
     accTitle: Defect lifecycle
-    accDescr: A new defect is assigned, fixed and sent for a retest. After a successful retest it is closed, after a failed one it is reopened. A report can also be rejected, marked as a duplicate or deferred.
+    accDescr: A new defect is assigned, fixed and sent for a retest. After a successful retest it is closed, after a failed one it is reopened. A report can also be rejected, marked as a duplicate, marked as cannot reproduce or deferred.
     New --> Assigned --> InProgress[In Progress] --> Resolved --> RFT[Ready for Test]
     RFT -->|retest OK| Closed
     RFT -->|defect still occurs| Reopened --> Assigned
     New -.-> Rejected
     New -.-> Duplicate
+    New -.-> CannotReproduce[Cannot Reproduce]
     Assigned -.-> Deferred
 ```
 
