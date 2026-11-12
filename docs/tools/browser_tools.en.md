@@ -24,14 +24,14 @@ A cloud platform for testing web and mobile applications on **real devices and b
 | **Automate** | running automated tests (Selenium, Cypress, Playwright…) with reports |
 | **Percy** | visual regression tests (comparing screenshots) |
 
-Alternative: **LambdaTest**.
+Alternative: **TestMu AI** (formerly LambdaTest).
 
 ## Extensions for testers
 
 | Extension | Use |
 |---|---|
 | **Bug Magnet** | ready-made valid and invalid data for forms (e-mails, numbers, special characters) |
-| **LambdaTest** | the page on different browsers, systems and resolutions, full-page screenshot |
+| **LT Browser** (TestMu AI, formerly LambdaTest) | the page on different browsers, systems and resolutions, full-page screenshot |
 | **ResolutionTest** | quick tests at different resolutions |
 | **Bird Eats Bug** | screenshots and recordings with **console logs, requests** and system information |
 | **Awesome Screenshot** | screenshots and recordings with editing |

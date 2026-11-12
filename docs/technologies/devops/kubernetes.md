@@ -65,12 +65,21 @@ flowchart TB
 |---|---|
 | `kubectl get pods -n qa` | lista Podów w namespace `qa` |
 | `kubectl logs <pod> -n qa` | logi Poda (analiza błędów) |
+| `kubectl logs <pod> -n qa --previous` | logi poprzedniego kontenera, gdy Pod się restartuje |
+| `kubectl rollout status deployment/<nazwa> -n qa` | czy wdrożenie nowej wersji się zakończyło |
+| `kubectl port-forward svc/<usługa> 8080:80 -n qa` | dostęp do usługi z własnego komputera na `localhost:8080` |
 | `kubectl describe pod <pod> -n qa` | szczegóły, np. przyczyna awarii |
-| `kubectl get events -n qa` | zdarzenia, diagnoza problemów z wdrożeniem |
+| `kubectl get events -n qa --sort-by=.lastTimestamp` | zdarzenia od najstarszego, diagnoza problemów z wdrożeniem |
 | `kubectl get deployments -n qa` | lista deploymentów |
 | `kubectl get svc -n qa` | lista usług |
 | `kubectl apply -f deployment.yaml` | utworzenie / aktualizacja obiektów z YAML |
 | `kubectl delete pod <pod>` | usunięcie Poda (Deployment odtworzy go automatycznie) |
+
+| Status Poda | Typowa przyczyna |
+|---|---|
+| `Pending` | brak zasobów w klastrze albo nieprzypisany wolumen |
+| `ImagePullBackOff` | zła nazwa lub tag obrazu, brak dostępu do rejestru |
+| `CrashLoopBackOff` | aplikacja kończy działanie zaraz po starcie, np. brak zmiennej środowiskowej; sprawdź `logs --previous` |
 
 ## Scenariusz pracy testera
 

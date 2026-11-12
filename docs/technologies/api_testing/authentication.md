@@ -85,11 +85,14 @@ sequenceDiagram
 |---|---|
 | żądanie bez tokena lub klucza | `401` |
 | wygasły, zmodyfikowany lub losowy token | `401` |
+| JWT z `alg: none`, zmienionym payloadem albo złym `aud` lub `iss` | `401` (podpis i deklaracje muszą być sprawdzane) |
 | poprawny token, ale brak uprawnień (rola, scope) | `403` |
 | dostęp do cudzego zasobu przez zmianę ID w URL (IDOR) | `403` lub `404`, nigdy dane innego użytkownika |
 | wylogowanie | token przestaje działać, jeśli system obsługuje unieważnianie |
 | odświeżenie tokena | nowy access token działa, użyty refresh token nie działa ponownie (jeśli stosowana rotacja) |
 | wiele błędnych logowań | limit prób lub blokada (`429` lub komunikat o blokadzie) |
 | treść odpowiedzi i logów | brak haseł, tokenów i kluczy |
+
+Odpowiedź `401` powinna zawierać nagłówek `WWW-Authenticate`. IDOR to w OWASP API Security Top 10 (2023) kategoria **BOLA** (API1).
 
 Praktyka w Postmanie (zakładka *Authorization*, zapisywanie tokena do zmiennej): [Postman](../../tools/api_testing_tools/postman.md).

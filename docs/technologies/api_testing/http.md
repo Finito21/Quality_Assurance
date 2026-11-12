@@ -45,6 +45,11 @@ Authorization: Bearer eyJhbGci...
 | `PATCH` | zmiana pól, których nie wysłano, brak walidacji zmienianych pól, niespójne dane |
 | `DELETE` | usunięcie bez uprawnień, usunięcie zasobu używanego przez inne rekordy, zasób nadal widoczny przez cache |
 
+!!! tip "Współbieżność i duplikaty"
+    - Równoczesna edycja: z nagłówkiem `If-Match` i nieaktualnym `ETag` serwer powinien zwrócić `412 Precondition Failed`, a nie nadpisać cudze zmiany.
+    - Ponowne wysłanie `POST`: z tym samym nagłówkiem `Idempotency-Key` nie powinien powstać drugi zasób.
+    - Odpowiedź `429` lub `503` powinna zawierać nagłówek `Retry-After`.
+
 !!! info "Hard delete i soft delete"
     Przy **hard delete** rekord znika z bazy. Przy **soft delete** zostaje oznaczony jako usunięty (np. `deleted_at`). Warto sprawdzić, czy „usunięty” zasób nie wraca w listach, wyszukiwarce ani raportach.
 

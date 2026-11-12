@@ -38,7 +38,7 @@ describe("Login", () => {
 
   it("logs the user in with valid credentials", () => {
     cy.get("[data-cy=email]").type("jan@test.pl");
-    cy.get("[data-cy=password]").type("Password123!");
+    cy.get("[data-cy=password]").type(Cypress.env("TEST_PASSWORD"), { log: false }); // password from CYPRESS_TEST_PASSWORD
     cy.get("[data-cy=submit]").click();
 
     cy.url().should("include", "/dashboard");

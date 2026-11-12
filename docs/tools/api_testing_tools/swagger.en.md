@@ -15,7 +15,7 @@ The **OpenAPI Specification (OAS)** is a standard for describing REST APIs in a 
 ## Specification excerpt
 
 ```yaml
-openapi: 3.0.3
+openapi: 3.1.0
 info:
   title: Shop API
   version: 1.0.0

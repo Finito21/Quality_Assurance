@@ -65,12 +65,21 @@ flowchart TB
 |---|---|
 | `kubectl get pods -n qa` | list of pods in the `qa` namespace |
 | `kubectl logs <pod> -n qa` | pod logs (bug analysis) |
+| `kubectl logs <pod> -n qa --previous` | logs of the previous container when the pod keeps restarting |
+| `kubectl rollout status deployment/<name> -n qa` | whether the rollout of a new version has finished |
+| `kubectl port-forward svc/<service> 8080:80 -n qa` | reach a service from your own machine at `localhost:8080` |
 | `kubectl describe pod <pod> -n qa` | details, e.g. the reason for a crash |
-| `kubectl get events -n qa` | events, diagnosing deployment problems |
+| `kubectl get events -n qa --sort-by=.lastTimestamp` | events from oldest to newest, diagnosing deployment problems |
 | `kubectl get deployments -n qa` | list of deployments |
 | `kubectl get svc -n qa` | list of services |
 | `kubectl apply -f deployment.yaml` | create / update objects from YAML |
 | `kubectl delete pod <pod>` | delete a pod (the deployment recreates it automatically) |
+
+| Pod status | Typical cause |
+|---|---|
+| `Pending` | not enough resources in the cluster or an unbound volume |
+| `ImagePullBackOff` | wrong image name or tag, no access to the registry |
+| `CrashLoopBackOff` | the app exits right after starting, e.g. a missing environment variable; check `logs --previous` |
 
 ## A tester's workflow
 
