@@ -40,6 +40,7 @@ hooks/typography.py             MkDocs hook: Polish non-breaking-space rules
 scripts/check_translations.py   CI check: every page exists in PL and EN, is in nav (no dead nav entries), nav titles have EN labels,
                                 EN has no Polish text (front matter included), one H1 and a description per page, no emoji/icon shortcodes/&nbsp;
 tests/                          unit tests for the typography hook and the translation check (stdlib unittest)
+.github/ISSUE_TEMPLATE/         issue forms: content error, translation
 .github/dependabot.yml          dependency and Actions updates
 .github/workflows/checks.yml    tests, translation check, strict build, site artifact; on PRs and called by deploy
 .github/workflows/deploy.yml    on push to main: calls checks.yml, then deploys the artifact to Pages
