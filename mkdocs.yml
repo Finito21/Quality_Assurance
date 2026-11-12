@@ -4,7 +4,6 @@ site_author: Grzegorz Zięba
 site_url: https://finito21.github.io/Quality_Assurance/
 repo_url: https://github.com/Finito21/Quality_Assurance
 repo_name: Finito21/Quality_Assurance
-edit_uri: edit/main/docs/
 copyright: Notatki tworzone na własny użytek edukacyjny · Grzegorz Zięba · Treść na licencji <a href="https://creativecommons.org/licenses/by/4.0/deed.pl">CC BY 4.0</a>
 
 theme:

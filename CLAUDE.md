@@ -36,6 +36,7 @@ docs/
   assets/images/                images used by pages
   assets/stylesheets/extra.css  all custom styling (light + dark scheme)
 overrides/404.html              bilingual 404 page (GitHub Pages serves one root 404)
+overrides/main.html             Open Graph / Twitter tags, PNG icons
 hooks/typography.py             MkDocs hook: Polish non-breaking-space rules
 scripts/check_translations.py   CI check: every page exists in PL and EN, is in nav (no dead nav entries), nav titles have EN labels,
                                 EN has no Polish text (front matter included), one H1 and a description per page, no emoji/icon shortcodes/&nbsp;
