@@ -44,12 +44,13 @@ SAME_NAV_TITLES = {
 # A closing fence may be longer than the opening one (CommonMark).
 FENCE_RE = re.compile(r"^([ \t]*)(`{3,}|~{3,}).*?^\1\2[`~]*[ \t]*$", re.M | re.S)
 INLINE_CODE_RE = re.compile(r"(`+)(?!`)(.+?)(?<!`)\1(?!`)")
-URL_RE = re.compile(r"\]\([^)]*\)|https?://\S+")
+# Only the link target is skipped; a link title ("...") stays in the scanned text.
+URL_RE = re.compile(r"\]\(\s*(?:<[^>]*>|[^\s)]*)|https?://\S+")
 FRONT_MATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.S)
 NBSP_RE = re.compile(r"&nbsp;|&#160;|&#x0*a0;| ", re.I)
 # Polish deliberately quoted on an English page (e.g. the glossary) is marked with
 # lang="pl", which screen readers also need, and is not reported.
-LANG_PL_RE = re.compile(r"<(\w+)\b[^>]*\blang=\"pl\"[^>]*>.*?</\1>", re.S)
+LANG_PL_RE = re.compile(r"<(\w+)\b[^>]*\blang=([\"'])pl\2[^>]*>.*?</\1>", re.S)
 POLISH_WORD_RE = re.compile(rf"\w*[{POLISH_CHARS}]\w*")
 # Common Polish words without diacritics; in lowercase they never occur in English
 # prose, so they catch untranslated sentences that POLISH_WORD_RE misses
@@ -58,9 +59,11 @@ POLISH_STOP_WORDS = {"jest", "nie", "oraz", "dla", "przez", "jak", "aby", "lub",
 STOP_WORD_RE = re.compile(rf"\b({'|'.join(sorted(POLISH_STOP_WORDS))})\b")
 H1_RE = re.compile(r"^# \S", re.M)
 # Emoji and pictograph blocks, misc symbols and dingbats, and the emoji variation
-# selector; the plain check and cross marks used in decision tables are allowed.
-EMOJI_RE = re.compile("[\U0001F000-\U0001FAFF⌀-⏿■-◿ℹ⃣☀-➿⬀-⯿️]")
-ALLOWED_SYMBOLS = {"✓", "✔", "✗", "✘"}
+# selector, and a few emoji-style punctuation marks and arrows; the plain check and
+# cross marks used in decision tables and the keyboard symbols used in shortcut
+# tables are allowed.
+EMOJI_RE = re.compile("[\U0001F000-\U0001FAFF⌀-⏿■-◿ℹ⃣☀-➿⬀-⯿️‼⁉↩↪⤴⤵]")
+ALLOWED_SYMBOLS = {"✓", "✔", "✗", "✘", "⌘", "⌥", "⌃", "⌫", "⏎"}
 # Meta description length recommended for search result snippets (CLAUDE.md).
 DESCRIPTION_MIN, DESCRIPTION_MAX = 120, 160
 ICON_RE = re.compile(r":(?:material|fontawesome|octicons|simple)-[\w-]+:")

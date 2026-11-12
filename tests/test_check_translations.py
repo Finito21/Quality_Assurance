@@ -193,6 +193,28 @@ class CheckTranslations(unittest.TestCase):
         self.write("a.md", PAGE + "Do not write `&nbsp;` by hand.\n")
         self.assertEqual(self.errors(), [])
 
+    def test_polish_in_link_title_is_reported(self):
+        self.write("a.en.md", PAGE + '[Docs](https://example.com/zażółć "Opis zażółć")\n')
+        self.assertError("Polish words in a.en.md: zażółć")
+
+    def test_polish_in_link_target_is_ignored(self):
+        self.write("a.en.md", PAGE + "[Docs](https://example.com/zażółć) and [page](strona_główna.md)\n")
+        self.assertEqual(self.errors(), [])
+
+    def test_lang_pl_with_single_quotes(self):
+        self.write("a.en.md", PAGE + "<span lang='pl'>zażółć</span>\n")
+        self.assertEqual(self.errors(), [])
+
+    def test_keyboard_symbols_are_allowed(self):
+        self.write("a.md", PAGE + "| ⌘ + ⌥ + I | DevTools |\n")
+        self.assertEqual(self.errors(), [])
+
+    def test_emoji_style_punctuation(self):
+        for symbol in ("‼", "⁉", "↪"):
+            with self.subTest(symbol=symbol):
+                self.write("a.md", PAGE + f"Note {symbol}\n")
+                self.assertError("a.md: emoji")
+
     def test_polish_in_english_front_matter(self):
         self.write("a.en.md", "---\ndescription: Opis strony z błędami\n---\n# Title\n")
         self.assertError("Polish words in a.en.md: błędami")
