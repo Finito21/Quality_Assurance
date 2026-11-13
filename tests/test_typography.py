@@ -139,7 +139,49 @@ class MarkupEdgeCases(unittest.TestCase):
         self.assertEqual(fix_typography(once), once)
 
     def test_nbsp_is_a_real_non_breaking_space(self):
-        self.assertEqual(NBSP, " ")
+        self.assertEqual(NBSP, "\u00a0")
+
+    def test_script_with_less_than_does_not_disable_the_hook(self):
+        html = "<script>if(a<b){x()}</script><p>w domu</p>"
+        self.assertEqual(fix(html), "<script>if(a<b){x()}</script><p>w~domu</p>")
+
+    def test_style_and_textarea_content_is_untouched(self):
+        self.assertEqual(fix("<style>a > b {}</style>w domu"), "<style>a > b {}</style>w~domu")
+        self.assertEqual(fix("<textarea>w domu</textarea> i tak"), "<textarea>w domu</textarea> i~tak")
+
+    def test_english_element_is_untouched(self):
+        self.assertEqual(fix('<p lang="en">a cat</p><p>w domu</p>'), '<p lang="en">a cat</p><p>w~domu</p>')
+
+    def test_nested_same_tag_inside_english_element(self):
+        html = '<div lang="en"><div>a cat</div>a dog</div>w domu'
+        self.assertEqual(fix(html), '<div lang="en"><div>a cat</div>a dog</div>w~domu')
+
+    def test_polish_element_inside_english_is_fixed(self):
+        html = '<p lang="en">see <span lang="pl">w domu</span> and a cat</p>'
+        self.assertEqual(fix(html), '<p lang="en">see <span lang="pl">w~domu</span> and a cat</p>')
+
+    def test_one_letter_word_before_image(self):
+        self.assertEqual(fix('w <img src="x.png" alt="">'), 'w~<img src="x.png" alt="">')
+
+    def test_one_letter_word_at_end_of_block_gets_no_trailing_nbsp(self):
+        self.assertEqual(fix("idzie w\n</p>"), "idzie w\n</p>")
+
+    def test_tys_with_full_stop(self):
+        self.assertEqual(fix("5 tys. zł"), "5~tys.~zł")
+
+    def test_year_followed_by_number_is_not_a_thousands_group(self):
+        self.assertEqual(fix("rok 2024 123"), "rok 2024 123")
+
+    def test_thousands_after_a_word(self):
+        self.assertEqual(fix("kosztuje 10 000 zł"), "kosztuje 10~000~zł")
+
+    def test_line_numbers_table_is_untouched(self):
+        html = '<td class="linenos"><div class="linenodiv"><pre><span>1 2</span></pre></div></td>'
+        self.assertEqual(fix(html), html)
+
+    def test_one_letter_word_inside_em_is_a_known_limit(self):
+        # the word before the closing tag is not glued across it
+        self.assertEqual(fix("<em>w</em> domu"), "<em>w</em> domu")
 
 
 class PageLanguage(unittest.TestCase):
