@@ -173,6 +173,18 @@ class CheckTranslations(unittest.TestCase):
         self.write("a.md", "---\ndescription: ''\n---\n# Title\n")
         self.assertError("a.md: no description in front matter")
 
+    def test_front_matter_at_end_of_file(self):
+        self.write("a.md", f"# Title\n")
+        self.write("a.md", f"---\ndescription: {DESCRIPTION}\n---")
+        errors = self.errors()
+        self.assertFalse(any("a.md: no description" in e for e in errors), errors)
+
+    def test_polish_in_english_mkdocs_settings(self):
+        self.mkdocs.write_text(
+            MKDOCS.replace("            Start: Home", "            Start: Strona główna"), encoding="utf-8"
+        )
+        self.assertError("Polish words in the English settings of mkdocs.yml: główna")
+
     def test_description_length(self):
         for length in (119, 161):
             with self.subTest(length=length):

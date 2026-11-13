@@ -46,7 +46,7 @@ FENCE_RE = re.compile(r"^([ \t]*)(`{3,}|~{3,}).*?^\1\2[`~]*[ \t]*$", re.M | re.S
 INLINE_CODE_RE = re.compile(r"(`+)(?!`)(.+?)(?<!`)\1(?!`)")
 # Only the link target is skipped; a link title ("...") stays in the scanned text.
 URL_RE = re.compile(r"\]\(\s*(?:<[^>]*>|[^\s)]*)|https?://\S+")
-FRONT_MATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.S)
+FRONT_MATTER_RE = re.compile(r"\A---\n(.*?)\n---[ \t]*(?:\n|\Z)", re.S)
 NBSP_RE = re.compile(r"&nbsp;|&#160;|&#x0*a0;| ", re.I)
 # Polish deliberately quoted on an English page (e.g. the glossary) is marked with
 # lang="pl", which screen readers also need, and is not reported.
@@ -126,13 +126,34 @@ def nav_entries(nav, titles=None, paths=None):
     return titles, paths
 
 
-def english_translations(config) -> dict:
+def english_language(config) -> dict:
+    """The `en` entry of the i18n plugin's languages (empty when missing)."""
     for plugin in config.get("plugins") or []:
         if isinstance(plugin, dict) and "i18n" in plugin:
             for lang in plugin["i18n"].get("languages") or []:
                 if lang.get("locale") == "en":
-                    return lang.get("nav_translations") or {}
+                    return lang
     return {}
+
+
+def english_translations(config) -> dict:
+    return english_language(config).get("nav_translations") or {}
+
+
+def strings(value):
+    """Every string value inside a nested YAML structure."""
+    if isinstance(value, str):
+        yield value
+    elif isinstance(value, dict):
+        for item in value.values():
+            yield from strings(item)
+    elif isinstance(value, list):
+        for item in value:
+            yield from strings(item)
+
+
+def polish_words(text: str) -> set:
+    return (set(POLISH_WORD_RE.findall(text)) - ALLOWED_WORDS) | set(STOP_WORD_RE.findall(text))
 
 
 def check(docs: Path = DOCS, mkdocs: Path = MKDOCS) -> list:
@@ -182,6 +203,15 @@ def check(docs: Path = DOCS, mkdocs: Path = MKDOCS) -> list:
         words |= set(STOP_WORD_RE.findall(strip_code(raw)))
         if words:
             errors.append(f"Polish words in {rel(en, docs)}: {', '.join(sorted(words)[:10])}")
+
+    # 4a. English strings in mkdocs.yml (site_description, copyright, palette toggles,
+    #     nav labels) must not contain Polish either
+    english = {k: v for k, v in english_language(config).items() if k not in ("locale", "name")}
+    words = set()
+    for text in strings(english):
+        words |= polish_words(text)
+    if words:
+        errors.append(f"Polish words in the English settings of mkdocs.yml: {', '.join(sorted(words)[:10])}")
 
     # 5. content rules from CLAUDE.md
     for page in all_md:
